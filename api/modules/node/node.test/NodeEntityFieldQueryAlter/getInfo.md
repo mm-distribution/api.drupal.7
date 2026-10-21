@@ -1,0 +1,31 @@
+# NodeEntityFieldQueryAlter::getInfo()
+
+- **Type:** Method
+- **File:** [`modules/node/node.test`](../_file.md), lines 2459–2465 · [local source](../../../../../source/modules/node/node.test) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/node/node.test#L2459-L2465)
+- **Class:** [NodeEntityFieldQueryAlter](../NodeEntityFieldQueryAlter.md)
+- **Module/theme:** node
+
+## Signature
+
+```php
+public static function getInfo()
+```
+
+## Documentation
+
+_No docblock in source._
+
+## Code
+
+```php
+  public static function getInfo() {
+    return array(
+      'name' => 'Node entity query alter',
+      'description' => 'Test that node access entity queries are properly altered by the node module.',
+      'group' => 'Node',
+    );
+  }
+```
+
+---
+_Drupal 7.103 · [modules/node/node.test](https://github.com/drupal/drupal/blob/7.103/modules/node/node.test) · Licensed GPL-2.0-or-later (see LICENSE)._

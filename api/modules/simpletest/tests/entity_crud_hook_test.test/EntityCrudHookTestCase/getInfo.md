@@ -1,0 +1,31 @@
+# EntityCrudHookTestCase::getInfo()
+
+- **Type:** Method
+- **File:** [`modules/simpletest/tests/entity_crud_hook_test.test`](../_file.md), lines 23–29 · [local source](../../../../../../source/modules/simpletest/tests/entity_crud_hook_test.test) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/simpletest/tests/entity_crud_hook_test.test#L23-L29)
+- **Class:** [EntityCrudHookTestCase](../EntityCrudHookTestCase.md)
+- **Module/theme:** batch_test
+
+## Signature
+
+```php
+public static function getInfo()
+```
+
+## Documentation
+
+_No docblock in source._
+
+## Code
+
+```php
+  public static function getInfo() {
+    return array(
+      'name' => 'Entity CRUD hooks',
+      'description' => 'Tests the invocation of hooks when inserting, loading, updating or deleting an entity.',
+      'group' => 'Entity API',
+    );
+  }
+```
+
+---
+_Drupal 7.103 · [modules/simpletest/tests/entity_crud_hook_test.test](https://github.com/drupal/drupal/blob/7.103/modules/simpletest/tests/entity_crud_hook_test.test) · Licensed GPL-2.0-or-later (see LICENSE)._

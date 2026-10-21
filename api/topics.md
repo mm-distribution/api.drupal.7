@@ -1,0 +1,71 @@
+# Topics (derived index)
+
+Topic groups defined with `@defgroup` in core.
+
+- [Actions](topics/actions.md) — `actions`, 21 members
+- [Ajax framework](topics/ajax.md) — `ajax`, 10 members
+- [Ajax framework commands](topics/ajax_commands.md) — `ajax_commands`, 17 members
+- [Authorized operations](topics/authorize.md) — `authorize`, 5 members
+- [Automatic interface translation import](topics/locale-autoimport.md) — `locale-autoimport`, 6 members
+- [Batch operations](topics/batch.md) — `batch`, 6 members
+- [Block Caching](topics/block_caching.md) — `block_caching`, 6 members
+- [Callbacks](topics/callbacks.md) — `callbacks`, 11 members
+- [Code registry](topics/registry.md) — `registry`, 10 members
+- [Content markers](topics/content_flags.md) — `content_flags`, 3 members
+- [Database abstraction layer](topics/database.md) — `database`, 501 members
+- [Default theme implementations](topics/themeable.md) — `themeable`, 143 members
+- [Extra updates for 7.x](topics/updates-7.x-extra.md) — `updates-7.x-extra`, 66 members
+- [Field API](topics/field.md) — `field`, 40 members
+- [Field API bulk data deletion](topics/field_purge.md) — `field_purge`, 4 members
+- [Field Attach API](topics/field_attach.md) — `field_attach`, 41 members
+- [Field CRUD API](topics/field_crud.md) — `field_crud`, 26 members
+- [Field Formatter API](topics/field_formatter.md) — `field_formatter`, 4 members
+- [Field Info API](topics/field_info.md) — `field_info`, 29 members
+- [Field Language API](topics/field_language.md) — `field_language`, 11 members
+- [Field Storage API](topics/field_storage.md) — `field_storage`, 20 members
+- [Field Types API](topics/field_types.md) — `field_types`, 26 members
+- [Field Widget API](topics/field_widget.md) — `field_widget`, 8 members
+- [File interface](topics/file.md) — `file`, 70 members
+- [File module public API functions](topics/file-module-api.md) — `file-module-api`, 1 members
+- [Form builder functions](topics/forms.md) — `forms`, 131 members
+- [Form generation](topics/form_api.md) — `form_api`, 90 members
+- [Formatting](topics/format.md) — `format`, 11 members
+- [Hook implementations for user-created content types](topics/node_content.md) — `node_content`, 1 members
+- [Hooks](topics/hooks.md) — `hooks`, 355 members
+- [HTTP handling](topics/http_handling.md) — `http_handling`, 14 members
+- [Image toolkits](topics/image.md) — `image`, 24 members
+- [Input validation](topics/validation.md) — `validation`, 2 members
+- [Language addition API](topics/locale-api-add.md) — `locale-api-add`, 1 members
+- [Language administration interface](topics/locale-language-administration.md) — `locale-language-administration`, 20 members
+- [Language Negotiation API functionality](topics/language_negotiation.md) — `language_negotiation`, 20 members
+- [Language negotiation options](topics/locale-languages-negotiation.md) — `locale-languages-negotiation`, 10 members
+- [List of predefined languages](topics/locale-api-predefined.md) — `locale-api-predefined`, 1 members
+- [Locking mechanisms](topics/lock.md) — `lock`, 7 members
+- [Logging severity levels](topics/logging_severity_levels.md) — `logging_severity_levels`, 12 members
+- [Menu context types](topics/menu_context_types.md) — `menu_context_types`, 3 members
+- [Menu flags](topics/menu_flags.md) — `menu_flags`, 8 members
+- [Menu item types](topics/menu_item_types.md) — `menu_item_types`, 6 members
+- [Menu status codes](topics/menu_status_codes.md) — `menu_status_codes`, 5 members
+- [Menu system](topics/menu.md) — `menu`, 111 members
+- [Menu tree parameters](topics/menu_tree_parameters.md) — `menu_tree_parameters`, 2 members
+- [Node access rights](topics/node_access.md) — `node_access`, 21 members
+- [Node API Hooks](topics/node_api_hooks.md) — `node_api_hooks`, 23 members
+- [Pager pieces](topics/pagerpieces.md) — `pagerpieces`, 5 members
+- [PHP wrapper functions](topics/php_wrappers.md) — `php_wrappers`, 25 members
+- [Private update status cache system](topics/update_status_cache.md) — `update_status_cache`, 5 members
+- [Queue operations](topics/queue.md) — `queue`, 29 members
+- [RDF Mapping API](topics/rdf.md) — `rdf`, 11 members
+- [Sanitization functions](topics/sanitization.md) — `sanitization`, 14 members
+- [Schema API](topics/schemaapi.md) — `schemaapi`, 97 members
+- [Search interface](topics/search.md) — `search`, 16 members
+- [Standard filters](topics/standard_filters.md) — `standard_filters`, 17 members
+- [Taxonomy indexing](topics/taxonomy_index.md) — `taxonomy_index`, 7 members
+- [Translation administration screens](topics/locale-translate-administration-screens.md) — `locale-translate-administration-screens`, 12 members
+- [Translation editing/deletion interface](topics/locale-translate-edit-delete.md) — `locale-translate-edit-delete`, 6 members
+- [Translation import/export API.](topics/locale-api-import-export.md) — `locale-api-import-export`, 18 members
+- [Translation search API](topics/locale-api-seek.md) — `locale-api-seek`, 5 members
+- [Update Manager module: file management](topics/update_manager_file.md) — `update_manager_file`, 6 members
+- [Update Manager module: install](topics/update_manager_install.md) — `update_manager_install`, 4 members
+- [Update Manager module: update](topics/update_manager_update.md) — `update_manager_update`, 7 members
+- [Update versions of API functions](topics/update_api.md) — `update_api`, 9 members
+- [Updates from 6.x to 7.x](topics/updates-6.x-to-7.x.md) — `updates-6.x-to-7.x`, 116 members

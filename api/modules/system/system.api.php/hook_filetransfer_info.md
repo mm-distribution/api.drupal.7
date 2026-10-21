@@ -1,0 +1,75 @@
+# hook_filetransfer_info()
+
+- **Type:** Hook (documentation function)
+- **File:** [`modules/system/system.api.php`](_file.md), lines 4792–4800 · [local source](../../../../source/modules/system/system.api.php) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/system/system.api.php#L4792-L4800)
+- **Module/theme:** system
+- **Topics:** [hooks](../../../topics/hooks.md)
+
+## Signature
+
+```php
+function hook_filetransfer_info()
+```
+
+## Documentation
+
+```text
+Register information about FileTransfer classes provided by a module.
+
+The FileTransfer class allows transferring files over a specific type of
+connection. Core provides classes for FTP and SSH. Contributed modules are
+free to extend the FileTransfer base class to add other connection types,
+and if these classes are registered via hook_filetransfer_info(), those
+connection types will be available to site administrators using the Update
+manager when they are redirected to the authorize.php script to authorize
+the file operations.
+
+@return array
+  Nested array of information about FileTransfer classes. Each key is a
+  FileTransfer type (not human readable, used for form elements and
+  variable names, etc), and the values are subarrays that define properties
+  of that type. The keys in each subarray are:
+  - 'title': Required. The human-readable name of the connection type.
+  - 'class': Required. The name of the FileTransfer class. The constructor
+    will always be passed the full path to the root of the site that should
+    be used to restrict where file transfer operations can occur (the $jail)
+    and an array of settings values returned by the settings form.
+  - 'file': Required. The include file containing the FileTransfer class.
+    This should be a separate .inc file, not just the .module file, so that
+    the minimum possible code is loaded when authorize.php is running.
+  - 'file path': Optional. The directory (relative to the Drupal root)
+    where the include file lives. If not defined, defaults to the base
+    directory of the module implementing the hook.
+  - 'weight': Optional. Integer weight used for sorting connection types on
+    the authorize.php form.
+
+@see FileTransfer
+@see authorize.php
+@see hook_filetransfer_info_alter()
+@see drupal_get_filetransfer_info()
+```
+
+## Code
+
+```php
+function hook_filetransfer_info() {
+  $info['sftp'] = array(
+    'title' => t('SFTP (Secure FTP)'),
+    'file' => 'sftp.filetransfer.inc',
+    'class' => 'FileTransferSFTP',
+    'weight' => 10,
+  );
+  return $info;
+}
+```
+
+## Implementations in Drupal core (derived)
+
+Functions whose docblock says "Implements hook_filetransfer_info()".
+
+- [update_test_filetransfer_info()](../../update/tests/update_test.module/update_test_filetransfer_info.md) — `modules/update/tests/update_test.module`
+- [system_test_filetransfer_info()](../../simpletest/tests/system_test.module/system_test_filetransfer_info.md) — `modules/simpletest/tests/system_test.module`
+- [system_filetransfer_info()](../system.module/system_filetransfer_info.md) — `modules/system/system.module`
+
+---
+_Drupal 7.103 · [modules/system/system.api.php](https://github.com/drupal/drupal/blob/7.103/modules/system/system.api.php) · Licensed GPL-2.0-or-later (see LICENSE)._

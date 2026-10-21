@@ -1,0 +1,55 @@
+# book_export_html()
+
+- **Type:** Function
+- **File:** [`modules/book/book.pages.inc`](_file.md), lines 87–102 · [local source](../../../../source/modules/book/book.pages.inc) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/book/book.pages.inc#L87-L102)
+- **Module/theme:** book
+
+## Signature
+
+```php
+function book_export_html($nid)
+```
+
+## Documentation
+
+```text
+Generates HTML for export when invoked by book_export().
+
+The given node is embedded to its absolute depth in a top level section. For
+example, a child node with depth 2 in the hierarchy is contained in
+(otherwise empty) <div> elements corresponding to depth 0 and depth 1.
+This is intended to support WYSIWYG output - e.g., level 3 sections always
+look like level 3 sections, no matter their depth relative to the node
+selected to be exported as printer-friendly HTML.
+
+@param $nid
+  An integer representing the node id (nid) of the node to export.
+
+@return
+  A string containing HTML representing the node and its children in
+  the book hierarchy.
+```
+
+## Code
+
+```php
+function book_export_html($nid) {
+  if (user_access('access printer-friendly version')) {
+    $node = node_load($nid);
+    if (isset($node->book)) {
+      $tree = book_menu_subtree_data($node->book);
+      $contents = book_export_traverse($tree, 'book_node_export');
+      return theme('book_export_html', array('title' => $node->title, 'contents' => $contents, 'depth' => $node->book['depth']));
+    }
+    else {
+      drupal_not_found();
+    }
+  }
+  else {
+    drupal_access_denied();
+  }
+}
+```
+
+---
+_Drupal 7.103 · [modules/book/book.pages.inc](https://github.com/drupal/drupal/blob/7.103/modules/book/book.pages.inc) · Licensed GPL-2.0-or-later (see LICENSE)._

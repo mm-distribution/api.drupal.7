@@ -1,0 +1,30 @@
+# PharStreamWrapper::resolveAssertable()
+
+- **Type:** Method
+- **File:** [`misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php`](../_file.md), lines 452–455 · [local source](../../../../../../../source/misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php) · [GitHub](https://github.com/drupal/drupal/blob/7.103/misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php#L452-L455)
+- **Class:** [PharStreamWrapper](../PharStreamWrapper.md)
+
+## Signature
+
+```php
+protected function resolveAssertable()
+```
+
+## Documentation
+
+```text
+@return Manager|Assertable
+@deprecated Use Manager::instance() directly
+```
+
+## Code
+
+```php
+    protected function resolveAssertable()
+    {
+        return Manager::instance();
+    }
+```
+
+---
+_Drupal 7.103 · [misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php](https://github.com/drupal/drupal/blob/7.103/misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php) · Licensed GPL-2.0-or-later (see LICENSE)._

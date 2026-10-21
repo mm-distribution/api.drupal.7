@@ -1,0 +1,80 @@
+# InsertQuery_mysql::__toString()
+
+- **Type:** Method
+- **File:** [`includes/database/mysql/query.inc`](../_file.md), lines 44–99 · [local source](../../../../../../source/includes/database/mysql/query.inc) · [GitHub](https://github.com/drupal/drupal/blob/7.103/includes/database/mysql/query.inc#L44-L99)
+- **Class:** [InsertQuery_mysql](../InsertQuery_mysql.md)
+- **Topics:** [database](../../../../../topics/database.md)
+
+## Signature
+
+```php
+public function __toString()
+```
+
+## Documentation
+
+_No docblock in source._
+
+## Code
+
+```php
+  public function __toString() {
+    // Create a sanitized comment string to prepend to the query.
+    $comments = $this->connection->makeComment($this->comments);
+
+    // Default fields are always placed first for consistency.
+    $insert_fields = array_merge($this->defaultFields, $this->insertFields);
+
+    if (method_exists($this->connection, 'escapeFields')) {
+      $insert_fields = $this->connection->escapeFields($insert_fields);
+    }
+
+    // If we're selecting from a SelectQuery, finish building the query and
+    // pass it back, as any remaining options are irrelevant.
+    if (!empty($this->fromQuery)) {
+      $insert_fields_string = $insert_fields ? ' (' . implode(', ', $insert_fields) . ') ' : ' ';
+      return $comments . 'INSERT INTO {' . $this->table . '}' . $insert_fields_string . $this->fromQuery;
+    }
+
+    $query = $comments . 'INSERT INTO {' . $this->table . '} (' . implode(', ', $insert_fields) . ') VALUES ';
+
+    $max_placeholder = 0;
+    $values = array();
+    if (!is_array($this->insertValues)) {
+      if (version_compare(PHP_VERSION, '7.4', '>=')) {
+        throw new UnexpectedValueException();
+      }
+      else {
+        drupal_trigger_fatal_error('Unexpected Value');
+      }
+    }
+    if (count($this->insertValues)) {
+      foreach ($this->insertValues as $insert_values) {
+        $placeholders = array();
+
+        // Default fields aren't really placeholders, but this is the most convenient
+        // way to handle them.
+        $placeholders = array_pad($placeholders, count($this->defaultFields), 'default');
+
+        $new_placeholder = $max_placeholder + count($insert_values);
+        for ($i = $max_placeholder; $i < $new_placeholder; ++$i) {
+          $placeholders[] = ':db_insert_placeholder_' . $i;
+        }
+        $max_placeholder = $new_placeholder;
+        $values[] = '(' . implode(', ', $placeholders) . ')';
+      }
+    }
+    else {
+      // If there are no values, then this is a default-only query. We still need to handle that.
+      $placeholders = array_fill(0, count($this->defaultFields), 'default');
+      $values[] = '(' . implode(', ', $placeholders) . ')';
+    }
+
+    $query .= implode(', ', $values);
+
+    return $query;
+  }
+```
+
+---
+_Drupal 7.103 · [includes/database/mysql/query.inc](https://github.com/drupal/drupal/blob/7.103/includes/database/mysql/query.inc) · Licensed GPL-2.0-or-later (see LICENSE)._

@@ -1,0 +1,397 @@
+# Hooks
+
+- **Topic id:** `hooks`
+- **Defined in:** [`includes/module.inc`](../includes/module.inc/_file.md), line 618 · [GitHub](https://github.com/drupal/drupal/blob/7.103/includes/module.inc#L618)
+
+## Documentation
+
+```text
+@defgroup hooks Hooks
+@{
+Allow modules to interact with the Drupal core.
+
+Drupal's module system is based on the concept of "hooks". A hook is a PHP
+function that is named foo_bar(), where "foo" is the name of the module
+(whose filename is thus foo.module) and "bar" is the name of the hook. Each
+hook has a defined set of parameters and a specified result type.
+
+To extend Drupal, a module need simply implement a hook. When Drupal wishes
+to allow intervention from modules, it determines which modules implement a
+hook and calls that hook in all enabled modules that implement it.
+
+The available hooks to implement are explained here in the Hooks section of
+the developer documentation. The string "hook" is used as a placeholder for
+the module name in the hook definitions. For example, if the module file is
+called example.module, then hook_help() as implemented by that module would
+be defined as example_help().
+
+The example functions included are not part of the Drupal core, they are
+just models that you can modify. Only the hooks implemented within modules
+are executed when running Drupal.
+
+@see themeable
+@see callbacks
+```
+
+## Members (derived, 355)
+
+From `@ingroup` tags and `@addtogroup`/`@defgroup` `@{ … @}` regions in the source.
+
+- [hook_action_info()](../modules/system/system.api.php/hook_action_info.md) (function) — Declares information about actions.
+- [hook_action_info_alter()](../modules/system/system.api.php/hook_action_info_alter.md) (function) — Alters the actions declared by another module.
+- [hook_actions_delete()](../modules/system/system.api.php/hook_actions_delete.md) (function) — Executes code after an action is deleted.
+- [hook_admin_paths()](../modules/system/system.api.php/hook_admin_paths.md) (function) — Define administrative paths.
+- [hook_admin_paths_alter()](../modules/system/system.api.php/hook_admin_paths_alter.md) (function) — Redefine administrative paths defined by other modules.
+- [hook_aggregator_fetch()](../modules/aggregator/aggregator.api.php/hook_aggregator_fetch.md) (function) — Create an alternative fetcher for aggregator.module.
+- [hook_aggregator_fetch_info()](../modules/aggregator/aggregator.api.php/hook_aggregator_fetch_info.md) (function) — Specify the title and short description of your fetcher.
+- [hook_aggregator_parse()](../modules/aggregator/aggregator.api.php/hook_aggregator_parse.md) (function) — Create an alternative parser for aggregator module.
+- [hook_aggregator_parse_info()](../modules/aggregator/aggregator.api.php/hook_aggregator_parse_info.md) (function) — Specify the title and short description of your parser.
+- [hook_aggregator_process()](../modules/aggregator/aggregator.api.php/hook_aggregator_process.md) (function) — Create a processor for aggregator.module.
+- [hook_aggregator_process_info()](../modules/aggregator/aggregator.api.php/hook_aggregator_process_info.md) (function) — Specify the title and short description of your processor.
+- [hook_aggregator_remove()](../modules/aggregator/aggregator.api.php/hook_aggregator_remove.md) (function) — Remove stored feed data.
+- [hook_ajax_render_alter()](../modules/system/system.api.php/hook_ajax_render_alter.md) (function) — Alter the commands that are sent to the user through the Ajax framework.
+- [hook_archiver_info()](../modules/system/system.api.php/hook_archiver_info.md) (function) — Declare archivers to the system.
+- [hook_archiver_info_alter()](../modules/system/system.api.php/hook_archiver_info_alter.md) (function) — Alter archiver information declared by other modules.
+- [hook_batch_alter()](../modules/system/system.api.php/hook_batch_alter.md) (function) — Alter batch information before a batch is processed.
+- [hook_block_cid_parts_alter()](../modules/block/block.api.php/hook_block_cid_parts_alter.md) (function) — Act on block cache ID (cid) parts before the cid is generated.
+- [hook_block_configure()](../modules/block/block.api.php/hook_block_configure.md) (function) — Define a configuration form for a block.
+- [hook_block_info()](../modules/block/block.api.php/hook_block_info.md) (function) — Define all blocks provided by the module.
+- [hook_block_info_alter()](../modules/block/block.api.php/hook_block_info_alter.md) (function) — Change block definition before saving to the database.
+- [hook_block_list_alter()](../modules/block/block.api.php/hook_block_list_alter.md) (function) — Act on blocks prior to rendering.
+- [hook_block_save()](../modules/block/block.api.php/hook_block_save.md) (function) — Save the configuration options from hook_block_configure().
+- [hook_block_view()](../modules/block/block.api.php/hook_block_view.md) (function) — Return a rendered or renderable view of a block.
+- [hook_block_view_MODULE_DELTA_alter()](../modules/block/block.api.php/hook_block_view_MODULE_DELTA_alter.md) (function) — Perform alterations to a specific block.
+- [hook_block_view_alter()](../modules/block/block.api.php/hook_block_view_alter.md) (function) — Perform alterations to the content of a block.
+- [hook_boot()](../modules/system/system.api.php/hook_boot.md) (function) — Perform setup tasks for all page requests.
+- [hook_comment_delete()](../modules/comment/comment.api.php/hook_comment_delete.md) (function) — The comment is being deleted by the moderator.
+- [hook_comment_insert()](../modules/comment/comment.api.php/hook_comment_insert.md) (function) — The comment is being inserted.
+- [hook_comment_load()](../modules/comment/comment.api.php/hook_comment_load.md) (function) — Comments are being loaded from the database.
+- [hook_comment_presave()](../modules/comment/comment.api.php/hook_comment_presave.md) (function) — The comment passed validation and is about to be saved.
+- [hook_comment_publish()](../modules/comment/comment.api.php/hook_comment_publish.md) (function) — Act on a comment that is being saved in a published state.
+- [hook_comment_unpublish()](../modules/comment/comment.api.php/hook_comment_unpublish.md) (function) — Act on a comment that is being saved in an unpublished state.
+- [hook_comment_update()](../modules/comment/comment.api.php/hook_comment_update.md) (function) — The comment is being updated.
+- [hook_comment_view()](../modules/comment/comment.api.php/hook_comment_view.md) (function) — The comment is being viewed. This hook can be used to add additional data to the comment before theming.
+- [hook_comment_view_alter()](../modules/comment/comment.api.php/hook_comment_view_alter.md) (function) — The comment was built; the module may modify the structured content.
+- [hook_contextual_links_view_alter()](../modules/contextual/contextual.api.php/hook_contextual_links_view_alter.md) (function) — Alter a contextual links element before it is rendered.
+- [hook_countries_alter()](../modules/system/system.api.php/hook_countries_alter.md) (function) — Alter the default country list.
+- [hook_cron()](../modules/system/system.api.php/hook_cron.md) (function) — Perform periodic actions.
+- [hook_cron_queue_info()](../modules/system/system.api.php/hook_cron_queue_info.md) (function) — Declare queues holding items that need to be run periodically.
+- [hook_cron_queue_info_alter()](../modules/system/system.api.php/hook_cron_queue_info_alter.md) (function) — Alter cron queue information before cron runs.
+- [hook_css_alter()](../modules/system/system.api.php/hook_css_alter.md) (function) — Alter CSS files before they are output on the page.
+- [hook_custom_theme()](../modules/system/system.api.php/hook_custom_theme.md) (function) — Return the machine-readable name of the theme to use for the current page.
+- [hook_dashboard_regions()](../modules/dashboard/dashboard.api.php/hook_dashboard_regions.md) (function) — Add regions to the dashboard.
+- [hook_dashboard_regions_alter()](../modules/dashboard/dashboard.api.php/hook_dashboard_regions_alter.md) (function) — Alter dashboard regions provided by modules.
+- [hook_date_format_types()](../modules/system/system.api.php/hook_date_format_types.md) (function) — Define additional date types.
+- [hook_date_format_types_alter()](../modules/system/system.api.php/hook_date_format_types_alter.md) (function) — Modify existing date types.
+- [hook_date_formats()](../modules/system/system.api.php/hook_date_formats.md) (function) — Define additional date formats.
+- [hook_date_formats_alter()](../modules/system/system.api.php/hook_date_formats_alter.md) (function) — Alter date formats declared by another module.
+- [hook_delete()](../modules/node/node.api.php/hook_delete.md) (function) — Respond to node deletion.
+- [hook_disable()](../modules/system/system.api.php/hook_disable.md) (function) — Perform necessary actions before module is disabled.
+- [hook_drupal_goto_alter()](../modules/system/system.api.php/hook_drupal_goto_alter.md) (function) — Change the page the user is sent to by drupal_goto().
+- [hook_element_info()](../modules/system/system.api.php/hook_element_info.md) (function) — Allows modules to declare their own Form API element types and specify their default values.
+- [hook_element_info_alter()](../modules/system/system.api.php/hook_element_info_alter.md) (function) — Alter the element type information returned from modules.
+- [hook_enable()](../modules/system/system.api.php/hook_enable.md) (function) — Perform necessary actions after module is enabled.
+- [hook_entity_delete()](../modules/system/system.api.php/hook_entity_delete.md) (function) — Act on entities when deleted.
+- [hook_entity_info()](../modules/system/system.api.php/hook_entity_info.md) (function) — Inform the base system and the Field API about one or more entity types.
+- [hook_entity_info_alter()](../modules/system/system.api.php/hook_entity_info_alter.md) (function) — Alter the entity info.
+- [hook_entity_insert()](../modules/system/system.api.php/hook_entity_insert.md) (function) — Act on entities when inserted.
+- [hook_entity_load()](../modules/system/system.api.php/hook_entity_load.md) (function) — Act on entities when loaded.
+- [hook_entity_prepare_view()](../modules/system/system.api.php/hook_entity_prepare_view.md) (function) — Act on entities as they are being prepared for view.
+- [hook_entity_presave()](../modules/system/system.api.php/hook_entity_presave.md) (function) — Act on an entity before it is about to be created or updated.
+- [hook_entity_query_alter()](../modules/system/system.api.php/hook_entity_query_alter.md) (function) — Alter or execute an EntityFieldQuery.
+- [hook_entity_update()](../modules/system/system.api.php/hook_entity_update.md) (function) — Act on entities when updated.
+- [hook_entity_view()](../modules/system/system.api.php/hook_entity_view.md) (function) — Act on entities being assembled before rendering.
+- [hook_entity_view_alter()](../modules/system/system.api.php/hook_entity_view_alter.md) (function) — Alter the results of ENTITY_view().
+- [hook_entity_view_mode_alter()](../modules/system/system.api.php/hook_entity_view_mode_alter.md) (function) — Change the view mode of an entity that is being displayed.
+- [hook_exit()](../modules/system/system.api.php/hook_exit.md) (function) — Perform cleanup tasks.
+- [hook_field_access()](../modules/field/field.api.php/hook_field_access.md) (function) — Determine whether the user has access to a given field.
+- [hook_field_attach_create_bundle()](../modules/field/field.api.php/hook_field_attach_create_bundle.md) (function) — Act on field_attach_create_bundle().
+- [hook_field_attach_delete()](../modules/field/field.api.php/hook_field_attach_delete.md) (function) — Act on field_attach_delete().
+- [hook_field_attach_delete_bundle()](../modules/field/field.api.php/hook_field_attach_delete_bundle.md) (function) — Act on field_attach_delete_bundle.
+- [hook_field_attach_delete_revision()](../modules/field/field.api.php/hook_field_attach_delete_revision.md) (function) — Act on field_attach_delete_revision().
+- [hook_field_attach_form()](../modules/field/field.api.php/hook_field_attach_form.md) (function) — Act on field_attach_form().
+- [hook_field_attach_insert()](../modules/field/field.api.php/hook_field_attach_insert.md) (function) — Act on field_attach_insert().
+- [hook_field_attach_load()](../modules/field/field.api.php/hook_field_attach_load.md) (function) — Act on field_attach_load().
+- [hook_field_attach_prepare_translation_alter()](../modules/field/field.api.php/hook_field_attach_prepare_translation_alter.md) (function) — Perform alterations on field_attach_prepare_translation().
+- [hook_field_attach_preprocess_alter()](../modules/field/field.api.php/hook_field_attach_preprocess_alter.md) (function) — Alter field_attach_preprocess() variables.
+- [hook_field_attach_presave()](../modules/field/field.api.php/hook_field_attach_presave.md) (function) — Act on field_attach_presave().
+- [hook_field_attach_purge()](../modules/field/field.api.php/hook_field_attach_purge.md) (function) — Act on field_purge_data().
+- [hook_field_attach_rename_bundle()](../modules/field/field.api.php/hook_field_attach_rename_bundle.md) (function) — Act on field_attach_rename_bundle().
+- [hook_field_attach_submit()](../modules/field/field.api.php/hook_field_attach_submit.md) (function) — Act on field_attach_submit().
+- [hook_field_attach_update()](../modules/field/field.api.php/hook_field_attach_update.md) (function) — Act on field_attach_update().
+- [hook_field_attach_validate()](../modules/field/field.api.php/hook_field_attach_validate.md) (function) — Act on field_attach_validate().
+- [hook_field_attach_view_alter()](../modules/field/field.api.php/hook_field_attach_view_alter.md) (function) — Perform alterations on field_attach_view() or field_view_field().
+- [hook_field_available_languages_alter()](../modules/field/field.api.php/hook_field_available_languages_alter.md) (function) — Alter field_available_languages() values.
+- [hook_field_create_field()](../modules/field/field.api.php/hook_field_create_field.md) (function) — Act on a field being created.
+- [hook_field_create_instance()](../modules/field/field.api.php/hook_field_create_instance.md) (function) — Act on a field instance being created.
+- [hook_field_delete()](../modules/field/field.api.php/hook_field_delete.md) (function) — Define custom delete behavior for this module's field data.
+- [hook_field_delete_field()](../modules/field/field.api.php/hook_field_delete_field.md) (function) — Act on a field being deleted.
+- [hook_field_delete_instance()](../modules/field/field.api.php/hook_field_delete_instance.md) (function) — Act on a field instance being deleted.
+- [hook_field_delete_revision()](../modules/field/field.api.php/hook_field_delete_revision.md) (function) — Define custom revision delete behavior for this module's field types.
+- [hook_field_display_ENTITY_TYPE_alter()](../modules/field/field.api.php/hook_field_display_ENTITY_TYPE_alter.md) (function) — Alters the display settings of a field on a given entity type before it gets displayed.
+- [hook_field_display_alter()](../modules/field/field.api.php/hook_field_display_alter.md) (function) — Alters the display settings of a field before it gets displayed.
+- [hook_field_extra_fields()](../modules/field/field.api.php/hook_field_extra_fields.md) (function) — Exposes "pseudo-field" components on fieldable entities.
+- [hook_field_extra_fields_alter()](../modules/field/field.api.php/hook_field_extra_fields_alter.md) (function) — Alter "pseudo-field" components on fieldable entities.
+- [hook_field_extra_fields_display_alter()](../modules/field/field.api.php/hook_field_extra_fields_display_alter.md) (function) — Alters the display settings of pseudo-fields before an entity is displayed.
+- [hook_field_formatter_info()](../modules/field/field.api.php/hook_field_formatter_info.md) (function) — Expose Field API formatter types.
+- [hook_field_formatter_info_alter()](../modules/field/field.api.php/hook_field_formatter_info_alter.md) (function) — Perform alterations on Field API formatter types.
+- [hook_field_formatter_prepare_view()](../modules/field/field.api.php/hook_field_formatter_prepare_view.md) (function) — Allow formatters to load information for field values being displayed.
+- [hook_field_formatter_view()](../modules/field/field.api.php/hook_field_formatter_view.md) (function) — Build a renderable array for a field value.
+- [hook_field_info()](../modules/field/field.api.php/hook_field_info.md) (function) — Define Field API field types.
+- [hook_field_info_alter()](../modules/field/field.api.php/hook_field_info_alter.md) (function) — Perform alterations on Field API field types.
+- [hook_field_info_max_weight()](../modules/field/field.api.php/hook_field_info_max_weight.md) (function) — Returns the maximum weight for the entity components handled by the module.
+- [hook_field_insert()](../modules/field/field.api.php/hook_field_insert.md) (function) — Define custom insert behavior for this module's field data.
+- [hook_field_is_empty()](../modules/field/field.api.php/hook_field_is_empty.md) (function) — Define what constitutes an empty item for a field type.
+- [hook_field_language_alter()](../modules/field/field.api.php/hook_field_language_alter.md) (function) — Perform alterations on field_language() values.
+- [hook_field_load()](../modules/field/field.api.php/hook_field_load.md) (function) — Define custom load behavior for this module's field types.
+- [hook_field_prepare_translation()](../modules/field/field.api.php/hook_field_prepare_translation.md) (function) — Define custom prepare_translation behavior for this module's field types.
+- [hook_field_prepare_view()](../modules/field/field.api.php/hook_field_prepare_view.md) (function) — Prepare field values prior to display.
+- [hook_field_presave()](../modules/field/field.api.php/hook_field_presave.md) (function) — Define custom presave behavior for this module's field types.
+- [hook_field_purge_field()](../modules/field/field.api.php/hook_field_purge_field.md) (function) — Acts when a field record is being purged.
+- [hook_field_purge_instance()](../modules/field/field.api.php/hook_field_purge_instance.md) (function) — Acts when a field instance is being purged.
+- [hook_field_read_field()](../modules/field/field.api.php/hook_field_read_field.md) (function) — Act on field records being read from the database.
+- [hook_field_read_instance()](../modules/field/field.api.php/hook_field_read_instance.md) (function) — Act on a field record being read from the database.
+- [hook_field_schema()](../modules/field/field.api.php/hook_field_schema.md) (function) — Define the Field API schema for a field structure.
+- [hook_field_schema_alter()](../modules/field/field.api.php/hook_field_schema_alter.md) (function) — Allow modules to alter the schema for a field.
+- [hook_field_storage_create_field()](../modules/field/field.api.php/hook_field_storage_create_field.md) (function) — Act on creation of a new field.
+- [hook_field_storage_delete()](../modules/field/field.api.php/hook_field_storage_delete.md) (function) — Delete all field data for an entity.
+- [hook_field_storage_delete_field()](../modules/field/field.api.php/hook_field_storage_delete_field.md) (function) — Act on deletion of a field.
+- [hook_field_storage_delete_instance()](../modules/field/field.api.php/hook_field_storage_delete_instance.md) (function) — Act on deletion of a field instance.
+- [hook_field_storage_delete_revision()](../modules/field/field.api.php/hook_field_storage_delete_revision.md) (function) — Delete a single revision of field data for an entity.
+- [hook_field_storage_details()](../modules/field/field.api.php/hook_field_storage_details.md) (function) — Reveal the internal details about the storage for a field.
+- [hook_field_storage_details_alter()](../modules/field/field.api.php/hook_field_storage_details_alter.md) (function) — Perform alterations on Field API storage details.
+- [hook_field_storage_info()](../modules/field/field.api.php/hook_field_storage_info.md) (function) — Expose Field API storage backends.
+- [hook_field_storage_info_alter()](../modules/field/field.api.php/hook_field_storage_info_alter.md) (function) — Perform alterations on Field API storage types.
+- [hook_field_storage_load()](../modules/field/field.api.php/hook_field_storage_load.md) (function) — Load field data for a set of entities.
+- [hook_field_storage_pre_insert()](../modules/field/field.api.php/hook_field_storage_pre_insert.md) (function) — Act before the storage backends insert field data.
+- [hook_field_storage_pre_load()](../modules/field/field.api.php/hook_field_storage_pre_load.md) (function) — Act before the storage backends load field data.
+- [hook_field_storage_pre_update()](../modules/field/field.api.php/hook_field_storage_pre_update.md) (function) — Act before the storage backends update field data.
+- [hook_field_storage_purge()](../modules/field/field.api.php/hook_field_storage_purge.md) (function) — Remove field storage information when field data is purged.
+- [hook_field_storage_purge_field()](../modules/field/field.api.php/hook_field_storage_purge_field.md) (function) — Remove field storage information when a field record is purged.
+- [hook_field_storage_purge_field_instance()](../modules/field/field.api.php/hook_field_storage_purge_field_instance.md) (function) — Remove field storage information when a field instance is purged.
+- [hook_field_storage_query()](../modules/field/field.api.php/hook_field_storage_query.md) (function) — Execute an EntityFieldQuery.
+- [hook_field_storage_update_field()](../modules/field/field.api.php/hook_field_storage_update_field.md) (function) — Update the storage information for a field.
+- [hook_field_storage_write()](../modules/field/field.api.php/hook_field_storage_write.md) (function) — Write field data for an entity.
+- [hook_field_update()](../modules/field/field.api.php/hook_field_update.md) (function) — Define custom update behavior for this module's field data.
+- [hook_field_update_field()](../modules/field/field.api.php/hook_field_update_field.md) (function) — Act on a field being updated.
+- [hook_field_update_forbid()](../modules/field/field.api.php/hook_field_update_forbid.md) (function) — Forbid a field update from occurring.
+- [hook_field_update_instance()](../modules/field/field.api.php/hook_field_update_instance.md) (function) — Act on a field instance being updated.
+- [hook_field_validate()](../modules/field/field.api.php/hook_field_validate.md) (function) — Validate this module's field data.
+- [hook_field_widget_WIDGET_TYPE_form_alter()](../modules/field/field.api.php/hook_field_widget_WIDGET_TYPE_form_alter.md) (function) — Alter widget forms for a specific widget provided by another module.
+- [hook_field_widget_error()](../modules/field/field.api.php/hook_field_widget_error.md) (function) — Flag a field-level validation error.
+- [hook_field_widget_form()](../modules/field/field.api.php/hook_field_widget_form.md) (function) — Return the form for a single field widget.
+- [hook_field_widget_form_alter()](../modules/field/field.api.php/hook_field_widget_form_alter.md) (function) — Alter forms for field widgets provided by other modules.
+- [hook_field_widget_info()](../modules/field/field.api.php/hook_field_widget_info.md) (function) — Expose Field API widget types.
+- [hook_field_widget_info_alter()](../modules/field/field.api.php/hook_field_widget_info_alter.md) (function) — Perform alterations on Field API widget types.
+- [hook_field_widget_properties_ENTITY_TYPE_alter()](../modules/field/field.api.php/hook_field_widget_properties_ENTITY_TYPE_alter.md) (function) — Alters the widget properties of a field instance on a given entity type before it gets displayed.
+- [hook_field_widget_properties_alter()](../modules/field/field.api.php/hook_field_widget_properties_alter.md) (function) — Alters the widget properties of a field instance before it gets displayed.
+- [hook_file_copy()](../modules/system/system.api.php/hook_file_copy.md) (function) — Respond to a file that has been copied.
+- [hook_file_delete()](../modules/system/system.api.php/hook_file_delete.md) (function) — Respond to a file being deleted.
+- [hook_file_download()](../modules/system/system.api.php/hook_file_download.md) (function) — Control access to private file downloads and specify HTTP headers.
+- [hook_file_insert()](../modules/system/system.api.php/hook_file_insert.md) (function) — Respond to a file being added.
+- [hook_file_load()](../modules/system/system.api.php/hook_file_load.md) (function) — Load additional information into file objects.
+- [hook_file_mimetype_mapping_alter()](../modules/system/system.api.php/hook_file_mimetype_mapping_alter.md) (function) — Alter MIME type mappings used to determine MIME type from a file extension.
+- [hook_file_move()](../modules/system/system.api.php/hook_file_move.md) (function) — Respond to a file that has been moved.
+- [hook_file_presave()](../modules/system/system.api.php/hook_file_presave.md) (function) — Act on a file being inserted or updated.
+- [hook_file_update()](../modules/system/system.api.php/hook_file_update.md) (function) — Respond to a file being updated.
+- [hook_file_url_alter()](../modules/system/system.api.php/hook_file_url_alter.md) (function) — Alter the URL to a file.
+- [hook_file_validate()](../modules/system/system.api.php/hook_file_validate.md) (function) — Check that files meet a given criteria.
+- [hook_filetransfer_info()](../modules/system/system.api.php/hook_filetransfer_info.md) (function) — Register information about FileTransfer classes provided by a module.
+- [hook_filetransfer_info_alter()](../modules/system/system.api.php/hook_filetransfer_info_alter.md) (function) — Alter the FileTransfer class registry.
+- [hook_filter_format_disable()](../modules/filter/filter.api.php/hook_filter_format_disable.md) (function) — Perform actions when a text format has been disabled.
+- [hook_filter_format_insert()](../modules/filter/filter.api.php/hook_filter_format_insert.md) (function) — Perform actions when a new text format has been created.
+- [hook_filter_format_update()](../modules/filter/filter.api.php/hook_filter_format_update.md) (function) — Perform actions when a text format has been updated.
+- [hook_filter_info()](../modules/filter/filter.api.php/hook_filter_info.md) (function) — Define content filters.
+- [hook_filter_info_alter()](../modules/filter/filter.api.php/hook_filter_info_alter.md) (function) — Perform alterations on filter definitions.
+- [hook_flush_caches()](../modules/system/system.api.php/hook_flush_caches.md) (function) — Add a list of cache tables to be cleared.
+- [hook_form()](../modules/node/node.api.php/hook_form.md) (function) — Display a node editing form.
+- [hook_form_BASE_FORM_ID_alter()](../modules/system/system.api.php/hook_form_BASE_FORM_ID_alter.md) (function) — Provide a form-specific alteration for shared ('base') forms.
+- [hook_form_FORM_ID_alter()](../modules/system/system.api.php/hook_form_FORM_ID_alter.md) (function) — Provide a form-specific alteration instead of the global hook_form_alter().
+- [hook_form_alter()](../modules/system/system.api.php/hook_form_alter.md) (function) — Perform alterations before a form is rendered.
+- [hook_forms()](../modules/system/system.api.php/hook_forms.md) (function) — Map form_ids to form builder functions.
+- [hook_help()](../modules/system/system.api.php/hook_help.md) (function) — Provide online user help.
+- [hook_hook_info()](../modules/system/system.api.php/hook_hook_info.md) (function) — Defines one or more hooks that are exposed by a module.
+- [hook_hook_info_alter()](../modules/system/system.api.php/hook_hook_info_alter.md) (function) — Alter information from hook_hook_info().
+- [hook_html_head_alter()](../modules/system/system.api.php/hook_html_head_alter.md) (function) — Alter XHTML HEAD tags before they are rendered by drupal_get_html_head().
+- [hook_image_default_styles()](../modules/image/image.api.php/hook_image_default_styles.md) (function) — Provide module-based image styles for reuse throughout Drupal.
+- [hook_image_effect_info()](../modules/image/image.api.php/hook_image_effect_info.md) (function) — Define information about image effects provided by a module.
+- [hook_image_effect_info_alter()](../modules/image/image.api.php/hook_image_effect_info_alter.md) (function) — Alter the information provided in hook_image_effect_info().
+- [hook_image_style_delete()](../modules/image/image.api.php/hook_image_style_delete.md) (function) — Respond to image style deletion.
+- [hook_image_style_flush()](../modules/image/image.api.php/hook_image_style_flush.md) (function) — Respond to image style flushing.
+- [hook_image_style_save()](../modules/image/image.api.php/hook_image_style_save.md) (function) — Respond to image style updating.
+- [hook_image_styles_alter()](../modules/image/image.api.php/hook_image_styles_alter.md) (function) — Modify any image styles provided by other modules or the user.
+- [hook_image_toolkits()](../modules/system/system.api.php/hook_image_toolkits.md) (function) — Define image toolkits provided by this module.
+- [hook_init()](../modules/system/system.api.php/hook_init.md) (function) — Perform setup tasks for non-cached page requests.
+- [hook_insert()](../modules/node/node.api.php/hook_insert.md) (function) — Respond to creation of a new node.
+- [hook_install()](../modules/system/system.api.php/hook_install.md) (function) — Perform setup tasks when the module is installed.
+- [hook_install_tasks()](../modules/system/system.api.php/hook_install_tasks.md) (function) — Return an array of tasks to be performed by an installation profile.
+- [hook_install_tasks_alter()](../modules/system/system.api.php/hook_install_tasks_alter.md) (function) — Alter the full list of installation tasks.
+- [hook_js_alter()](../modules/system/system.api.php/hook_js_alter.md) (function) — Perform necessary alterations to the JavaScript before it is presented on the page.
+- [hook_language_fallback_candidates_alter()](../modules/system/language.api.php/hook_language_fallback_candidates_alter.md) (function) — Perform alterations on the language fallback candidates.
+- [hook_language_init()](../modules/system/language.api.php/hook_language_init.md) (function) — Allows modules to act after language initialization has been performed.
+- [hook_language_negotiation_info()](../modules/system/language.api.php/hook_language_negotiation_info.md) (function) — Define language negotiation providers.
+- [hook_language_negotiation_info_alter()](../modules/system/language.api.php/hook_language_negotiation_info_alter.md) (function) — Perform alterations on language negoiation providers.
+- [hook_language_switch_links_alter()](../modules/system/language.api.php/hook_language_switch_links_alter.md) (function) — Perform alterations on language switcher links.
+- [hook_language_types_info()](../modules/system/language.api.php/hook_language_types_info.md) (function) — Define language types.
+- [hook_language_types_info_alter()](../modules/system/language.api.php/hook_language_types_info_alter.md) (function) — Perform alterations on language types.
+- [hook_library()](../modules/system/system.api.php/hook_library.md) (function) — Registers JavaScript/CSS libraries associated with a module.
+- [hook_library_alter()](../modules/system/system.api.php/hook_library_alter.md) (function) — Alters the JavaScript/CSS library registry.
+- [hook_load()](../modules/node/node.api.php/hook_load.md) (function) — Act on nodes being loaded from the database.
+- [hook_locale()](../modules/locale/locale.api.php/hook_locale.md) (function) — Allows modules to define their own text groups that can be translated.
+- [hook_mail()](../modules/system/system.api.php/hook_mail.md) (function) — Prepare a message based on parameters; called from drupal_mail().
+- [hook_mail_alter()](../modules/system/system.api.php/hook_mail_alter.md) (function) — Alter an email message created with the drupal_mail() function.
+- [hook_menu()](../modules/system/system.api.php/hook_menu.md) (function) — Define menu items and page callbacks.
+- [hook_menu_alter()](../modules/system/system.api.php/hook_menu_alter.md) (function) — Alter the data being saved to the {menu_router} table after hook_menu is invoked.
+- [hook_menu_breadcrumb_alter()](../modules/system/system.api.php/hook_menu_breadcrumb_alter.md) (function) — Alter links in the active trail before it is rendered as the breadcrumb.
+- [hook_menu_contextual_links_alter()](../modules/system/system.api.php/hook_menu_contextual_links_alter.md) (function) — Alter contextual links before they are rendered.
+- [hook_menu_delete()](../modules/menu/menu.api.php/hook_menu_delete.md) (function) — Respond to a custom menu deletion.
+- [hook_menu_get_item_alter()](../modules/system/system.api.php/hook_menu_get_item_alter.md) (function) — Alter a menu router item right after it has been retrieved from the database or cache.
+- [hook_menu_insert()](../modules/menu/menu.api.php/hook_menu_insert.md) (function) — Respond to a custom menu creation.
+- [hook_menu_link_alter()](../modules/system/system.api.php/hook_menu_link_alter.md) (function) — Alter the data being saved to the {menu_links} table by menu_link_save().
+- [hook_menu_link_delete()](../modules/system/system.api.php/hook_menu_link_delete.md) (function) — Inform modules that a menu link has been deleted.
+- [hook_menu_link_insert()](../modules/system/system.api.php/hook_menu_link_insert.md) (function) — Inform modules that a menu link has been created.
+- [hook_menu_link_update()](../modules/system/system.api.php/hook_menu_link_update.md) (function) — Inform modules that a menu link has been updated.
+- [hook_menu_local_tasks_alter()](../modules/system/system.api.php/hook_menu_local_tasks_alter.md) (function) — Alter tabs and actions displayed on the page before they are rendered.
+- [hook_menu_site_status_alter()](../modules/system/system.api.php/hook_menu_site_status_alter.md) (function) — Control site status before menu dispatching.
+- [hook_menu_update()](../modules/menu/menu.api.php/hook_menu_update.md) (function) — Respond to a custom menu update.
+- [hook_module_implements_alter()](../modules/system/system.api.php/hook_module_implements_alter.md) (function) — Alter the registry of modules implementing a hook.
+- [hook_modules_disabled()](../modules/system/system.api.php/hook_modules_disabled.md) (function) — Perform necessary actions after modules are disabled.
+- [hook_modules_enabled()](../modules/system/system.api.php/hook_modules_enabled.md) (function) — Perform necessary actions after modules are enabled.
+- [hook_modules_installed()](../modules/system/system.api.php/hook_modules_installed.md) (function) — Perform necessary actions after modules are installed.
+- [hook_modules_uninstalled()](../modules/system/system.api.php/hook_modules_uninstalled.md) (function) — Perform necessary actions after modules are uninstalled.
+- [hook_multilingual_settings_changed()](../modules/locale/locale.api.php/hook_multilingual_settings_changed.md) (function) — Allow modules to react to language settings changes.
+- [hook_node_access()](../modules/node/node.api.php/hook_node_access.md) (function) — Control access to a node.
+- [hook_node_access_records()](../modules/node/node.api.php/hook_node_access_records.md) (function) — Set permissions for a node to be written to the database.
+- [hook_node_access_records_alter()](../modules/node/node.api.php/hook_node_access_records_alter.md) (function) — Alter permissions for a node before it is written to the database.
+- [hook_node_delete()](../modules/node/node.api.php/hook_node_delete.md) (function) — Respond to node deletion.
+- [hook_node_grants()](../modules/node/node.api.php/hook_node_grants.md) (function) — Inform the node access system what permissions the user has.
+- [hook_node_grants_alter()](../modules/node/node.api.php/hook_node_grants_alter.md) (function) — Alter user access rules when trying to view, edit or delete a node.
+- [hook_node_info()](../modules/node/node.api.php/hook_node_info.md) (function) — Define module-provided node types.
+- [hook_node_insert()](../modules/node/node.api.php/hook_node_insert.md) (function) — Respond to creation of a new node.
+- [hook_node_load()](../modules/node/node.api.php/hook_node_load.md) (function) — Act on arbitrary nodes being loaded from the database.
+- [hook_node_operations()](../modules/node/node.api.php/hook_node_operations.md) (function) — Add mass node operations.
+- [hook_node_prepare()](../modules/node/node.api.php/hook_node_prepare.md) (function) — Act on a node object about to be shown on the add/edit form.
+- [hook_node_presave()](../modules/node/node.api.php/hook_node_presave.md) (function) — Act on a node being inserted or updated.
+- [hook_node_revision_delete()](../modules/node/node.api.php/hook_node_revision_delete.md) (function) — Respond to deletion of a node revision.
+- [hook_node_search_result()](../modules/node/node.api.php/hook_node_search_result.md) (function) — Act on a node being displayed as a search result.
+- [hook_node_submit()](../modules/node/node.api.php/hook_node_submit.md) (function) — Act on a node after validated form values have been copied to it.
+- [hook_node_type_delete()](../modules/node/node.api.php/hook_node_type_delete.md) (function) — Respond to node type deletion.
+- [hook_node_type_insert()](../modules/node/node.api.php/hook_node_type_insert.md) (function) — Respond to node type creation.
+- [hook_node_type_update()](../modules/node/node.api.php/hook_node_type_update.md) (function) — Respond to node type updates.
+- [hook_node_update()](../modules/node/node.api.php/hook_node_update.md) (function) — Respond to updates to a node.
+- [hook_node_update_index()](../modules/node/node.api.php/hook_node_update_index.md) (function) — Act on a node being indexed for searching.
+- [hook_node_validate()](../modules/node/node.api.php/hook_node_validate.md) (function) — Perform node validation before a node is created or updated.
+- [hook_node_view()](../modules/node/node.api.php/hook_node_view.md) (function) — Act on a node that is being assembled before rendering.
+- [hook_node_view_alter()](../modules/node/node.api.php/hook_node_view_alter.md) (function) — Alter the results of node_view().
+- [hook_openid()](../modules/openid/openid.api.php/hook_openid.md) (function) — Allow modules to modify the OpenID request parameters.
+- [hook_openid_discovery_method_info()](../modules/openid/openid.api.php/hook_openid_discovery_method_info.md) (function) — Allow modules to declare OpenID discovery methods.
+- [hook_openid_discovery_method_info_alter()](../modules/openid/openid.api.php/hook_openid_discovery_method_info_alter.md) (function) — Allow modules to alter discovery methods.
+- [hook_openid_normalization_method_info()](../modules/openid/openid.api.php/hook_openid_normalization_method_info.md) (function) — Allow modules to declare OpenID normalization methods.
+- [hook_openid_normalization_method_info_alter()](../modules/openid/openid.api.php/hook_openid_normalization_method_info_alter.md) (function) — Allow modules to alter normalization methods.
+- [hook_openid_response()](../modules/openid/openid.api.php/hook_openid_response.md) (function) — Allow modules to act upon a successful OpenID login.
+- [hook_overlay_child_initialize()](../modules/overlay/overlay.api.php/hook_overlay_child_initialize.md) (function) — Allow modules to act when an overlay child window is initialized.
+- [hook_overlay_parent_initialize()](../modules/overlay/overlay.api.php/hook_overlay_parent_initialize.md) (function) — Allow modules to act when an overlay parent window is initialized.
+- [hook_page_alter()](../modules/system/system.api.php/hook_page_alter.md) (function) — Perform alterations before a page is rendered.
+- [hook_page_build()](../modules/system/system.api.php/hook_page_build.md) (function) — Add elements to a page before it is rendered.
+- [hook_page_delivery_callback_alter()](../modules/system/system.api.php/hook_page_delivery_callback_alter.md) (function) — Alters the delivery callback used to send the result of the page callback to the browser.
+- [hook_path_delete()](../modules/path/path.api.php/hook_path_delete.md) (function) — Respond to a path being deleted.
+- [hook_path_insert()](../modules/path/path.api.php/hook_path_insert.md) (function) — Respond to a path being inserted.
+- [hook_path_update()](../modules/path/path.api.php/hook_path_update.md) (function) — Respond to a path being updated.
+- [hook_permission()](../modules/system/system.api.php/hook_permission.md) (function) — Define user permissions.
+- [hook_prepare()](../modules/node/node.api.php/hook_prepare.md) (function) — Act on a node object about to be shown on the add/edit form.
+- [hook_query_TAG_alter()](../modules/system/system.api.php/hook_query_TAG_alter.md) (function) — Perform alterations to a structured query for a given tag.
+- [hook_query_alter()](../modules/system/system.api.php/hook_query_alter.md) (function) — Perform alterations to a structured query.
+- [hook_ranking()](../modules/node/node.api.php/hook_ranking.md) (function) — Provide additional methods of scoring for core search results for nodes.
+- [hook_rdf_mapping()](../modules/rdf/rdf.api.php/hook_rdf_mapping.md) (function) — Allow modules to define RDF mappings for field bundles.
+- [hook_rdf_namespaces()](../modules/rdf/rdf.api.php/hook_rdf_namespaces.md) (function) — Allow modules to define namespaces for RDF mappings.
+- [hook_registry_files_alter()](../modules/system/system.api.php/hook_registry_files_alter.md) (function) — Perform necessary alterations to the list of files parsed by the registry.
+- [hook_requirements()](../modules/system/system.api.php/hook_requirements.md) (function) — Check installation requirements and do status reporting.
+- [hook_schema()](../modules/system/system.api.php/hook_schema.md) (function) — Define the current version of the database schema.
+- [hook_schema_alter()](../modules/system/system.api.php/hook_schema_alter.md) (function) — Perform alterations to existing database schemas.
+- [hook_search_access()](../modules/search/search.api.php/hook_search_access.md) (function) — Define access to a custom search routine.
+- [hook_search_admin()](../modules/search/search.api.php/hook_search_admin.md) (function) — Add elements to the search settings form.
+- [hook_search_execute()](../modules/search/search.api.php/hook_search_execute.md) (function) — Execute a search for a set of key words.
+- [hook_search_info()](../modules/search/search.api.php/hook_search_info.md) (function) — Define a custom search type.
+- [hook_search_page()](../modules/search/search.api.php/hook_search_page.md) (function) — Override the rendering of search results.
+- [hook_search_preprocess()](../modules/search/search.api.php/hook_search_preprocess.md) (function) — Preprocess text for search.
+- [hook_search_reset()](../modules/search/search.api.php/hook_search_reset.md) (function) — Take action when the search index is going to be rebuilt.
+- [hook_search_status()](../modules/search/search.api.php/hook_search_status.md) (function) — Report the status of indexing.
+- [hook_shortcut_default_set()](../modules/shortcut/shortcut.api.php/hook_shortcut_default_set.md) (function) — Return the name of a default shortcut set for the provided user account.
+- [hook_simpletest_alter()](../modules/simpletest/simpletest.api.php/hook_simpletest_alter.md) (function) — Alter the list of tests.
+- [hook_stream_wrappers()](../modules/system/system.api.php/hook_stream_wrappers.md) (function) — Registers PHP stream wrapper implementations associated with a module.
+- [hook_stream_wrappers_alter()](../modules/system/system.api.php/hook_stream_wrappers_alter.md) (function) — Alters the list of PHP stream wrapper implementations.
+- [hook_system_info_alter()](../modules/system/system.api.php/hook_system_info_alter.md) (function) — Alter the information parsed from module and theme .info files
+- [hook_system_theme_engine_info()](../modules/system/system.api.php/hook_system_theme_engine_info.md) (function) — Return additional theme engines provided by modules.
+- [hook_system_theme_info()](../modules/system/system.api.php/hook_system_theme_info.md) (function) — Return additional themes provided by modules.
+- [hook_system_themes_page_alter()](../modules/system/system.api.php/hook_system_themes_page_alter.md) (function) — Alters theme operation links.
+- [hook_taxonomy_term_delete()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_term_delete.md) (function) — Respond to the deletion of taxonomy terms.
+- [hook_taxonomy_term_insert()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_term_insert.md) (function) — Act on taxonomy terms when inserted.
+- [hook_taxonomy_term_load()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_term_load.md) (function) — Act on taxonomy terms when loaded.
+- [hook_taxonomy_term_presave()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_term_presave.md) (function) — Act on taxonomy terms before they are saved.
+- [hook_taxonomy_term_update()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_term_update.md) (function) — Act on taxonomy terms when updated.
+- [hook_taxonomy_term_view()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_term_view.md) (function) — Act on a taxonomy term that is being assembled before rendering.
+- [hook_taxonomy_term_view_alter()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_term_view_alter.md) (function) — Alter the results of taxonomy_term_view().
+- [hook_taxonomy_vocabulary_delete()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_vocabulary_delete.md) (function) — Respond to the deletion of taxonomy vocabularies.
+- [hook_taxonomy_vocabulary_insert()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_vocabulary_insert.md) (function) — Act on taxonomy vocabularies when inserted.
+- [hook_taxonomy_vocabulary_load()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_vocabulary_load.md) (function) — Act on taxonomy vocabularies when loaded.
+- [hook_taxonomy_vocabulary_presave()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_vocabulary_presave.md) (function) — Act on taxonomy vocabularies before they are saved.
+- [hook_taxonomy_vocabulary_update()](../modules/taxonomy/taxonomy.api.php/hook_taxonomy_vocabulary_update.md) (function) — Act on taxonomy vocabularies when updated.
+- [hook_test_finished()](../modules/simpletest/simpletest.api.php/hook_test_finished.md) (function) — An individual test has finished.
+- [hook_test_group_finished()](../modules/simpletest/simpletest.api.php/hook_test_group_finished.md) (function) — A test group has finished.
+- [hook_test_group_started()](../modules/simpletest/simpletest.api.php/hook_test_group_started.md) (function) — A test group has started.
+- [hook_theme()](../modules/system/system.api.php/hook_theme.md) (function) — Register a module (or theme's) theme implementations.
+- [hook_theme_registry_alter()](../modules/system/system.api.php/hook_theme_registry_alter.md) (function) — Alter the theme registry information returned from hook_theme().
+- [hook_token_info()](../modules/system/system.api.php/hook_token_info.md) (function) — Provide information about available placeholder tokens and token types.
+- [hook_token_info_alter()](../modules/system/system.api.php/hook_token_info_alter.md) (function) — Alter the metadata about available placeholder tokens and token types.
+- [hook_tokens()](../modules/system/system.api.php/hook_tokens.md) (function) — Provide replacement values for placeholder tokens.
+- [hook_tokens_alter()](../modules/system/system.api.php/hook_tokens_alter.md) (function) — Alter replacement values for placeholder tokens.
+- [hook_translated_menu_link_alter()](../modules/system/system.api.php/hook_translated_menu_link_alter.md) (function) — Alter a menu link after it has been translated and before it is rendered.
+- [hook_trigger_info()](../modules/trigger/trigger.api.php/hook_trigger_info.md) (function) — Declare triggers (events) for users to assign actions to.
+- [hook_trigger_info_alter()](../modules/trigger/trigger.api.php/hook_trigger_info_alter.md) (function) — Alter triggers declared by hook_trigger_info().
+- [hook_uninstall()](../modules/system/system.api.php/hook_uninstall.md) (function) — Remove any information that the module sets.
+- [hook_update()](../modules/node/node.api.php/hook_update.md) (function) — Respond to updates to a node.
+- [hook_update_N()](../modules/system/system.api.php/hook_update_N.md) (function) — Perform a single update.
+- [hook_update_dependencies()](../modules/system/system.api.php/hook_update_dependencies.md) (function) — Return an array of information about module update dependencies.
+- [hook_update_index()](../modules/search/search.api.php/hook_update_index.md) (function) — Update the search index for this module.
+- [hook_update_last_removed()](../modules/system/system.api.php/hook_update_last_removed.md) (function) — Return a number which is no longer available as hook_update_N().
+- [hook_update_projects_alter()](../modules/update/update.api.php/hook_update_projects_alter.md) (function) — Alter the list of projects before fetching data and comparing versions.
+- [hook_update_status_alter()](../modules/update/update.api.php/hook_update_status_alter.md) (function) — Alter the information about available updates for projects.
+- [hook_updater_info()](../modules/system/system.api.php/hook_updater_info.md) (function) — Provide information on Updaters (classes that can update Drupal).
+- [hook_updater_info_alter()](../modules/system/system.api.php/hook_updater_info_alter.md) (function) — Alter the Updater information array.
+- [hook_url_inbound_alter()](../modules/system/system.api.php/hook_url_inbound_alter.md) (function) — Alters inbound URL requests.
+- [hook_url_outbound_alter()](../modules/system/system.api.php/hook_url_outbound_alter.md) (function) — Alters outbound URLs.
+- [hook_user_cancel()](../modules/user/user.api.php/hook_user_cancel.md) (function) — Act on user account cancellations.
+- [hook_user_cancel_methods_alter()](../modules/user/user.api.php/hook_user_cancel_methods_alter.md) (function) — Modify account cancellation methods.
+- [hook_user_categories()](../modules/user/user.api.php/hook_user_categories.md) (function) — Define a list of user settings or profile information categories.
+- [hook_user_delete()](../modules/user/user.api.php/hook_user_delete.md) (function) — Respond to user deletion.
+- [hook_user_flood_control()](../modules/user/user.api.php/hook_user_flood_control.md) (function) — Respond to user flood control events.
+- [hook_user_insert()](../modules/user/user.api.php/hook_user_insert.md) (function) — A user account was created.
+- [hook_user_load()](../modules/user/user.api.php/hook_user_load.md) (function) — Act on user objects when loaded from the database.
+- [hook_user_login()](../modules/user/user.api.php/hook_user_login.md) (function) — The user just logged in.
+- [hook_user_logout()](../modules/user/user.api.php/hook_user_logout.md) (function) — The user just logged out.
+- [hook_user_operations()](../modules/user/user.api.php/hook_user_operations.md) (function) — Add mass user operations.
+- [hook_user_presave()](../modules/user/user.api.php/hook_user_presave.md) (function) — A user account is about to be created or updated.
+- [hook_user_role_delete()](../modules/user/user.api.php/hook_user_role_delete.md) (function) — Respond to user role deletion.
+- [hook_user_role_insert()](../modules/user/user.api.php/hook_user_role_insert.md) (function) — Respond to creation of a new user role.
+- [hook_user_role_presave()](../modules/user/user.api.php/hook_user_role_presave.md) (function) — Act on a user role being inserted or updated.
+- [hook_user_role_update()](../modules/user/user.api.php/hook_user_role_update.md) (function) — Respond to updates to a user role.
+- [hook_user_update()](../modules/user/user.api.php/hook_user_update.md) (function) — A user account was updated.
+- [hook_user_view()](../modules/user/user.api.php/hook_user_view.md) (function) — The user's account information is being displayed.
+- [hook_user_view_alter()](../modules/user/user.api.php/hook_user_view_alter.md) (function) — The user was built; the module may modify the structured content.
+- [hook_username_alter()](../modules/system/system.api.php/hook_username_alter.md) (function) — Alter the username that is displayed for a user.
+- [hook_valid_email_address_alter()](../modules/system/system.api.php/hook_valid_email_address_alter.md) (function) — Alter core e-mail validation.
+- [hook_validate()](../modules/node/node.api.php/hook_validate.md) (function) — Perform node validation before a node is created or updated.
+- [hook_verify_update_archive()](../modules/update/update.api.php/hook_verify_update_archive.md) (function) — Verify an archive after it has been downloaded and extracted.
+- [hook_view()](../modules/node/node.api.php/hook_view.md) (function) — Display a node.
+- [hook_watchdog()](../modules/system/system.api.php/hook_watchdog.md) (function) — Log an event message.
+- [hook_xmlrpc()](../modules/system/system.api.php/hook_xmlrpc.md) (function) — Register XML-RPC callbacks.
+- [hook_xmlrpc_alter()](../modules/system/system.api.php/hook_xmlrpc_alter.md) (function) — Alters the definition of XML-RPC methods before they are called.
+- [module_hook()](../includes/module.inc/module_hook.md) (function) — Determines whether a module implements a hook.
+- [module_hook_info()](../includes/module.inc/module_hook_info.md) (function) — Retrieves a list of hooks that are declared through hook_hook_info().
+- [module_implements()](../includes/module.inc/module_implements.md) (function) — Determines which modules are implementing a hook.
+- [module_implements_write_cache()](../includes/module.inc/module_implements_write_cache.md) (function) — Writes the hook implementation cache.
+- [module_invoke()](../includes/module.inc/module_invoke.md) (function) — Invokes a hook in a particular module.
+- [module_invoke_all()](../includes/module.inc/module_invoke_all.md) (function) — Invokes a hook in all enabled modules that implement it.
+
+---
+_Drupal 7.103 · Licensed GPL-2.0-or-later (see LICENSE)._

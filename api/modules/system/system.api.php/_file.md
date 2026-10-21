@@ -1,0 +1,143 @@
+# modules/system/system.api.php
+
+- **Source:** [local](../../../../source/modules/system/system.api.php) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/system/system.api.php) · 5054 lines
+- **Module/theme:** system
+
+## File documentation
+
+```text
+@file
+Hooks provided by Drupal core and the System module.
+```
+
+## Functions (derived index)
+
+- [hook_hook_info()](hook_hook_info.md) — Defines one or more hooks that are exposed by a module.
+- [hook_hook_info_alter()](hook_hook_info_alter.md) — Alter information from hook_hook_info().
+- [hook_entity_info()](hook_entity_info.md) — Inform the base system and the Field API about one or more entity types.
+- [hook_entity_info_alter()](hook_entity_info_alter.md) — Alter the entity info.
+- [hook_entity_load()](hook_entity_load.md) — Act on entities when loaded.
+- [hook_entity_presave()](hook_entity_presave.md) — Act on an entity before it is about to be created or updated.
+- [hook_entity_insert()](hook_entity_insert.md) — Act on entities when inserted.
+- [hook_entity_update()](hook_entity_update.md) — Act on entities when updated.
+- [hook_entity_delete()](hook_entity_delete.md) — Act on entities when deleted.
+- [hook_entity_query_alter()](hook_entity_query_alter.md) — Alter or execute an EntityFieldQuery.
+- [hook_entity_view()](hook_entity_view.md) — Act on entities being assembled before rendering.
+- [hook_entity_view_alter()](hook_entity_view_alter.md) — Alter the results of ENTITY_view().
+- [hook_entity_view_mode_alter()](hook_entity_view_mode_alter.md) — Change the view mode of an entity that is being displayed.
+- [hook_admin_paths()](hook_admin_paths.md) — Define administrative paths.
+- [hook_admin_paths_alter()](hook_admin_paths_alter.md) — Redefine administrative paths defined by other modules.
+- [hook_entity_prepare_view()](hook_entity_prepare_view.md) — Act on entities as they are being prepared for view.
+- [hook_cron()](hook_cron.md) — Perform periodic actions.
+- [hook_cron_queue_info()](hook_cron_queue_info.md) — Declare queues holding items that need to be run periodically.
+- [hook_cron_queue_info_alter()](hook_cron_queue_info_alter.md) — Alter cron queue information before cron runs.
+- [hook_element_info()](hook_element_info.md) — Allows modules to declare their own Form API element types and specify their default values.
+- [hook_element_info_alter()](hook_element_info_alter.md) — Alter the element type information returned from modules.
+- [hook_exit()](hook_exit.md) — Perform cleanup tasks.
+- [hook_js_alter()](hook_js_alter.md) — Perform necessary alterations to the JavaScript before it is presented on the page.
+- [hook_library()](hook_library.md) — Registers JavaScript/CSS libraries associated with a module.
+- [hook_library_alter()](hook_library_alter.md) — Alters the JavaScript/CSS library registry.
+- [hook_css_alter()](hook_css_alter.md) — Alter CSS files before they are output on the page.
+- [hook_ajax_render_alter()](hook_ajax_render_alter.md) — Alter the commands that are sent to the user through the Ajax framework.
+- [hook_page_build()](hook_page_build.md) — Add elements to a page before it is rendered.
+- [hook_menu_get_item_alter()](hook_menu_get_item_alter.md) — Alter a menu router item right after it has been retrieved from the database or cache.
+- [hook_menu()](hook_menu.md) — Define menu items and page callbacks.
+- [hook_menu_alter()](hook_menu_alter.md) — Alter the data being saved to the {menu_router} table after hook_menu is invoked.
+- [hook_menu_link_alter()](hook_menu_link_alter.md) — Alter the data being saved to the {menu_links} table by menu_link_save().
+- [hook_translated_menu_link_alter()](hook_translated_menu_link_alter.md) — Alter a menu link after it has been translated and before it is rendered.
+- [hook_menu_link_insert()](hook_menu_link_insert.md) — Inform modules that a menu link has been created.
+- [hook_menu_link_update()](hook_menu_link_update.md) — Inform modules that a menu link has been updated.
+- [hook_menu_link_delete()](hook_menu_link_delete.md) — Inform modules that a menu link has been deleted.
+- [hook_menu_local_tasks_alter()](hook_menu_local_tasks_alter.md) — Alter tabs and actions displayed on the page before they are rendered.
+- [hook_menu_breadcrumb_alter()](hook_menu_breadcrumb_alter.md) — Alter links in the active trail before it is rendered as the breadcrumb.
+- [hook_menu_contextual_links_alter()](hook_menu_contextual_links_alter.md) — Alter contextual links before they are rendered.
+- [hook_page_alter()](hook_page_alter.md) — Perform alterations before a page is rendered.
+- [hook_form_alter()](hook_form_alter.md) — Perform alterations before a form is rendered.
+- [hook_form_FORM_ID_alter()](hook_form_FORM_ID_alter.md) — Provide a form-specific alteration instead of the global hook_form_alter().
+- [hook_form_BASE_FORM_ID_alter()](hook_form_BASE_FORM_ID_alter.md) — Provide a form-specific alteration for shared ('base') forms.
+- [hook_forms()](hook_forms.md) — Map form_ids to form builder functions.
+- [hook_boot()](hook_boot.md) — Perform setup tasks for all page requests.
+- [hook_init()](hook_init.md) — Perform setup tasks for non-cached page requests.
+- [hook_image_toolkits()](hook_image_toolkits.md) — Define image toolkits provided by this module.
+- [hook_mail_alter()](hook_mail_alter.md) — Alter an email message created with the drupal_mail() function.
+- [hook_module_implements_alter()](hook_module_implements_alter.md) — Alter the registry of modules implementing a hook.
+- [hook_system_theme_info()](hook_system_theme_info.md) — Return additional themes provided by modules.
+- [hook_system_theme_engine_info()](hook_system_theme_engine_info.md) — Return additional theme engines provided by modules.
+- [hook_system_info_alter()](hook_system_info_alter.md) — Alter the information parsed from module and theme .info files
+- [hook_permission()](hook_permission.md) — Define user permissions.
+- [hook_help()](hook_help.md) — Provide online user help.
+- [hook_theme()](hook_theme.md) — Register a module (or theme's) theme implementations.
+- [hook_theme_registry_alter()](hook_theme_registry_alter.md) — Alter the theme registry information returned from hook_theme().
+- [hook_custom_theme()](hook_custom_theme.md) — Return the machine-readable name of the theme to use for the current page.
+- [hook_xmlrpc()](hook_xmlrpc.md) — Register XML-RPC callbacks.
+- [hook_xmlrpc_alter()](hook_xmlrpc_alter.md) — Alters the definition of XML-RPC methods before they are called.
+- [hook_watchdog()](hook_watchdog.md) — Log an event message.
+- [hook_mail()](hook_mail.md) — Prepare a message based on parameters; called from drupal_mail().
+- [hook_flush_caches()](hook_flush_caches.md) — Add a list of cache tables to be cleared.
+- [hook_modules_installed()](hook_modules_installed.md) — Perform necessary actions after modules are installed.
+- [hook_modules_enabled()](hook_modules_enabled.md) — Perform necessary actions after modules are enabled.
+- [hook_modules_disabled()](hook_modules_disabled.md) — Perform necessary actions after modules are disabled.
+- [hook_modules_uninstalled()](hook_modules_uninstalled.md) — Perform necessary actions after modules are uninstalled.
+- [hook_stream_wrappers()](hook_stream_wrappers.md) — Registers PHP stream wrapper implementations associated with a module.
+- [hook_stream_wrappers_alter()](hook_stream_wrappers_alter.md) — Alters the list of PHP stream wrapper implementations.
+- [hook_file_load()](hook_file_load.md) — Load additional information into file objects.
+- [hook_file_validate()](hook_file_validate.md) — Check that files meet a given criteria.
+- [hook_file_presave()](hook_file_presave.md) — Act on a file being inserted or updated.
+- [hook_file_insert()](hook_file_insert.md) — Respond to a file being added.
+- [hook_file_update()](hook_file_update.md) — Respond to a file being updated.
+- [hook_file_copy()](hook_file_copy.md) — Respond to a file that has been copied.
+- [hook_file_move()](hook_file_move.md) — Respond to a file that has been moved.
+- [hook_file_delete()](hook_file_delete.md) — Respond to a file being deleted.
+- [hook_file_download()](hook_file_download.md) — Control access to private file downloads and specify HTTP headers.
+- [hook_file_url_alter()](hook_file_url_alter.md) — Alter the URL to a file.
+- [hook_requirements()](hook_requirements.md) — Check installation requirements and do status reporting.
+- [hook_schema()](hook_schema.md) — Define the current version of the database schema.
+- [hook_schema_alter()](hook_schema_alter.md) — Perform alterations to existing database schemas.
+- [hook_query_alter()](hook_query_alter.md) — Perform alterations to a structured query.
+- [hook_query_TAG_alter()](hook_query_TAG_alter.md) — Perform alterations to a structured query for a given tag.
+- [hook_install()](hook_install.md) — Perform setup tasks when the module is installed.
+- [hook_update_N()](hook_update_N.md) — Perform a single update.
+- [hook_update_dependencies()](hook_update_dependencies.md) — Return an array of information about module update dependencies.
+- [hook_update_last_removed()](hook_update_last_removed.md) — Return a number which is no longer available as hook_update_N().
+- [hook_uninstall()](hook_uninstall.md) — Remove any information that the module sets.
+- [hook_enable()](hook_enable.md) — Perform necessary actions after module is enabled.
+- [hook_disable()](hook_disable.md) — Perform necessary actions before module is disabled.
+- [hook_registry_files_alter()](hook_registry_files_alter.md) — Perform necessary alterations to the list of files parsed by the registry.
+- [hook_install_tasks()](hook_install_tasks.md) — Return an array of tasks to be performed by an installation profile.
+- [hook_drupal_goto_alter()](hook_drupal_goto_alter.md) — Change the page the user is sent to by drupal_goto().
+- [hook_html_head_alter()](hook_html_head_alter.md) — Alter XHTML HEAD tags before they are rendered by drupal_get_html_head().
+- [hook_install_tasks_alter()](hook_install_tasks_alter.md) — Alter the full list of installation tasks.
+- [hook_file_mimetype_mapping_alter()](hook_file_mimetype_mapping_alter.md) — Alter MIME type mappings used to determine MIME type from a file extension.
+- [hook_action_info()](hook_action_info.md) — Declares information about actions.
+- [hook_actions_delete()](hook_actions_delete.md) — Executes code after an action is deleted.
+- [hook_action_info_alter()](hook_action_info_alter.md) — Alters the actions declared by another module.
+- [hook_archiver_info()](hook_archiver_info.md) — Declare archivers to the system.
+- [hook_archiver_info_alter()](hook_archiver_info_alter.md) — Alter archiver information declared by other modules.
+- [hook_date_format_types()](hook_date_format_types.md) — Define additional date types.
+- [hook_date_format_types_alter()](hook_date_format_types_alter.md) — Modify existing date types.
+- [hook_date_formats()](hook_date_formats.md) — Define additional date formats.
+- [hook_date_formats_alter()](hook_date_formats_alter.md) — Alter date formats declared by another module.
+- [hook_page_delivery_callback_alter()](hook_page_delivery_callback_alter.md) — Alters the delivery callback used to send the result of the page callback to the browser.
+- [hook_system_themes_page_alter()](hook_system_themes_page_alter.md) — Alters theme operation links.
+- [hook_url_inbound_alter()](hook_url_inbound_alter.md) — Alters inbound URL requests.
+- [hook_url_outbound_alter()](hook_url_outbound_alter.md) — Alters outbound URLs.
+- [hook_username_alter()](hook_username_alter.md) — Alter the username that is displayed for a user.
+- [hook_tokens()](hook_tokens.md) — Provide replacement values for placeholder tokens.
+- [hook_tokens_alter()](hook_tokens_alter.md) — Alter replacement values for placeholder tokens.
+- [hook_token_info()](hook_token_info.md) — Provide information about available placeholder tokens and token types.
+- [hook_token_info_alter()](hook_token_info_alter.md) — Alter the metadata about available placeholder tokens and token types.
+- [hook_batch_alter()](hook_batch_alter.md) — Alter batch information before a batch is processed.
+- [hook_updater_info()](hook_updater_info.md) — Provide information on Updaters (classes that can update Drupal).
+- [hook_updater_info_alter()](hook_updater_info_alter.md) — Alter the Updater information array.
+- [hook_countries_alter()](hook_countries_alter.md) — Alter the default country list.
+- [hook_menu_site_status_alter()](hook_menu_site_status_alter.md) — Control site status before menu dispatching.
+- [hook_filetransfer_info()](hook_filetransfer_info.md) — Register information about FileTransfer classes provided by a module.
+- [hook_filetransfer_info_alter()](hook_filetransfer_info_alter.md) — Alter the FileTransfer class registry.
+- [hook_valid_email_address_alter()](hook_valid_email_address_alter.md) — Alter core e-mail validation.
+- [callback_queue_worker()](callback_queue_worker.md) — Work on a single queue item.
+- [callback_entity_info_uri()](callback_entity_info_uri.md) — Return the URI for an entity.
+- [callback_entity_info_label()](callback_entity_info_label.md) — Return the label of an entity.
+- [callback_entity_info_language()](callback_entity_info_language.md) — Return the language code of the entity.
+
+---
+_Drupal 7.103 · Licensed GPL-2.0-or-later (see LICENSE)._

@@ -1,0 +1,29 @@
+# FileDownloadTest::setUp()
+
+- **Type:** Method
+- **File:** [`modules/simpletest/tests/file.test`](../_file.md), lines 2578–2582 · [local source](../../../../../../source/modules/simpletest/tests/file.test) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/simpletest/tests/file.test#L2578-L2582)
+- **Class:** [FileDownloadTest](../FileDownloadTest.md)
+- **Module/theme:** batch_test
+
+## Signature
+
+```php
+function setUp()
+```
+
+## Documentation
+
+_No docblock in source._
+
+## Code
+
+```php
+  function setUp() {
+    parent::setUp('file_test');
+    // Clear out any hook calls.
+    file_test_reset();
+  }
+```
+
+---
+_Drupal 7.103 · [modules/simpletest/tests/file.test](https://github.com/drupal/drupal/blob/7.103/modules/simpletest/tests/file.test) · Licensed GPL-2.0-or-later (see LICENSE)._

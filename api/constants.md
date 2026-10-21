@@ -1,0 +1,282 @@
+# Constants (derived index)
+
+- [AGGREGATOR_CLEAR_NEVER](modules/aggregator/aggregator.module/_file.md#aggregator_clear_never) — `modules/aggregator/aggregator.module` — Denotes that a feed's items should never expire.
+- [ANNOUNCEMENTS_FEED_DEFAULT_CRON_INTERVAL](modules/announcements_feed/announcements_feed.module/_file.md#announcements_feed_default_cron_interval) — `modules/announcements_feed/announcements_feed.module` — Default cron interval for refreshing feed data in seconds.
+- [ANNOUNCEMENTS_FEED_DEFAULT_JSON_URL](modules/announcements_feed/announcements_feed.module/_file.md#announcements_feed_default_json_url) — `modules/announcements_feed/announcements_feed.module` — Default URL for the announcements JSON feed.
+- [ANNOUNCEMENTS_FEED_DEFAULT_LIMIT](modules/announcements_feed/announcements_feed.module/_file.md#announcements_feed_default_limit) — `modules/announcements_feed/announcements_feed.module` — Default limit for number of feed items to fetch.
+- [ANNOUNCEMENTS_FEED_DEFAULT_LINK](modules/announcements_feed/announcements_feed.module/_file.md#announcements_feed_default_link) — `modules/announcements_feed/announcements_feed.module` — Default URL for the announcements feed at drupal.org.
+- [ANNOUNCEMENTS_FEED_DEFAULT_MAX_AGE](modules/announcements_feed/announcements_feed.module/_file.md#announcements_feed_default_max_age) — `modules/announcements_feed/announcements_feed.module` — Default maximum age of cached feed data in seconds.
+- [ARCHIVE_TAR_ATT_SEPARATOR](modules/system/system.tar.inc/_file.md#archive_tar_att_separator) — `modules/system/system.tar.inc`
+- [ARCHIVE_TAR_END_BLOCK](modules/system/system.tar.inc/_file.md#archive_tar_end_block) — `modules/system/system.tar.inc`
+- [BLOCK_CUSTOM_DISABLED](modules/block/block.module/_file.md#block_custom_disabled) — `modules/block/block.module` — Hides this block by default but lets individual users show it.
+- [BLOCK_CUSTOM_ENABLED](modules/block/block.module/_file.md#block_custom_enabled) — `modules/block/block.module` — Shows this block by default, but lets individual users hide it.
+- [BLOCK_CUSTOM_FIXED](modules/block/block.module/_file.md#block_custom_fixed) — `modules/block/block.module` — Users cannot control whether or not they see this block.
+- [BLOCK_REGION_NONE](modules/block/block.module/_file.md#block_region_none) — `modules/block/block.module` — Denotes that a block is not enabled in any region and should not be shown.
+- [BLOCK_VISIBILITY_LISTED](modules/block/block.module/_file.md#block_visibility_listed) — `modules/block/block.module` — Shows this block on only the listed pages.
+- [BLOCK_VISIBILITY_NOTLISTED](modules/block/block.module/_file.md#block_visibility_notlisted) — `modules/block/block.module` — Shows this block on every page except the listed pages.
+- [BLOCK_VISIBILITY_PHP](modules/block/block.module/_file.md#block_visibility_php) — `modules/block/block.module` — Shows this block if the associated PHP code returns TRUE.
+- [CACHE_PERMANENT](includes/bootstrap.inc/_file.md#cache_permanent) — `includes/bootstrap.inc` — Indicates that the item should never be removed unless explicitly selected.
+- [CACHE_TEMPORARY](includes/bootstrap.inc/_file.md#cache_temporary) — `includes/bootstrap.inc` — Indicates that the item should be removed at the next general cache wipe.
+- [CHECK_PLAIN](includes/bootstrap.inc/_file.md#check_plain) — `includes/bootstrap.inc` — Flag used to indicate that text is not sanitized, so run check_plain().
+- [COMMENT_ANONYMOUS_MAYNOT_CONTACT](modules/comment/comment.module/_file.md#comment_anonymous_maynot_contact) — `modules/comment/comment.module` — Anonymous posters cannot enter their contact information.
+- [COMMENT_ANONYMOUS_MAY_CONTACT](modules/comment/comment.module/_file.md#comment_anonymous_may_contact) — `modules/comment/comment.module` — Anonymous posters may leave their contact information.
+- [COMMENT_ANONYMOUS_MUST_CONTACT](modules/comment/comment.module/_file.md#comment_anonymous_must_contact) — `modules/comment/comment.module` — Anonymous posters are required to leave their contact information.
+- [COMMENT_FORM_BELOW](modules/comment/comment.module/_file.md#comment_form_below) — `modules/comment/comment.module` — Comment form should be shown below post or list of comments.
+- [COMMENT_FORM_SEPARATE_PAGE](modules/comment/comment.module/_file.md#comment_form_separate_page) — `modules/comment/comment.module` — Comment form should be displayed on a separate page.
+- [COMMENT_MODE_FLAT](modules/comment/comment.module/_file.md#comment_mode_flat) — `modules/comment/comment.module` — Comments are displayed in a flat list - expanded.
+- [COMMENT_MODE_THREADED](modules/comment/comment.module/_file.md#comment_mode_threaded) — `modules/comment/comment.module` — Comments are displayed as a threaded list - expanded.
+- [COMMENT_NODE_CLOSED](modules/comment/comment.module/_file.md#comment_node_closed) — `modules/comment/comment.module` — Comments for this node are closed.
+- [COMMENT_NODE_HIDDEN](modules/comment/comment.module/_file.md#comment_node_hidden) — `modules/comment/comment.module` — Comments for this node are hidden.
+- [COMMENT_NODE_OPEN](modules/comment/comment.module/_file.md#comment_node_open) — `modules/comment/comment.module` — Comments for this node are open.
+- [COMMENT_NOT_PUBLISHED](modules/comment/comment.module/_file.md#comment_not_published) — `modules/comment/comment.module` — Comment is awaiting approval.
+- [COMMENT_PUBLISHED](modules/comment/comment.module/_file.md#comment_published) — `modules/comment/comment.module` — Comment is published.
+- [CSS_DEFAULT](includes/common.inc/_file.md#css_default) — `includes/common.inc` — The default group for module CSS files added to the page.
+- [CSS_SYSTEM](includes/common.inc/_file.md#css_system) — `includes/common.inc` — The default group for system CSS files added to the page.
+- [CSS_THEME](includes/common.inc/_file.md#css_theme) — `includes/common.inc` — The default group for theme CSS files added to the page.
+- [DATE_RFC7231](includes/bootstrap.inc/_file.md#date_rfc7231) — `includes/bootstrap.inc`
+- [DEFAULT_SYSLOG_FACILITY](modules/syslog/syslog.module/_file.md#default_syslog_facility) — `modules/syslog/syslog.module` — Sets the proper logging facility.
+- [DEFAULT_SYSLOG_FACILITY](modules/syslog/syslog.module/_file.md#default_syslog_facility) — `modules/syslog/syslog.module`
+- [DRUPAL_ANONYMOUS_RID](includes/bootstrap.inc/_file.md#drupal_anonymous_rid) — `includes/bootstrap.inc` — Role ID for anonymous users; should match what's in the "role" table.
+- [DRUPAL_AUTHENTICATED_RID](includes/bootstrap.inc/_file.md#drupal_authenticated_rid) — `includes/bootstrap.inc` — Role ID for authenticated users; should match what's in the "role" table.
+- [DRUPAL_BOOTSTRAP_CONFIGURATION](includes/bootstrap.inc/_file.md#drupal_bootstrap_configuration) — `includes/bootstrap.inc` — First bootstrap phase: initialize configuration.
+- [DRUPAL_BOOTSTRAP_DATABASE](includes/bootstrap.inc/_file.md#drupal_bootstrap_database) — `includes/bootstrap.inc` — Third bootstrap phase: initialize database layer.
+- [DRUPAL_BOOTSTRAP_FULL](includes/bootstrap.inc/_file.md#drupal_bootstrap_full) — `includes/bootstrap.inc` — Final bootstrap phase: Drupal is fully loaded; validate and fix input data.
+- [DRUPAL_BOOTSTRAP_LANGUAGE](includes/bootstrap.inc/_file.md#drupal_bootstrap_language) — `includes/bootstrap.inc` — Seventh bootstrap phase: find out language of the page.
+- [DRUPAL_BOOTSTRAP_PAGE_CACHE](includes/bootstrap.inc/_file.md#drupal_bootstrap_page_cache) — `includes/bootstrap.inc` — Second bootstrap phase: try to serve a cached page.
+- [DRUPAL_BOOTSTRAP_PAGE_HEADER](includes/bootstrap.inc/_file.md#drupal_bootstrap_page_header) — `includes/bootstrap.inc` — Sixth bootstrap phase: set up the page header.
+- [DRUPAL_BOOTSTRAP_SESSION](includes/bootstrap.inc/_file.md#drupal_bootstrap_session) — `includes/bootstrap.inc` — Fifth bootstrap phase: initialize session handling.
+- [DRUPAL_BOOTSTRAP_VARIABLES](includes/bootstrap.inc/_file.md#drupal_bootstrap_variables) — `includes/bootstrap.inc` — Fourth bootstrap phase: initialize the variable system.
+- [DRUPAL_CACHE_CUSTOM](includes/common.inc/_file.md#drupal_cache_custom) — `includes/common.inc` — The block is handling its own caching in its hook_block_view().
+- [DRUPAL_CACHE_GLOBAL](includes/common.inc/_file.md#drupal_cache_global) — `includes/common.inc` — The block or element is the same for every user and page that it is visible.
+- [DRUPAL_CACHE_PER_PAGE](includes/common.inc/_file.md#drupal_cache_per_page) — `includes/common.inc` — The block or element can change depending on the page being viewed.
+- [DRUPAL_CACHE_PER_ROLE](includes/common.inc/_file.md#drupal_cache_per_role) — `includes/common.inc` — The block or element can change depending on the user's roles.
+- [DRUPAL_CACHE_PER_USER](includes/common.inc/_file.md#drupal_cache_per_user) — `includes/common.inc` — The block or element can change depending on the user.
+- [DRUPAL_CORE_COMPATIBILITY](includes/bootstrap.inc/_file.md#drupal_core_compatibility) — `includes/bootstrap.inc` — Core API compatibility.
+- [DRUPAL_CRON_DEFAULT_THRESHOLD](modules/system/system.module/_file.md#drupal_cron_default_threshold) — `modules/system/system.module` — Default interval for automatic cron executions in seconds.
+- [DRUPAL_CRON_DETAILED_LOGGING](modules/system/system.module/_file.md#drupal_cron_detailed_logging) — `modules/system/system.module` — Detailed cron logging disabled by default.
+- [DRUPAL_DISABLED](modules/system/system.module/_file.md#drupal_disabled) — `modules/system/system.module` — Disabled option on forms and settings
+- [DRUPAL_HASH_COUNT](includes/password.inc/_file.md#drupal_hash_count) — `includes/password.inc` — The standard log2 number of iterations for password stretching. This should increase by 1 every Drupal version in order to counteract increases in the speed and power of computers available to crack the hashes.
+- [DRUPAL_HASH_LENGTH](includes/password.inc/_file.md#drupal_hash_length) — `includes/password.inc` — The expected (and maximum) number of characters in a hashed password.
+- [DRUPAL_KILOBYTE](includes/bootstrap.inc/_file.md#drupal_kilobyte) — `includes/bootstrap.inc` — The number of bytes in a kilobyte.
+- [DRUPAL_MAXIMUM_TEMP_FILE_AGE](modules/system/system.module/_file.md#drupal_maximum_temp_file_age) — `modules/system/system.module` — Maximum age of temporary files in seconds.
+- [DRUPAL_MAX_HASH_COUNT](includes/password.inc/_file.md#drupal_max_hash_count) — `includes/password.inc` — The maximum allowed log2 number of iterations for password stretching.
+- [DRUPAL_MINIMUM_PHP](includes/bootstrap.inc/_file.md#drupal_minimum_php) — `includes/bootstrap.inc` — Minimum supported version of PHP.
+- [DRUPAL_MINIMUM_PHP_MEMORY_LIMIT](includes/bootstrap.inc/_file.md#drupal_minimum_php_memory_limit) — `includes/bootstrap.inc` — Minimum recommended value of PHP memory_limit.
+- [DRUPAL_MIN_HASH_COUNT](includes/password.inc/_file.md#drupal_min_hash_count) — `includes/password.inc` — The minimum allowed log2 number of iterations for password stretching.
+- [DRUPAL_NO_CACHE](includes/common.inc/_file.md#drupal_no_cache) — `includes/common.inc` — The block should not get cached.
+- [DRUPAL_OPTIONAL](modules/system/system.module/_file.md#drupal_optional) — `modules/system/system.module` — Optional option on forms and settings
+- [DRUPAL_PHP_FUNCTION_PATTERN](includes/bootstrap.inc/_file.md#drupal_php_function_pattern) — `includes/bootstrap.inc` — Regular expression to match PHP function names.
+- [DRUPAL_REQUIRED](modules/system/system.module/_file.md#drupal_required) — `modules/system/system.module` — Required option on forms and settings
+- [DRUPAL_ROOT](authorize.php/_file.md#drupal_root) — `authorize.php` — Defines the root directory of the Drupal installation.
+- [DRUPAL_ROOT](cron.php/_file.md#drupal_root) — `cron.php` — Root directory of Drupal installation.
+- [DRUPAL_ROOT](index.php/_file.md#drupal_root) — `index.php` — Root directory of Drupal installation.
+- [DRUPAL_ROOT](install.php/_file.md#drupal_root) — `install.php` — Defines the root directory of the Drupal installation.
+- [DRUPAL_ROOT](modules/simpletest/tests/http.php/_file.md#drupal_root) — `modules/simpletest/tests/http.php`
+- [DRUPAL_ROOT](modules/simpletest/tests/https.php/_file.md#drupal_root) — `modules/simpletest/tests/https.php`
+- [DRUPAL_ROOT](modules/statistics/statistics.php/_file.md#drupal_root) — `modules/statistics/statistics.php` — Root directory of Drupal installation.
+- [DRUPAL_ROOT](scripts/dump-database-d7.sh/_file.md#drupal_root) — `scripts/dump-database-d7.sh`
+- [DRUPAL_ROOT](scripts/generate-d7-content.sh/_file.md#drupal_root) — `scripts/generate-d7-content.sh`
+- [DRUPAL_ROOT](scripts/password-hash.sh/_file.md#drupal_root) — `scripts/password-hash.sh`
+- [DRUPAL_ROOT](update.php/_file.md#drupal_root) — `update.php` — Defines the root directory of the Drupal installation.
+- [DRUPAL_ROOT](xmlrpc.php/_file.md#drupal_root) — `xmlrpc.php` — Root directory of Drupal installation.
+- [DRUPAL_USER_TIMEZONE_DEFAULT](modules/system/system.module/_file.md#drupal_user_timezone_default) — `modules/system/system.module` — New users will be set to the default time zone at registration.
+- [DRUPAL_USER_TIMEZONE_EMPTY](modules/system/system.module/_file.md#drupal_user_timezone_empty) — `modules/system/system.module` — New users will get an empty time zone at registration.
+- [DRUPAL_USER_TIMEZONE_SELECT](modules/system/system.module/_file.md#drupal_user_timezone_select) — `modules/system/system.module` — New users will select their own timezone at registration.
+- [DRUPAL_WEIGHT_SELECT_MAX](modules/system/system.module/_file.md#drupal_weight_select_max) — `modules/system/system.module` — Maximum number of values in a weight select element.
+- [EMAIL_MAX_LENGTH](modules/user/user.module/_file.md#email_max_length) — `modules/user/user.module` — Maximum length of user e-mail text field.
+- [ERROR_REPORTING_DISPLAY_ALL](includes/bootstrap.inc/_file.md#error_reporting_display_all) — `includes/bootstrap.inc` — Error reporting level: display all messages.
+- [ERROR_REPORTING_DISPLAY_SOME](includes/bootstrap.inc/_file.md#error_reporting_display_some) — `includes/bootstrap.inc` — Error reporting level: display errors and warnings.
+- [ERROR_REPORTING_HIDE](includes/bootstrap.inc/_file.md#error_reporting_hide) — `includes/bootstrap.inc` — Error reporting level: display no errors.
+- [FIELD_BEHAVIOR_CUSTOM](modules/field/field.module/_file.md#field_behavior_custom) — `modules/field/field.module` — Value for field API indicating a widget can receive several field values.
+- [FIELD_BEHAVIOR_DEFAULT](modules/field/field.module/_file.md#field_behavior_default) — `modules/field/field.module` — Value for field API concerning widget default and multiple value settings.
+- [FIELD_BEHAVIOR_NONE](modules/field/field.module/_file.md#field_behavior_none) — `modules/field/field.module` — Value for field API indicating a widget doesn't accept default values.
+- [FIELD_CARDINALITY_UNLIMITED](modules/field/field.module/_file.md#field_cardinality_unlimited) — `modules/field/field.module` — Value for field API indicating a field accepts an unlimited number of values.
+- [FIELD_LOAD_CURRENT](modules/field/field.module/_file.md#field_load_current) — `modules/field/field.module` — Age argument for loading the most recent version of an entity's field data with field_attach_load().
+- [FIELD_LOAD_REVISION](modules/field/field.module/_file.md#field_load_revision) — `modules/field/field.module` — Age argument for loading the version of an entity's field data specified in the entity with field_attach_load().
+- [FIELD_STORAGE_INSERT](modules/field/field.attach.inc/_file.md#field_storage_insert) — `modules/field/field.attach.inc` — Argument for an insert operation.
+- [FIELD_STORAGE_UPDATE](modules/field/field.attach.inc/_file.md#field_storage_update) — `modules/field/field.attach.inc` — Argument for an update operation.
+- [FILE_CREATE_DIRECTORY](includes/file.inc/_file.md#file_create_directory) — `includes/file.inc` — Flag used by file_prepare_directory() -- create directory if not present.
+- [FILE_EXECUTABLE](includes/install.inc/_file.md#file_executable) — `includes/install.inc` — File permission check -- File is executable.
+- [FILE_EXIST](includes/install.inc/_file.md#file_exist) — `includes/install.inc` — File permission check -- File exists.
+- [FILE_EXISTS_ERROR](includes/file.inc/_file.md#file_exists_error) — `includes/file.inc` — Flag for dealing with existing files: Do nothing and return FALSE.
+- [FILE_EXISTS_RENAME](includes/file.inc/_file.md#file_exists_rename) — `includes/file.inc` — Flag for dealing with existing files: Appends number until name is unique.
+- [FILE_EXISTS_REPLACE](includes/file.inc/_file.md#file_exists_replace) — `includes/file.inc` — Flag for dealing with existing files: Replace the existing file.
+- [FILE_INSECURE_EXTENSIONS](includes/file.inc/_file.md#file_insecure_extensions) — `includes/file.inc` — A pipe-separated list of insecure extensions.
+- [FILE_MODIFY_PERMISSIONS](includes/file.inc/_file.md#file_modify_permissions) — `includes/file.inc` — Flag used by file_prepare_directory() -- file permissions may be changed.
+- [FILE_NOT_EXECUTABLE](includes/install.inc/_file.md#file_not_executable) — `includes/install.inc` — File permission check -- File is not executable.
+- [FILE_NOT_EXIST](includes/install.inc/_file.md#file_not_exist) — `includes/install.inc` — File permission check -- File does not exist.
+- [FILE_NOT_READABLE](includes/install.inc/_file.md#file_not_readable) — `includes/install.inc` — File permission check -- File is not readable.
+- [FILE_NOT_WRITABLE](includes/install.inc/_file.md#file_not_writable) — `includes/install.inc` — File permission check -- File is not writable.
+- [FILE_READABLE](includes/install.inc/_file.md#file_readable) — `includes/install.inc` — File permission check -- File is readable.
+- [FILE_STATUS_PERMANENT](includes/file.inc/_file.md#file_status_permanent) — `includes/file.inc` — Indicates that the file is permanent and should not be deleted.
+- [FILE_URL_TEST_CDN_1](modules/simpletest/tests/file_test.module/_file.md#file_url_test_cdn_1) — `modules/simpletest/tests/file_test.module`
+- [FILE_URL_TEST_CDN_2](modules/simpletest/tests/file_test.module/_file.md#file_url_test_cdn_2) — `modules/simpletest/tests/file_test.module`
+- [FILE_WRITABLE](includes/install.inc/_file.md#file_writable) — `includes/install.inc` — File permission check -- File is writable.
+- [HTTP_REQUEST_TIMEOUT](includes/common.inc/_file.md#http_request_timeout) — `includes/common.inc` — Error code indicating that the request exceeded the specified timeout.
+- [IMAGE_DERIVATIVE_TOKEN](modules/image/image.module/_file.md#image_derivative_token) — `modules/image/image.module` — The name of the query parameter for image derivative tokens.
+- [IMAGE_STORAGE_DEFAULT](modules/image/image.module/_file.md#image_storage_default) — `modules/image/image.module` — Image style constant for module-defined presets in code.
+- [IMAGE_STORAGE_EDITABLE](modules/image/image.module/_file.md#image_storage_editable) — `modules/image/image.module` — Image style constant to represent an editable preset.
+- [IMAGE_STORAGE_MODULE](modules/image/image.module/_file.md#image_storage_module) — `modules/image/image.module` — Image style constant to represent any module-based preset.
+- [IMAGE_STORAGE_NORMAL](modules/image/image.module/_file.md#image_storage_normal) — `modules/image/image.module` — Image style constant for user presets in the database.
+- [IMAGE_STORAGE_OVERRIDE](modules/image/image.module/_file.md#image_storage_override) — `modules/image/image.module` — Image style constant for user presets that override module-defined presets.
+- [INSTALL_TASK_RUN_IF_NOT_COMPLETED](includes/install.core.inc/_file.md#install_task_run_if_not_completed) — `includes/install.core.inc` — Global flag to indicate that a task should be run on each installation request that reaches it, until the database is set up and we are able to record the fact that it already ran.
+- [INSTALL_TASK_RUN_IF_REACHED](includes/install.core.inc/_file.md#install_task_run_if_reached) — `includes/install.core.inc` — Run the task on each installation request until the database is set up.
+- [INSTALL_TASK_SKIP](includes/install.core.inc/_file.md#install_task_skip) — `includes/install.core.inc` — Do not run the task during the current installation request.
+- [JS_DEFAULT](includes/common.inc/_file.md#js_default) — `includes/common.inc` — The default group for module JavaScript code added to the page.
+- [JS_LIBRARY](includes/common.inc/_file.md#js_library) — `includes/common.inc` — The default group for JavaScript and jQuery libraries added to the page.
+- [JS_THEME](includes/common.inc/_file.md#js_theme) — `includes/common.inc` — The default group for theme JavaScript code added to the page.
+- [LANGUAGE_LTR](includes/bootstrap.inc/_file.md#language_ltr) — `includes/bootstrap.inc` — Language written left to right. Possible value of $language->direction.
+- [LANGUAGE_NEGOTIATION_DEFAULT](includes/language.inc/_file.md#language_negotiation_default) — `includes/language.inc` — No language negotiation. The default language is used.
+- [LANGUAGE_NONE](includes/bootstrap.inc/_file.md#language_none) — `includes/bootstrap.inc` — The language code used when no language is explicitly assigned.
+- [LANGUAGE_RTL](includes/bootstrap.inc/_file.md#language_rtl) — `includes/bootstrap.inc` — Language written right to left. Possible value of $language->direction.
+- [LANGUAGE_TYPE_CONTENT](includes/bootstrap.inc/_file.md#language_type_content) — `includes/bootstrap.inc` — The type of language used to define the content language.
+- [LANGUAGE_TYPE_INTERFACE](includes/bootstrap.inc/_file.md#language_type_interface) — `includes/bootstrap.inc` — The type of language used to select the user interface.
+- [LANGUAGE_TYPE_URL](includes/bootstrap.inc/_file.md#language_type_url) — `includes/bootstrap.inc` — The type of language used for URLs.
+- [LOCALE_IMPORT_KEEP](includes/locale.inc/_file.md#locale_import_keep) — `includes/locale.inc` — Translation import mode keeping existing translations and only inserting new strings.
+- [LOCALE_IMPORT_OVERWRITE](includes/locale.inc/_file.md#locale_import_overwrite) — `includes/locale.inc` — Translation import mode overwriting all existing translations if new translated version available.
+- [LOCALE_JS_OBJECT](includes/locale.inc/_file.md#locale_js_object) — `includes/locale.inc` — Regular expression pattern used to match simple JS object literal.
+- [LOCALE_JS_OBJECT_CONTEXT](includes/locale.inc/_file.md#locale_js_object_context) — `includes/locale.inc` — Regular expression to match an object containing a key 'context'.
+- [LOCALE_JS_STRING](includes/locale.inc/_file.md#locale_js_string) — `includes/locale.inc` — Regular expression pattern used to localize JavaScript strings.
+- [LOCALE_LANGUAGE_NEGOTIATION_BROWSER](includes/locale.inc/_file.md#locale_language_negotiation_browser) — `includes/locale.inc` — The language is set based on the browser language settings.
+- [LOCALE_LANGUAGE_NEGOTIATION_INTERFACE](includes/locale.inc/_file.md#locale_language_negotiation_interface) — `includes/locale.inc` — The language is determined using the current interface language.
+- [LOCALE_LANGUAGE_NEGOTIATION_SESSION](includes/locale.inc/_file.md#locale_language_negotiation_session) — `includes/locale.inc` — The language is set based on the request/session parameters.
+- [LOCALE_LANGUAGE_NEGOTIATION_URL](includes/locale.inc/_file.md#locale_language_negotiation_url) — `includes/locale.inc` — The language is determined using a URL language indicator: path prefix or domain according to the configuration.
+- [LOCALE_LANGUAGE_NEGOTIATION_URL_DOMAIN](includes/locale.inc/_file.md#locale_language_negotiation_url_domain) — `includes/locale.inc` — URL language negotiation: use the domain as URL language indicator.
+- [LOCALE_LANGUAGE_NEGOTIATION_URL_FALLBACK](includes/locale.inc/_file.md#locale_language_negotiation_url_fallback) — `includes/locale.inc` — If no URL language is available language is determined using an already detected one.
+- [LOCALE_LANGUAGE_NEGOTIATION_URL_PREFIX](includes/locale.inc/_file.md#locale_language_negotiation_url_prefix) — `includes/locale.inc` — URL language negotiation: use the path prefix as URL language indicator.
+- [LOCALE_LANGUAGE_NEGOTIATION_USER](includes/locale.inc/_file.md#locale_language_negotiation_user) — `includes/locale.inc` — The language is set based on the user language settings.
+- [MAIL_LINE_ENDINGS](includes/mail.inc/_file.md#mail_line_endings) — `includes/mail.inc` — Auto-detect appropriate line endings for e-mails.
+- [MAIL_RFC_2822_SPECIALS](includes/mail.inc/_file.md#mail_rfc_2822_specials) — `includes/mail.inc` — Special characters, defined in RFC_2822.
+- [MAINTENANCE_MODE](authorize.php/_file.md#maintenance_mode) — `authorize.php` — Global flag to identify update.php and authorize.php runs.
+- [MAINTENANCE_MODE](install.php/_file.md#maintenance_mode) — `install.php` — Global flag to indicate the site is in installation mode.
+- [MAINTENANCE_MODE](update.php/_file.md#maintenance_mode) — `update.php` — Global flag indicating that update.php is being run.
+- [MARK_NEW](includes/theme.inc/_file.md#mark_new) — `includes/theme.inc` — Mark content as being new.
+- [MARK_READ](includes/theme.inc/_file.md#mark_read) — `includes/theme.inc` — Mark content as read.
+- [MARK_UPDATED](includes/theme.inc/_file.md#mark_updated) — `includes/theme.inc` — Mark content as being updated.
+- [MENU_ACCESS_DENIED](includes/menu.inc/_file.md#menu_access_denied) — `includes/menu.inc` — Menu status code -- Access denied.
+- [MENU_CALLBACK](includes/menu.inc/_file.md#menu_callback) — `includes/menu.inc` — Menu type -- A hidden, internal callback, typically used for API calls.
+- [MENU_CONTEXT_INLINE](includes/menu.inc/_file.md#menu_context_inline) — `includes/menu.inc` — Internal menu flag: Local task should be displayed inline.
+- [MENU_CONTEXT_NONE](includes/menu.inc/_file.md#menu_context_none) — `includes/menu.inc` — Internal menu flag: Invisible local task.
+- [MENU_CONTEXT_PAGE](includes/menu.inc/_file.md#menu_context_page) — `includes/menu.inc` — Internal menu flag: Local task should be displayed in page context.
+- [MENU_CREATED_BY_ADMIN](includes/menu.inc/_file.md#menu_created_by_admin) — `includes/menu.inc` — Internal menu flag -- menu item was created by administrator.
+- [MENU_DEFAULT_LOCAL_TASK](includes/menu.inc/_file.md#menu_default_local_task) — `includes/menu.inc` — Menu type -- The "default" local task, which is initially active.
+- [MENU_FOUND](includes/menu.inc/_file.md#menu_found) — `includes/menu.inc` — Internal menu status code -- Menu item was found.
+- [MENU_IS_LOCAL_ACTION](includes/menu.inc/_file.md#menu_is_local_action) — `includes/menu.inc` — Internal menu flag -- menu item is a local action.
+- [MENU_IS_LOCAL_TASK](includes/menu.inc/_file.md#menu_is_local_task) — `includes/menu.inc` — Internal menu flag -- menu item is a local task.
+- [MENU_IS_ROOT](includes/menu.inc/_file.md#menu_is_root) — `includes/menu.inc` — Internal menu flag -- menu item is the root of the menu tree.
+- [MENU_LINKS_TO_PARENT](includes/menu.inc/_file.md#menu_links_to_parent) — `includes/menu.inc` — Internal menu flag -- menu item links back to its parent.
+- [MENU_LOCAL_ACTION](includes/menu.inc/_file.md#menu_local_action) — `includes/menu.inc` — Menu type -- An action specific to the parent, usually rendered as a link.
+- [MENU_LOCAL_TASK](includes/menu.inc/_file.md#menu_local_task) — `includes/menu.inc` — Menu type -- A task specific to the parent item, usually rendered as a tab.
+- [MENU_MAX_DEPTH](includes/menu.inc/_file.md#menu_max_depth) — `includes/menu.inc` — The maximum depth of a menu links tree - matches the number of p columns.
+- [MENU_MAX_MENU_NAME_LENGTH_UI](modules/menu/menu.module/_file.md#menu_max_menu_name_length_ui) — `modules/menu/menu.module` — Maximum length of menu name as entered by the user. Database length is 32 and we add a menu- prefix.
+- [MENU_MAX_PARTS](includes/menu.inc/_file.md#menu_max_parts) — `includes/menu.inc` — The maximum number of path elements for a menu callback
+- [MENU_MODIFIED_BY_ADMIN](includes/menu.inc/_file.md#menu_modified_by_admin) — `includes/menu.inc` — Internal menu flag -- menu item can be modified by administrator.
+- [MENU_NORMAL_ITEM](includes/menu.inc/_file.md#menu_normal_item) — `includes/menu.inc` — Menu type -- A "normal" menu item that's shown in menu and breadcrumbs.
+- [MENU_NOT_FOUND](includes/menu.inc/_file.md#menu_not_found) — `includes/menu.inc` — Menu status code -- Not found.
+- [MENU_PREFERRED_LINK](includes/menu.inc/_file.md#menu_preferred_link) — `includes/menu.inc` — Reserved key to identify the most specific menu link for a given path.
+- [MENU_SITE_OFFLINE](includes/menu.inc/_file.md#menu_site_offline) — `includes/menu.inc` — Internal menu status code -- Menu item inaccessible because site is offline.
+- [MENU_SITE_ONLINE](includes/menu.inc/_file.md#menu_site_online) — `includes/menu.inc` — Internal menu status code -- Everything is working fine.
+- [MENU_SUGGESTED_ITEM](includes/menu.inc/_file.md#menu_suggested_item) — `includes/menu.inc` — Menu type -- A normal menu item, hidden until enabled by an administrator.
+- [MENU_VISIBLE_IN_BREADCRUMB](includes/menu.inc/_file.md#menu_visible_in_breadcrumb) — `includes/menu.inc` — Internal menu flag -- menu item is visible in the breadcrumb.
+- [MENU_VISIBLE_IN_TREE](includes/menu.inc/_file.md#menu_visible_in_tree) — `includes/menu.inc` — Internal menu flag -- menu item is visible in the menu tree.
+- [MYSQL_IDENTIFIER_QUOTE_CHARACTER_DEFAULT](includes/database/mysql/database.inc/_file.md#mysql_identifier_quote_character_default) — `includes/database/mysql/database.inc` — The default character for quoting identifiers in MySQL.
+- [NODE_ACCESS_ALLOW](modules/node/node.module/_file.md#node_access_allow) — `modules/node/node.module` — Modules should return this value from hook_node_access() to allow access to a node.
+- [NODE_ACCESS_DENY](modules/node/node.module/_file.md#node_access_deny) — `modules/node/node.module` — Modules should return this value from hook_node_access() to deny access to a node.
+- [NODE_ACCESS_IGNORE](modules/node/node.module/_file.md#node_access_ignore) — `modules/node/node.module` — Modules should return this value from hook_node_access() to not affect node access.
+- [NODE_NEW_LIMIT](modules/node/node.module/_file.md#node_new_limit) — `modules/node/node.module` — Nodes changed before this time are always marked as read.
+- [NODE_NOT_PROMOTED](modules/node/node.module/_file.md#node_not_promoted) — `modules/node/node.module` — Node is not promoted to front page.
+- [NODE_NOT_PUBLISHED](modules/node/node.module/_file.md#node_not_published) — `modules/node/node.module` — Node is not published.
+- [NODE_NOT_STICKY](modules/node/node.module/_file.md#node_not_sticky) — `modules/node/node.module` — Node is not sticky at top of the page.
+- [NODE_PROMOTED](modules/node/node.module/_file.md#node_promoted) — `modules/node/node.module` — Node is promoted to front page.
+- [NODE_PUBLISHED](modules/node/node.module/_file.md#node_published) — `modules/node/node.module` — Node is published.
+- [NODE_STICKY](modules/node/node.module/_file.md#node_sticky) — `modules/node/node.module` — Node is sticky at top of the page.
+- [OPENID_DH_DEFAULT_GEN](modules/openid/openid.inc/_file.md#openid_dh_default_gen) — `modules/openid/openid.inc` — Diffie-Hellman generator; used for Diffie-Hellman key exchange computations.
+- [OPENID_DH_DEFAULT_MOD](modules/openid/openid.inc/_file.md#openid_dh_default_mod) — `modules/openid/openid.inc` — Diffie-Hellman Key Exchange Default Value.
+- [OPENID_NS_1_0](modules/openid/openid.inc/_file.md#openid_ns_1_0) — `modules/openid/openid.inc` — OpenID Authentication 1.0 namespace URL; used for backwards-compatibility.
+- [OPENID_NS_1_1](modules/openid/openid.inc/_file.md#openid_ns_1_1) — `modules/openid/openid.inc` — OpenID Authentication 1.1 namespace URL; used for backwards-compatibility.
+- [OPENID_NS_2_0](modules/openid/openid.inc/_file.md#openid_ns_2_0) — `modules/openid/openid.inc` — OpenID Authentication 2.0 namespace URL.
+- [OPENID_NS_AX](modules/openid/openid.inc/_file.md#openid_ns_ax) — `modules/openid/openid.inc` — OpenID Attribute Exchange extension.
+- [OPENID_NS_OPENID](modules/openid/openid.inc/_file.md#openid_ns_openid) — `modules/openid/openid.inc` — OpenID namespace used in Yadis documents.
+- [OPENID_NS_SREG](modules/openid/openid.inc/_file.md#openid_ns_sreg) — `modules/openid/openid.inc` — OpenID Simple Registration extension.
+- [OPENID_NS_XRD](modules/openid/openid.inc/_file.md#openid_ns_xrd) — `modules/openid/openid.inc` — Extensible Resource Descriptor documents.
+- [OPENID_RAND_SOURCE](modules/openid/openid.inc/_file.md#openid_rand_source) — `modules/openid/openid.inc` — Random number generator; used for Diffie-Hellman key exchange computations.
+- [OPENID_SHA1_BLOCKSIZE](modules/openid/openid.inc/_file.md#openid_sha1_blocksize) — `modules/openid/openid.inc` — SHA-1 hash block size; used for Diffie-Hellman key exchange computations.
+- [OS_WINDOWS](modules/system/system.tar.inc/_file.md#os_windows) — `modules/system/system.tar.inc`
+- [OS_WINDOWS](modules/system/system.tar.inc/_file.md#os_windows) — `modules/system/system.tar.inc`
+- [PASS_THROUGH](includes/bootstrap.inc/_file.md#pass_through) — `includes/bootstrap.inc` — Flag used to indicate that text has already been sanitized.
+- [POSTGRESQL_NEXTID_LOCK](includes/database/pgsql/database.inc/_file.md#postgresql_nextid_lock) — `includes/database/pgsql/database.inc` — The name by which to obtain a lock for retrieving the next insert id.
+- [PREG_CLASS_CJK](modules/search/search.module/_file.md#preg_class_cjk) — `modules/search/search.module` — Matches CJK (Chinese, Japanese, Korean) letter-like characters.
+- [PREG_CLASS_NUMBERS](modules/search/search.module/_file.md#preg_class_numbers) — `modules/search/search.module` — Matches all 'N' Unicode character classes (numbers)
+- [PREG_CLASS_PUNCTUATION](modules/search/search.module/_file.md#preg_class_punctuation) — `modules/search/search.module` — Matches all 'P' Unicode character classes (punctuation)
+- [PREG_CLASS_UNICODE_WORD_BOUNDARY](includes/unicode.inc/_file.md#preg_class_unicode_word_boundary) — `includes/unicode.inc` — Matches Unicode characters that are word boundaries.
+- [PROFILE_HIDDEN](modules/profile/profile.module/_file.md#profile_hidden) — `modules/profile/profile.module` — Hidden profile field, only accessible by administrators, modules and themes.
+- [PROFILE_PRIVATE](modules/profile/profile.module/_file.md#profile_private) — `modules/profile/profile.module` — Private field, content only available to privileged users.
+- [PROFILE_PUBLIC](modules/profile/profile.module/_file.md#profile_public) — `modules/profile/profile.module` — Public field, content shown on profile page but not used on member list pages.
+- [PROFILE_PUBLIC_LISTINGS](modules/profile/profile.module/_file.md#profile_public_listings) — `modules/profile/profile.module` — Public field, content shown on profile page and on member list pages.
+- [RDF_DEFAULT_BUNDLE](modules/rdf/rdf.module/_file.md#rdf_default_bundle) — `modules/rdf/rdf.module` — RDF bundle flag: Default bundle.
+- [REGIONS_ALL](modules/system/system.module/_file.md#regions_all) — `modules/system/system.module` — Return all regions.
+- [REGIONS_VISIBLE](modules/system/system.module/_file.md#regions_visible) — `modules/system/system.module` — Return only visible regions.
+- [REGISTRY_RESET_LOOKUP_CACHE](includes/bootstrap.inc/_file.md#registry_reset_lookup_cache) — `includes/bootstrap.inc` — Signals that the registry lookup cache should be reset.
+- [REGISTRY_WRITE_LOOKUP_CACHE](includes/bootstrap.inc/_file.md#registry_write_lookup_cache) — `includes/bootstrap.inc` — Signals that the registry lookup cache should be written to storage.
+- [REQUEST_TIME](includes/bootstrap.inc/_file.md#request_time) — `includes/bootstrap.inc` — Time of the current request in seconds elapsed since the Unix Epoch.
+- [REQUIRED_D6_SCHEMA_VERSION](includes/update.inc/_file.md#required_d6_schema_version) — `includes/update.inc` — Minimum schema version of Drupal 6 required for upgrade to Drupal 7.
+- [REQUIREMENT_ERROR](includes/install.inc/_file.md#requirement_error) — `includes/install.inc` — Requirement severity -- Error condition; abort installation.
+- [REQUIREMENT_INFO](includes/install.inc/_file.md#requirement_info) — `includes/install.inc` — Requirement severity -- Informational message only.
+- [REQUIREMENT_OK](includes/install.inc/_file.md#requirement_ok) — `includes/install.inc` — Requirement severity -- Requirement successfully met.
+- [REQUIREMENT_WARNING](includes/install.inc/_file.md#requirement_warning) — `includes/install.inc` — Requirement severity -- Warning condition; proceed but flag warning.
+- [SAVED_DELETED](includes/common.inc/_file.md#saved_deleted) — `includes/common.inc` — Return status for saving which deleted an existing item.
+- [SAVED_NEW](includes/common.inc/_file.md#saved_new) — `includes/common.inc` — Return status for saving which involved creating a new item.
+- [SAVED_UPDATED](includes/common.inc/_file.md#saved_updated) — `includes/common.inc` — Return status for saving which involved an update to an existing item.
+- [SCHEMA_INSTALLED](includes/install.inc/_file.md#schema_installed) — `includes/install.inc` — Indicates that a module has been installed.
+- [SCHEMA_UNINSTALLED](includes/install.inc/_file.md#schema_uninstalled) — `includes/install.inc` — Indicates that a module has not been installed yet.
+- [SEARCH_TYPE](modules/search/search.test/_file.md#search_type) — `modules/search/search.test`
+- [SEARCH_TYPE_2](modules/search/search.test/_file.md#search_type_2) — `modules/search/search.test`
+- [SEARCH_TYPE_JPN](modules/search/search.test/_file.md#search_type_jpn) — `modules/search/search.test`
+- [SHORTCUT_DEFAULT_SET_NAME](modules/shortcut/shortcut.module/_file.md#shortcut_default_set_name) — `modules/shortcut/shortcut.module` — The name of the default shortcut set.
+- [SIMPLETEST_MINIMUM_PHP_MEMORY_LIMIT](modules/simpletest/simpletest.install/_file.md#simpletest_minimum_php_memory_limit) — `modules/simpletest/simpletest.install` — Minimum value of PHP memory_limit for SimpleTest.
+- [SIMPLETEST_SCRIPT_COLOR_EXCEPTION](scripts/run-tests.sh/_file.md#simpletest_script_color_exception) — `scripts/run-tests.sh`
+- [SIMPLETEST_SCRIPT_COLOR_FAIL](scripts/run-tests.sh/_file.md#simpletest_script_color_fail) — `scripts/run-tests.sh`
+- [SIMPLETEST_SCRIPT_COLOR_PASS](scripts/run-tests.sh/_file.md#simpletest_script_color_pass) — `scripts/run-tests.sh`
+- [SIMPLETEST_SCRIPT_EXIT_EXCEPTION](scripts/run-tests.sh/_file.md#simpletest_script_exit_exception) — `scripts/run-tests.sh`
+- [SIMPLETEST_SCRIPT_EXIT_FAILURE](scripts/run-tests.sh/_file.md#simpletest_script_exit_failure) — `scripts/run-tests.sh`
+- [SIMPLETEST_SCRIPT_EXIT_SUCCESS](scripts/run-tests.sh/_file.md#simpletest_script_exit_success) — `scripts/run-tests.sh`
+- [STREAM_WRAPPERS_ALL](includes/stream_wrappers.inc/_file.md#stream_wrappers_all) — `includes/stream_wrappers.inc` — Stream wrapper bit flag -- a filter that matches all wrappers.
+- [STREAM_WRAPPERS_HIDDEN](includes/stream_wrappers.inc/_file.md#stream_wrappers_hidden) — `includes/stream_wrappers.inc` — Stream wrapper type flag -- not visible in the UI or accessible via web, but readable and writable. E.g. the temporary directory for uploads.
+- [STREAM_WRAPPERS_LOCAL](includes/stream_wrappers.inc/_file.md#stream_wrappers_local) — `includes/stream_wrappers.inc` — Stream wrapper bit flag -- refers to a local file system location.
+- [STREAM_WRAPPERS_LOCAL_HIDDEN](includes/stream_wrappers.inc/_file.md#stream_wrappers_local_hidden) — `includes/stream_wrappers.inc` — Stream wrapper type flag -- hidden, readable and writeable using local files.
+- [STREAM_WRAPPERS_LOCAL_NORMAL](includes/stream_wrappers.inc/_file.md#stream_wrappers_local_normal) — `includes/stream_wrappers.inc` — Stream wrapper type flag -- visible, readable and writeable using local files.
+- [STREAM_WRAPPERS_NORMAL](includes/stream_wrappers.inc/_file.md#stream_wrappers_normal) — `includes/stream_wrappers.inc` — Stream wrapper type flag -- the default when 'type' is omitted from hook_stream_wrappers(). This does not include STREAM_WRAPPERS_LOCAL, because PHP grants a greater trust level to local files (for example, they can be used in an "include" statement, regardless of the "allow_url_include" setting), so stream wrappers need to explicitly opt-in to this.
+- [STREAM_WRAPPERS_READ](includes/stream_wrappers.inc/_file.md#stream_wrappers_read) — `includes/stream_wrappers.inc` — Stream wrapper bit flag -- wrapper is readable (almost always true).
+- [STREAM_WRAPPERS_READ_VISIBLE](includes/stream_wrappers.inc/_file.md#stream_wrappers_read_visible) — `includes/stream_wrappers.inc` — Stream wrapper type flag -- visible and read-only.
+- [STREAM_WRAPPERS_VISIBLE](includes/stream_wrappers.inc/_file.md#stream_wrappers_visible) — `includes/stream_wrappers.inc` — Stream wrapper bit flag -- exposed in the UI and potentially web accessible.
+- [STREAM_WRAPPERS_WRITE](includes/stream_wrappers.inc/_file.md#stream_wrappers_write) — `includes/stream_wrappers.inc` — Stream wrapper bit flag -- wrapper is writeable.
+- [STREAM_WRAPPERS_WRITE_VISIBLE](includes/stream_wrappers.inc/_file.md#stream_wrappers_write_visible) — `includes/stream_wrappers.inc` — Stream wrapper type flag -- visible, readable and writeable.
+- [TRANSLATION_ENABLED](modules/translation/translation.module/_file.md#translation_enabled) — `modules/translation/translation.module` — Identifies a content type which has translation support enabled.
+- [UNICODE_ERROR](includes/unicode.inc/_file.md#unicode_error) — `includes/unicode.inc` — Indicates an error during check for PHP unicode support.
+- [UNICODE_MULTIBYTE](includes/unicode.inc/_file.md#unicode_multibyte) — `includes/unicode.inc` — Indicates that full unicode support with the PHP mbstring extension is being used.
+- [UNICODE_SINGLEBYTE](includes/unicode.inc/_file.md#unicode_singlebyte) — `includes/unicode.inc` — Indicates that standard PHP (emulated) unicode support is being used.
+- [UPDATE_CURRENT](modules/update/update.module/_file.md#update_current) — `modules/update/update.module` — Project is up to date.
+- [UPDATE_DEFAULT_URL](modules/update/update.module/_file.md#update_default_url) — `modules/update/update.module` — URL to check for updates, if a given project doesn't define its own.
+- [UPDATE_FETCH_PENDING](modules/update/update.module/_file.md#update_fetch_pending) — `modules/update/update.module` — We need to (re)fetch available update data for this project.
+- [UPDATE_MAX_FETCH_ATTEMPTS](modules/update/update.module/_file.md#update_max_fetch_attempts) — `modules/update/update.module` — Maximum number of attempts to fetch available update data from a given host.
+- [UPDATE_MAX_FETCH_TIME](modules/update/update.module/_file.md#update_max_fetch_time) — `modules/update/update.module` — Maximum number of seconds to try fetching available update data at a time.
+- [UPDATE_NOT_CHECKED](modules/update/update.module/_file.md#update_not_checked) — `modules/update/update.module` — Project's status cannot be checked.
+- [UPDATE_NOT_CURRENT](modules/update/update.module/_file.md#update_not_current) — `modules/update/update.module` — Project has a new release available, but it is not a security release.
+- [UPDATE_NOT_FETCHED](modules/update/update.module/_file.md#update_not_fetched) — `modules/update/update.module` — There was a failure fetching available update data for this project.
+- [UPDATE_NOT_SECURE](modules/update/update.module/_file.md#update_not_secure) — `modules/update/update.module` — Project is missing security update(s).
+- [UPDATE_NOT_SUPPORTED](modules/update/update.module/_file.md#update_not_supported) — `modules/update/update.module` — Current release is no longer supported by the project maintainer.
+- [UPDATE_REVOKED](modules/update/update.module/_file.md#update_revoked) — `modules/update/update.module` — Current release has been unpublished and is no longer available.
+- [UPDATE_UNKNOWN](modules/update/update.module/_file.md#update_unknown) — `modules/update/update.module` — No available update data was found for project.
+- [USERNAME_MAX_LENGTH](modules/user/user.module/_file.md#username_max_length) — `modules/user/user.module` — Maximum length of username text field.
+- [USER_REGISTER_ADMINISTRATORS_ONLY](modules/user/user.module/_file.md#user_register_administrators_only) — `modules/user/user.module` — Only administrators can create user accounts.
+- [USER_REGISTER_VISITORS](modules/user/user.module/_file.md#user_register_visitors) — `modules/user/user.module` — Visitors can create their own accounts.
+- [USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL](modules/user/user.module/_file.md#user_register_visitors_administrative_approval) — `modules/user/user.module` — Visitors can create accounts, but they don't become active without administrative approval.
+- [VERSION](includes/bootstrap.inc/_file.md#version) — `includes/bootstrap.inc` — The current system version.
+- [WATCHDOG_ALERT](includes/bootstrap.inc/_file.md#watchdog_alert) — `includes/bootstrap.inc` — Log message severity -- Alert: action must be taken immediately.
+- [WATCHDOG_CRITICAL](includes/bootstrap.inc/_file.md#watchdog_critical) — `includes/bootstrap.inc` — Log message severity -- Critical conditions.
+- [WATCHDOG_DEBUG](includes/bootstrap.inc/_file.md#watchdog_debug) — `includes/bootstrap.inc` — Log message severity -- Debug-level messages.
+- [WATCHDOG_EMERGENCY](includes/bootstrap.inc/_file.md#watchdog_emergency) — `includes/bootstrap.inc` — Log message severity -- Emergency: system is unusable.
+- [WATCHDOG_ERROR](includes/bootstrap.inc/_file.md#watchdog_error) — `includes/bootstrap.inc` — Log message severity -- Error conditions.
+- [WATCHDOG_INFO](includes/bootstrap.inc/_file.md#watchdog_info) — `includes/bootstrap.inc` — Log message severity -- Informational messages.
+- [WATCHDOG_NOTICE](includes/bootstrap.inc/_file.md#watchdog_notice) — `includes/bootstrap.inc` — Log message severity -- Normal but significant conditions.
+- [WATCHDOG_WARNING](includes/bootstrap.inc/_file.md#watchdog_warning) — `includes/bootstrap.inc` — Log message severity -- Warning conditions.

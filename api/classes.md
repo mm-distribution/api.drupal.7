@@ -1,0 +1,768 @@
+# Classes and interfaces (derived index)
+
+- [AccessDeniedTestCase](modules/system/system.test/AccessDeniedTestCase.md) (class) — `modules/system/system.test` — Tests custom access denied functionality.
+- [ActionLoopTestCase](modules/simpletest/tests/actions.test/ActionLoopTestCase.md) (class) — `modules/simpletest/tests/actions.test` — Test actions executing in a potential loop, and make sure they abort properly.
+- [ActionsConfigurationTestCase](modules/simpletest/tests/actions.test/ActionsConfigurationTestCase.md) (class) — `modules/simpletest/tests/actions.test`
+- [AddFeedTestCase](modules/aggregator/aggregator.test/AddFeedTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests adding aggregator feeds.
+- [AdminMetaTagTestCase](modules/system/system.test/AdminMetaTagTestCase.md) (class) — `modules/system/system.test`
+- [AggregatorConfigurationTestCase](modules/aggregator/aggregator.test/AggregatorConfigurationTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests functionality of the configuration settings in the Aggregator module.
+- [AggregatorCronTestCase](modules/aggregator/aggregator.test/AggregatorCronTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests functionality of the cron process in the Aggregator module.
+- [AggregatorRenderingTestCase](modules/aggregator/aggregator.test/AggregatorRenderingTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests rendering functionality in the Aggregator module.
+- [AggregatorTestCase](modules/aggregator/aggregator.test/AggregatorTestCase.md) (class) — `modules/aggregator/aggregator.test` — Defines a base class for testing the Aggregator module.
+- [AggregatorUpdatePathTestCase](modules/simpletest/tests/upgrade/update.aggregator.test/AggregatorUpdatePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/update.aggregator.test`
+- [AJAXCommandsTestCase](modules/simpletest/tests/ajax.test/AJAXCommandsTestCase.md) (class) — `modules/simpletest/tests/ajax.test` — Tests Ajax framework commands.
+- [AJAXElementValidation](modules/simpletest/tests/ajax.test/AJAXElementValidation.md) (class) — `modules/simpletest/tests/ajax.test` — Miscellaneous Ajax tests using ajax_test module.
+- [AJAXFormPageCacheTestCase](modules/simpletest/tests/ajax.test/AJAXFormPageCacheTestCase.md) (class) — `modules/simpletest/tests/ajax.test` — Test Ajax forms when page caching for anonymous users is turned on.
+- [AJAXFormValuesTestCase](modules/simpletest/tests/ajax.test/AJAXFormValuesTestCase.md) (class) — `modules/simpletest/tests/ajax.test` — Test that $form_state['values'] is properly delivered to $ajax['callback'].
+- [AJAXFrameworkTestCase](modules/simpletest/tests/ajax.test/AJAXFrameworkTestCase.md) (class) — `modules/simpletest/tests/ajax.test` — Tests primary Ajax framework functions.
+- [AJAXMultiFormTestCase](modules/simpletest/tests/ajax.test/AJAXMultiFormTestCase.md) (class) — `modules/simpletest/tests/ajax.test` — Tests that Ajax-enabled forms work when multiple instances of the same form are on a page.
+- [AJAXTestCase](modules/simpletest/tests/ajax.test/AJAXTestCase.md) (class) — `modules/simpletest/tests/ajax.test`
+- [AnnounceFeedTestInvalidJsonTestCase](modules/announcements_feed/tests/announce_feed_test.test/AnnounceFeedTestInvalidJsonTestCase.md) (class) — `modules/announcements_feed/tests/announce_feed_test.test` — Tests the announcements feed with invalid JSON URLs.
+- [AnnounceFeedTestRelevantVersion](modules/announcements_feed/tests/announce_feed_test.test/AnnounceFeedTestRelevantVersion.md) (class) — `modules/announcements_feed/tests/announce_feed_test.test` — Unit test for version compatibility functions.
+- [AnnounceFeedTestSanitizationTestCase](modules/announcements_feed/tests/announce_feed_test.test/AnnounceFeedTestSanitizationTestCase.md) (class) — `modules/announcements_feed/tests/announce_feed_test.test` — Tests the announcements feed with malicious content.
+- [AnnounceFeedTestValidateJsonFeed](modules/announcements_feed/tests/announce_feed_test.test/AnnounceFeedTestValidateJsonFeed.md) (class) — `modules/announcements_feed/tests/announce_feed_test.test` — Tests for validating JSON feed with different JSON URLs.
+- [AnnounceFeedTestValidatePermissions](modules/announcements_feed/tests/announce_feed_test.test/AnnounceFeedTestValidatePermissions.md) (class) — `modules/announcements_feed/tests/announce_feed_test.test` — Test the Announcements module permissions.
+- [AnnounceFeedTestValidateUrl](modules/announcements_feed/tests/announce_feed_test.test/AnnounceFeedTestValidateUrl.md) (class) — `modules/announcements_feed/tests/announce_feed_test.test` — Unit test for validate URL functions.
+- [Archive_Tar](modules/system/system.tar.inc/Archive_Tar.md) (class) — `modules/system/system.tar.inc` — Creates a (compressed) Tar archive
+- [ArchiverInterface](includes/archiver.inc/ArchiverInterface.md) (interface) — `includes/archiver.inc` — Defines the common interface for all Archiver classes.
+- [ArchiverTar](modules/system/system.archiver.inc/ArchiverTar.md) (class) — `modules/system/system.archiver.inc` — Archiver for .tar files.
+- [ArchiverZip](modules/system/system.archiver.inc/ArchiverZip.md) (class) — `modules/system/system.archiver.inc` — Archiver for .zip files.
+- [ArrayDiffUnitTest](modules/simpletest/tests/common.test/ArrayDiffUnitTest.md) (class) — `modules/simpletest/tests/common.test` — Test array diff functions.
+- [Assertable](misc/typo3/phar-stream-wrapper/src/Assertable.php/Assertable.md) (interface) — `misc/typo3/phar-stream-wrapper/src/Assertable.php`
+- [BasicMinimalUpdatePath](modules/simpletest/tests/upgrade/upgrade.test/BasicMinimalUpdatePath.md) (class) — `modules/simpletest/tests/upgrade/upgrade.test` — Performs point release update tests on a bare database.
+- [BasicStandardUpdatePath](modules/simpletest/tests/upgrade/upgrade.test/BasicStandardUpdatePath.md) (class) — `modules/simpletest/tests/upgrade/upgrade.test` — Performs point release update tests on a bare database.
+- [BasicUpgradePath](modules/simpletest/tests/upgrade/upgrade.test/BasicUpgradePath.md) (class) — `modules/simpletest/tests/upgrade/upgrade.test` — Perform basic upgrade tests.
+- [BatchMemoryQueue](includes/batch.queue.inc/BatchMemoryQueue.md) (class) — `includes/batch.queue.inc` — Defines a batch queue for non-progressive batches.
+- [BatchPageTestCase](modules/simpletest/tests/batch.test/BatchPageTestCase.md) (class) — `modules/simpletest/tests/batch.test` — Tests for the Batch API Progress page.
+- [BatchPercentagesUnitTestCase](modules/simpletest/tests/batch.test/BatchPercentagesUnitTestCase.md) (class) — `modules/simpletest/tests/batch.test` — Tests the function _batch_api_percentage() to make sure that the rounding works properly in all cases.
+- [BatchProcessingTestCase](modules/simpletest/tests/batch.test/BatchProcessingTestCase.md) (class) — `modules/simpletest/tests/batch.test` — Tests for the Batch API.
+- [BatchQueue](includes/batch.queue.inc/BatchQueue.md) (class) — `includes/batch.queue.inc` — Defines a batch queue.
+- [Behavior](misc/typo3/phar-stream-wrapper/src/Behavior.php/Behavior.md) (class) — `misc/typo3/phar-stream-wrapper/src/Behavior.php`
+- [BlockAdminThemeTestCase](modules/block/block.test/BlockAdminThemeTestCase.md) (class) — `modules/block/block.test` — Test the block system with admin themes.
+- [BlockCacheTestCase](modules/block/block.test/BlockCacheTestCase.md) (class) — `modules/block/block.test` — Test block caching.
+- [BlockHashTestCase](modules/block/block.test/BlockHashTestCase.md) (class) — `modules/block/block.test` — Tests that block rehashing works correctly.
+- [BlockHiddenRegionTestCase](modules/block/block.test/BlockHiddenRegionTestCase.md) (class) — `modules/block/block.test` — Tests that hidden regions do not inherit blocks when a theme is enabled.
+- [BlockHTMLIdTestCase](modules/block/block.test/BlockHTMLIdTestCase.md) (class) — `modules/block/block.test` — Test block HTML id validity.
+- [BlockInvalidRegionTestCase](modules/block/block.test/BlockInvalidRegionTestCase.md) (class) — `modules/block/block.test` — Tests that a block assigned to an invalid region triggers the warning.
+- [BlockTemplateSuggestionsUnitTest](modules/block/block.test/BlockTemplateSuggestionsUnitTest.md) (class) — `modules/block/block.test` — Unit tests for template_preprocess_block().
+- [BlockTestCase](modules/block/block.test/BlockTestCase.md) (class) — `modules/block/block.test`
+- [BlockViewModuleDeltaAlterWebTest](modules/block/block.test/BlockViewModuleDeltaAlterWebTest.md) (class) — `modules/block/block.test` — Tests for hook_block_view_MODULE_DELTA_alter().
+- [BlogTestCase](modules/blog/blog.test/BlogTestCase.md) (class) — `modules/blog/blog.test`
+- [BookTestCase](modules/book/book.test/BookTestCase.md) (class) — `modules/book/book.test` — Tests the functionality of the Book module.
+- [BootstrapAutoloadTestCase](modules/simpletest/tests/bootstrap.test/BootstrapAutoloadTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Tests the auto-loading behavior of the code registry.
+- [BootstrapDestinationTestCase](modules/simpletest/tests/bootstrap.test/BootstrapDestinationTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Tests for $_GET['destination'] and $_REQUEST['destination'] validation.
+- [BootstrapDrupalCacheArrayTestCase](modules/simpletest/tests/bootstrap.test/BootstrapDrupalCacheArrayTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Tests DrupalCacheArray functionality.
+- [BootstrapGetFilenameTestCase](modules/simpletest/tests/bootstrap.test/BootstrapGetFilenameTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Test drupal_get_filename()'s availability.
+- [BootstrapGetFilenameWebTestCase](modules/simpletest/tests/bootstrap.test/BootstrapGetFilenameWebTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Test drupal_get_filename() in the context of a full Drupal installation.
+- [BootstrapIPAddressTestCase](modules/simpletest/tests/bootstrap.test/BootstrapIPAddressTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test`
+- [BootstrapMiscTestCase](modules/simpletest/tests/bootstrap.test/BootstrapMiscTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Test miscellaneous functions in bootstrap.inc.
+- [BootstrapOverrideServerVariablesTestCase](modules/simpletest/tests/bootstrap.test/BootstrapOverrideServerVariablesTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Tests for overriding server variables via the API.
+- [BootstrapPageCacheTestCase](modules/simpletest/tests/bootstrap.test/BootstrapPageCacheTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test`
+- [BootstrapResettableStaticTestCase](modules/simpletest/tests/bootstrap.test/BootstrapResettableStaticTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Test that resetting static variables works.
+- [BootstrapTimerTestCase](modules/simpletest/tests/bootstrap.test/BootstrapTimerTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test`
+- [BootstrapTrustedHostsTestCase](modules/simpletest/tests/bootstrap.test/BootstrapTrustedHostsTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Test the trusted HTTP host configuration.
+- [BootstrapVariableTestCase](modules/simpletest/tests/bootstrap.test/BootstrapVariableTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test`
+- [CacheClearCase](modules/simpletest/tests/cache.test/CacheClearCase.md) (class) — `modules/simpletest/tests/cache.test` — Test cache clearing methods.
+- [CacheGetMultipleUnitTest](modules/simpletest/tests/cache.test/CacheGetMultipleUnitTest.md) (class) — `modules/simpletest/tests/cache.test` — Test cache_get_multiple().
+- [CacheIsEmptyCase](modules/simpletest/tests/cache.test/CacheIsEmptyCase.md) (class) — `modules/simpletest/tests/cache.test` — Test cache_is_empty() function.
+- [CacheSavingCase](modules/simpletest/tests/cache.test/CacheSavingCase.md) (class) — `modules/simpletest/tests/cache.test`
+- [CacheTestCase](modules/simpletest/tests/cache.test/CacheTestCase.md) (class) — `modules/simpletest/tests/cache.test`
+- [CascadingStylesheetsTestCase](modules/simpletest/tests/common.test/CascadingStylesheetsTestCase.md) (class) — `modules/simpletest/tests/common.test` — Test the Drupal CSS system.
+- [CascadingStylesheetsUnitTest](modules/simpletest/tests/common.test/CascadingStylesheetsUnitTest.md) (class) — `modules/simpletest/tests/common.test` — CSS Unit Tests.
+- [CategorizeFeedItemTestCase](modules/aggregator/aggregator.test/CategorizeFeedItemTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests categorization functionality in the Aggregator module.
+- [CategorizeFeedTestCase](modules/aggregator/aggregator.test/CategorizeFeedTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests the categorize feed functionality in the Aggregator module.
+- [Collectable](misc/typo3/phar-stream-wrapper/src/Collectable.php/Collectable.md) (interface) — `misc/typo3/phar-stream-wrapper/src/Collectable.php`
+- [ColorTestCase](modules/color/color.test/ColorTestCase.md) (class) — `modules/color/color.test` — Tests the Color module functionality.
+- [ColorUnitTestCase](modules/color/color.test/ColorUnitTestCase.md) (class) — `modules/color/color.test` — Unit tests for the color.module
+- [CommentActionsTestCase](modules/comment/comment.test/CommentActionsTestCase.md) (class) — `modules/comment/comment.test` — Test actions provided by the comment module.
+- [CommentAnonymous](modules/comment/comment.test/CommentAnonymous.md) (class) — `modules/comment/comment.test`
+- [CommentApprovalTest](modules/comment/comment.test/CommentApprovalTest.md) (class) — `modules/comment/comment.test`
+- [CommentAuthorDeletionTestCase](modules/comment/comment.test/CommentAuthorDeletionTestCase.md) (class) — `modules/comment/comment.test` — Tests the behavior of comments when the comment author is deleted.
+- [CommentBlockFunctionalTest](modules/comment/comment.test/CommentBlockFunctionalTest.md) (class) — `modules/comment/comment.test` — Functional tests for the comment module blocks.
+- [CommentContentRebuild](modules/comment/comment.test/CommentContentRebuild.md) (class) — `modules/comment/comment.test` — Test to make sure comment content is rebuilt.
+- [CommentController](modules/comment/comment.module/CommentController.md) (class) — `modules/comment/comment.module` — Controller class for comments.
+- [CommentFieldsTest](modules/comment/comment.test/CommentFieldsTest.md) (class) — `modules/comment/comment.test` — Test fields on comments.
+- [CommentHelperCase](modules/comment/comment.test/CommentHelperCase.md) (class) — `modules/comment/comment.test`
+- [CommentInterfaceTest](modules/comment/comment.test/CommentInterfaceTest.md) (class) — `modules/comment/comment.test`
+- [CommentNodeAccessTest](modules/comment/comment.test/CommentNodeAccessTest.md) (class) — `modules/comment/comment.test` — Tests comments with node access.
+- [CommentNodeChangesTestCase](modules/comment/comment.test/CommentNodeChangesTestCase.md) (class) — `modules/comment/comment.test` — Tests that comments behave correctly when the node is changed.
+- [CommentPagerTest](modules/comment/comment.test/CommentPagerTest.md) (class) — `modules/comment/comment.test` — Verify pagination of comments.
+- [CommentPreviewTest](modules/comment/comment.test/CommentPreviewTest.md) (class) — `modules/comment/comment.test` — Test previewing comments.
+- [CommentRSSUnitTest](modules/comment/comment.test/CommentRSSUnitTest.md) (class) — `modules/comment/comment.test` — Unit tests for comment module integration with RSS feeds.
+- [CommentThreadingTestCase](modules/comment/comment.test/CommentThreadingTestCase.md) (class) — `modules/comment/comment.test` — Tests comment threading.
+- [CommentTokenReplaceTestCase](modules/comment/comment.test/CommentTokenReplaceTestCase.md) (class) — `modules/comment/comment.test` — Test comment token replacement in strings.
+- [CommentUninstallTestCase](modules/comment/comment.test/CommentUninstallTestCase.md) (class) — `modules/comment/comment.test` — Tests uninstalling the comment module.
+- [CommentUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.comment.test/CommentUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.comment.test` — Upgrade test for comment.module.
+- [CommonSizeTestCase](modules/simpletest/tests/common.test/CommonSizeTestCase.md) (class) — `modules/simpletest/tests/common.test` — Tests file size parsing and formatting functions.
+- [CommonURLUnitTest](modules/simpletest/tests/common.test/CommonURLUnitTest.md) (class) — `modules/simpletest/tests/common.test` — Tests for URL generation functions.
+- [CommonURLWebTest](modules/simpletest/tests/common.test/CommonURLWebTest.md) (class) — `modules/simpletest/tests/common.test` — Web tests for URL generation functions.
+- [CommonXssUnitTest](modules/simpletest/tests/common.test/CommonXssUnitTest.md) (class) — `modules/simpletest/tests/common.test` — Tests for check_plain(), filter_xss(), format_string(), and check_url().
+- [ConfirmFormTest](modules/system/system.test/ConfirmFormTest.md) (class) — `modules/system/system.test` — Tests confirm form destinations.
+- [ConjunctionInterceptor](misc/typo3/phar-stream-wrapper/src/Interceptor/ConjunctionInterceptor.php/ConjunctionInterceptor.md) (class) — `misc/typo3/phar-stream-wrapper/src/Interceptor/ConjunctionInterceptor.php`
+- [ConnectionUnitTest](modules/simpletest/tests/database_test.test/ConnectionUnitTest.md) (class) — `modules/simpletest/tests/database_test.test` — Tests management of database connections.
+- [ContactPersonalTestCase](modules/contact/contact.test/ContactPersonalTestCase.md) (class) — `modules/contact/contact.test` — Tests the personal contact form.
+- [ContactSitewideTestCase](modules/contact/contact.test/ContactSitewideTestCase.md) (class) — `modules/contact/contact.test` — Tests the site-wide contact form.
+- [Container](misc/typo3/phar-stream-wrapper/src/Phar/Container.php/Container.md) (class) — `misc/typo3/phar-stream-wrapper/src/Phar/Container.php`
+- [ContextualDynamicContextTestCase](modules/contextual/contextual.test/ContextualDynamicContextTestCase.md) (class) — `modules/contextual/contextual.test` — Tests accessible links after inaccessible links on dynamic context.
+- [CronQueueTestCallbackClass](modules/system/tests/cron_queue_test.module/CronQueueTestCallbackClass.md) (class) — `modules/system/tests/cron_queue_test.module`
+- [CronQueueTestCase](modules/system/system.test/CronQueueTestCase.md) (class) — `modules/system/system.test` — Test execution of the cron queue.
+- [CronRunTestCase](modules/system/system.test/CronRunTestCase.md) (class) — `modules/system/system.test`
+- [DashboardBlocksTestCase](modules/dashboard/dashboard.test/DashboardBlocksTestCase.md) (class) — `modules/dashboard/dashboard.test` — Tests the Dashboard module blocks.
+- [Database](includes/database/database.inc/Database.md) (class) — `includes/database/database.inc` — Primary front-controller for the database system.
+- [DatabaseAlterTestCase](modules/simpletest/tests/database_test.test/DatabaseAlterTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Select alter tests.
+- [DatabaseBasicSyntaxTestCase](modules/simpletest/tests/database_test.test/DatabaseBasicSyntaxTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test how the current database driver interprets the SQL syntax.
+- [DatabaseCaseSensitivityTestCase](modules/simpletest/tests/database_test.test/DatabaseCaseSensitivityTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test case sensitivity handling.
+- [DatabaseCondition](includes/database/query.inc/DatabaseCondition.md) (class) — `includes/database/query.inc` — Generic class for a series of conditions in a query.
+- [DatabaseConnection](includes/database/database.inc/DatabaseConnection.md) (class) — `includes/database/database.inc` — Base Database API class.
+- [DatabaseConnection_mysql](includes/database/mysql/database.inc/DatabaseConnection_mysql.md) (class) — `includes/database/mysql/database.inc`
+- [DatabaseConnection_pgsql](includes/database/pgsql/database.inc/DatabaseConnection_pgsql.md) (class) — `includes/database/pgsql/database.inc`
+- [DatabaseConnection_sqlite](includes/database/sqlite/database.inc/DatabaseConnection_sqlite.md) (class) — `includes/database/sqlite/database.inc` — Specific SQLite implementation of DatabaseConnection.
+- [DatabaseConnectionNotDefinedException](includes/database/database.inc/DatabaseConnectionNotDefinedException.md) (class) — `includes/database/database.inc` — Exception thrown if an undefined database connection is requested.
+- [DatabaseConnectionTestCase](modules/simpletest/tests/database_test.test/DatabaseConnectionTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test connection management.
+- [DatabaseDeleteTruncateTestCase](modules/simpletest/tests/database_test.test/DatabaseDeleteTruncateTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Delete/Truncate tests.
+- [DatabaseDriverNotSpecifiedException](includes/database/database.inc/DatabaseDriverNotSpecifiedException.md) (class) — `includes/database/database.inc` — Exception thrown if no driver is specified for a database connection.
+- [DatabaseEmptyStatementTestCase](modules/simpletest/tests/database_test.test/DatabaseEmptyStatementTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Tests the empty pseudo-statement class.
+- [DatabaseFetch2TestCase](modules/simpletest/tests/database_test.test/DatabaseFetch2TestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test fetch actions, part 2.
+- [DatabaseFetchTestCase](modules/simpletest/tests/database_test.test/DatabaseFetchTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test fetch actions, part 1.
+- [DatabaseInsertDefaultsTestCase](modules/simpletest/tests/database_test.test/DatabaseInsertDefaultsTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Insert tests for "database default" values.
+- [DatabaseInsertLOBTestCase](modules/simpletest/tests/database_test.test/DatabaseInsertLOBTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Insert tests using LOB fields, which are weird on some databases.
+- [DatabaseInsertTestCase](modules/simpletest/tests/database_test.test/DatabaseInsertTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test the insert builder.
+- [DatabaseInvalidDataTestCase](modules/simpletest/tests/database_test.test/DatabaseInvalidDataTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test invalid data handling.
+- [DatabaseLog](includes/database/log.inc/DatabaseLog.md) (class) — `includes/database/log.inc` — Database query logger.
+- [DatabaseLoggingTestCase](modules/simpletest/tests/database_test.test/DatabaseLoggingTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Query logging tests.
+- [DatabaseMergeTestCase](modules/simpletest/tests/database_test.test/DatabaseMergeTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test the MERGE query builder.
+- [DatabaseNextIdCase](modules/simpletest/tests/database_test.test/DatabaseNextIdCase.md) (class) — `modules/simpletest/tests/database_test.test` — Check the sequences API.
+- [DatabaseQueryTestCase](modules/simpletest/tests/database_test.test/DatabaseQueryTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Drupal-specific SQL syntax tests.
+- [DatabaseRangeQueryTestCase](modules/simpletest/tests/database_test.test/DatabaseRangeQueryTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Range query tests.
+- [DatabaseRegressionTestCase](modules/simpletest/tests/database_test.test/DatabaseRegressionTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Regression tests.
+- [DatabaseReservedKeywordTestCase](modules/simpletest/tests/database_test.test/DatabaseReservedKeywordTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test reserved keyword handling (introduced for MySQL 8+)
+- [DatabaseSchema](includes/database/schema.inc/DatabaseSchema.md) (class) — `includes/database/schema.inc` — Base class for database schema definitions.
+- [DatabaseSchema_mysql](includes/database/mysql/schema.inc/DatabaseSchema_mysql.md) (class) — `includes/database/mysql/schema.inc`
+- [DatabaseSchema_pgsql](includes/database/pgsql/schema.inc/DatabaseSchema_pgsql.md) (class) — `includes/database/pgsql/schema.inc`
+- [DatabaseSchema_sqlite](includes/database/sqlite/schema.inc/DatabaseSchema_sqlite.md) (class) — `includes/database/sqlite/schema.inc`
+- [DatabaseSchemaObjectDoesNotExistException](includes/database/schema.inc/DatabaseSchemaObjectDoesNotExistException.md) (class) — `includes/database/schema.inc` — Exception thrown if an object being modified doesn't exist yet.
+- [DatabaseSchemaObjectExistsException](includes/database/schema.inc/DatabaseSchemaObjectExistsException.md) (class) — `includes/database/schema.inc` — Exception thrown if an object being created already exists.
+- [DatabaseSelectCloneTest](modules/simpletest/tests/database_test.test/DatabaseSelectCloneTest.md) (class) — `modules/simpletest/tests/database_test.test` — Test cloning Select queries.
+- [DatabaseSelectComplexTestCase](modules/simpletest/tests/database_test.test/DatabaseSelectComplexTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test more complex select statements.
+- [DatabaseSelectComplexTestCase2](modules/simpletest/tests/database_test.test/DatabaseSelectComplexTestCase2.md) (class) — `modules/simpletest/tests/database_test.test` — Test more complex select statements, part 2.
+- [DatabaseSelectOrderedTestCase](modules/simpletest/tests/database_test.test/DatabaseSelectOrderedTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test select with order by clauses.
+- [DatabaseSelectPagerDefaultTestCase](modules/simpletest/tests/database_test.test/DatabaseSelectPagerDefaultTestCase.md) (class) — `modules/simpletest/tests/database_test.test`
+- [DatabaseSelectSubqueryTestCase](modules/simpletest/tests/database_test.test/DatabaseSelectSubqueryTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test case for subselects in a dynamic SELECT query.
+- [DatabaseSelectTableSortDefaultTestCase](modules/simpletest/tests/database_test.test/DatabaseSelectTableSortDefaultTestCase.md) (class) — `modules/simpletest/tests/database_test.test`
+- [DatabaseSelectTestCase](modules/simpletest/tests/database_test.test/DatabaseSelectTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test the SELECT builder.
+- [DatabaseSerializeQueryTestCase](modules/simpletest/tests/database_test.test/DatabaseSerializeQueryTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Query serialization tests.
+- [DatabaseStatement_sqlite](includes/database/sqlite/database.inc/DatabaseStatement_sqlite.md) (class) — `includes/database/sqlite/database.inc` — Specific SQLite implementation of DatabaseConnection.
+- [DatabaseStatementBase](includes/database/database.inc/DatabaseStatementBase.md) (class) — `includes/database/database.inc` — Default implementation of DatabaseStatementInterface.
+- [DatabaseStatementEmpty](includes/database/database.inc/DatabaseStatementEmpty.md) (class) — `includes/database/database.inc` — Empty implementation of a database statement.
+- [DatabaseStatementInterface](includes/database/database.inc/DatabaseStatementInterface.md) (interface) — `includes/database/database.inc` — Represents a prepared statement.
+- [DatabaseStatementPrefetch](includes/database/prefetch.inc/DatabaseStatementPrefetch.md) (class) — `includes/database/prefetch.inc` — An implementation of DatabaseStatementInterface that prefetches all data.
+- [DatabaseTablePrefixTestCase](modules/simpletest/tests/database_test.test/DatabaseTablePrefixTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test table prefix handling.
+- [DatabaseTaggingTestCase](modules/simpletest/tests/database_test.test/DatabaseTaggingTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Select tagging tests.
+- [DatabaseTaskException](includes/install.inc/DatabaseTaskException.md) (class) — `includes/install.inc` — Exception thrown if the database installer fails.
+- [DatabaseTasks](includes/install.inc/DatabaseTasks.md) (class) — `includes/install.inc` — Database installer structure.
+- [DatabaseTasks_mysql](includes/database/mysql/install.inc/DatabaseTasks_mysql.md) (class) — `includes/database/mysql/install.inc` — Specifies installation tasks for MySQL and equivalent databases.
+- [DatabaseTasks_pgsql](includes/database/pgsql/install.inc/DatabaseTasks_pgsql.md) (class) — `includes/database/pgsql/install.inc`
+- [DatabaseTasks_sqlite](includes/database/sqlite/install.inc/DatabaseTasks_sqlite.md) (class) — `includes/database/sqlite/install.inc`
+- [DatabaseTemporaryQueryTestCase](modules/simpletest/tests/database_test.test/DatabaseTemporaryQueryTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Temporary query tests.
+- [DatabaseTestCase](modules/simpletest/tests/database_test.test/DatabaseTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Base test class for databases.
+- [DatabaseTransaction](includes/database/database.inc/DatabaseTransaction.md) (class) — `includes/database/database.inc` — A wrapper class for creating and managing database transactions.
+- [DatabaseTransactionCommitFailedException](includes/database/database.inc/DatabaseTransactionCommitFailedException.md) (class) — `includes/database/database.inc` — Exception thrown when a commit() function fails.
+- [DatabaseTransactionExplicitCommitNotAllowedException](includes/database/database.inc/DatabaseTransactionExplicitCommitNotAllowedException.md) (class) — `includes/database/database.inc` — Exception to deny attempts to explicitly manage transactions.
+- [DatabaseTransactionNameNonUniqueException](includes/database/database.inc/DatabaseTransactionNameNonUniqueException.md) (class) — `includes/database/database.inc` — Exception thrown when a savepoint or transaction name occurs twice.
+- [DatabaseTransactionNoActiveException](includes/database/database.inc/DatabaseTransactionNoActiveException.md) (class) — `includes/database/database.inc` — Exception for when popTransaction() is called with no active transaction.
+- [DatabaseTransactionOutOfOrderException](includes/database/database.inc/DatabaseTransactionOutOfOrderException.md) (class) — `includes/database/database.inc` — Exception thrown when a rollback() resulted in other active transactions being rolled-back.
+- [DatabaseTransactionTestCase](modules/simpletest/tests/database_test.test/DatabaseTransactionTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test transaction support, particularly nesting.
+- [DatabaseUpdateComplexTestCase](modules/simpletest/tests/database_test.test/DatabaseUpdateComplexTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Tests for more complex update statements.
+- [DatabaseUpdateLOBTestCase](modules/simpletest/tests/database_test.test/DatabaseUpdateLOBTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Test update queries involving LOB values.
+- [DatabaseUpdateTestCase](modules/simpletest/tests/database_test.test/DatabaseUpdateTestCase.md) (class) — `modules/simpletest/tests/database_test.test` — Update builder tests.
+- [DateFormatTestCase](modules/system/system.test/DateFormatTestCase.md) (class) — `modules/system/system.test` — Tests date format configuration.
+- [DateTimeFunctionalTest](modules/system/system.test/DateTimeFunctionalTest.md) (class) — `modules/system/system.test` — Tests generic date and time handling capabilities of Drupal.
+- [DBLogTestCase](modules/dblog/dblog.test/DBLogTestCase.md) (class) — `modules/dblog/dblog.test` — Tests logging messages to the database.
+- [DefaultMailSystem](modules/system/system.mail.inc/DefaultMailSystem.md) (class) — `modules/system/system.mail.inc` — The default Drupal mail backend using PHP's mail function.
+- [DeleteQuery](includes/database/query.inc/DeleteQuery.md) (class) — `includes/database/query.inc` — General class for an abstracted DELETE operation.
+- [DeleteQuery_sqlite](includes/database/sqlite/query.inc/DeleteQuery_sqlite.md) (class) — `includes/database/sqlite/query.inc` — SQLite specific implementation of DeleteQuery.
+- [DeserializationException](misc/typo3/phar-stream-wrapper/src/Phar/DeserializationException.php/DeserializationException.md) (class) — `misc/typo3/phar-stream-wrapper/src/Phar/DeserializationException.php`
+- [DisabledNodeTypeTestCase](modules/simpletest/tests/upgrade/upgrade.node.test/DisabledNodeTypeTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.node.test` — Tests the upgrade path for node disabled node types.
+- [DrupalAddFeedTestCase](modules/simpletest/tests/common.test/DrupalAddFeedTestCase.md) (class) — `modules/simpletest/tests/common.test` — Basic tests for drupal_add_feed().
+- [DrupalAddHtmlHeadLinkTest](modules/simpletest/tests/common.test/DrupalAddHtmlHeadLinkTest.md) (class) — `modules/simpletest/tests/common.test` — Test for drupal_add_html_head_link().
+- [DrupalAlterTestCase](modules/simpletest/tests/common.test/DrupalAlterTestCase.md) (class) — `modules/simpletest/tests/common.test` — Tests for URL generation functions.
+- [DrupalAttributesUnitTest](modules/simpletest/tests/common.test/DrupalAttributesUnitTest.md) (class) — `modules/simpletest/tests/common.test` — Tests for the format_date() function.
+- [DrupalAutoloadTestClass](modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_class.inc/DrupalAutoloadTestClass.md) (class) — `modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_class.inc` — This class is empty because we only care if Drupal can find it.
+- [DrupalAutoloadTestInterface](modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_interface.inc/DrupalAutoloadTestInterface.md) (interface) — `modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_interface.inc` — This interface is empty because we only care if Drupal can find it.
+- [DrupalAutoloadTestTrait](modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_trait.sh/DrupalAutoloadTestTrait.md) (trait) — `modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_trait.sh` — This trait is empty because we only care if Drupal can find it.
+- [DrupalCacheArray](includes/bootstrap.inc/DrupalCacheArray.md) (class) — `includes/bootstrap.inc` — Provides a caching wrapper to be used in place of large array structures.
+- [DrupalCacheInterface](includes/cache.inc/DrupalCacheInterface.md) (interface) — `includes/cache.inc` — Defines an interface for cache implementations.
+- [DrupalDataApiTest](modules/simpletest/tests/common.test/DrupalDataApiTest.md) (class) — `modules/simpletest/tests/common.test` — Tests for CRUD API functions.
+- [DrupalDatabaseCache](includes/cache.inc/DrupalDatabaseCache.md) (class) — `includes/cache.inc` — Defines a default cache implementation.
+- [DrupalDefaultEntityController](includes/entity.inc/DrupalDefaultEntityController.md) (class) — `includes/entity.inc` — Default implementation of DrupalEntityControllerInterface.
+- [DrupalDummyRemoteStreamWrapper](modules/simpletest/tests/file_test.module/DrupalDummyRemoteStreamWrapper.md) (class) — `modules/simpletest/tests/file_test.module` — Helper class for testing the stream wrapper registry.
+- [DrupalDummyStreamWrapper](modules/simpletest/tests/file_test.module/DrupalDummyStreamWrapper.md) (class) — `modules/simpletest/tests/file_test.module` — Helper class for testing the stream wrapper registry.
+- [DrupalEntityControllerInterface](includes/entity.inc/DrupalEntityControllerInterface.md) (interface) — `includes/entity.inc` — Interface for entity controller classes.
+- [DrupalErrorCollectionUnitTest](modules/simpletest/tests/common.test/DrupalErrorCollectionUnitTest.md) (class) — `modules/simpletest/tests/common.test` — Tests Simpletest error and exception collector.
+- [DrupalErrorHandlerTestCase](modules/simpletest/tests/error.test/DrupalErrorHandlerTestCase.md) (class) — `modules/simpletest/tests/error.test` — Tests Drupal error and exception handlers.
+- [DrupalFakeCache](includes/cache-install.inc/DrupalFakeCache.md) (class) — `includes/cache-install.inc` — Defines a stub cache implementation to be used during installation.
+- [DrupalGetQueryArrayTestCase](modules/simpletest/tests/common.test/DrupalGetQueryArrayTestCase.md) (class) — `modules/simpletest/tests/common.test` — Tests the functionality of drupal_get_query_array().
+- [DrupalGetRdfNamespacesTestCase](modules/simpletest/tests/common.test/DrupalGetRdfNamespacesTestCase.md) (class) — `modules/simpletest/tests/common.test` — Tests for RDF namespaces XML serialization.
+- [DrupalGotoTest](modules/simpletest/tests/common.test/DrupalGotoTest.md) (class) — `modules/simpletest/tests/common.test` — Testing drupal_goto and hook_drupal_goto_alter().
+- [DrupalHTMLIdentifierTestCase](modules/simpletest/tests/common.test/DrupalHTMLIdentifierTestCase.md) (class) — `modules/simpletest/tests/common.test` — Test for cleaning HTML identifiers.
+- [DrupalHtmlToTextTestCase](modules/simpletest/tests/mail.test/DrupalHtmlToTextTestCase.md) (class) — `modules/simpletest/tests/mail.test` — Unit tests for drupal_html_to_text().
+- [DrupalHTTPRedirectTest](modules/simpletest/tests/common.test/DrupalHTTPRedirectTest.md) (class) — `modules/simpletest/tests/common.test` — Unit tests for processing of http redirects.
+- [DrupalHTTPRequestTestCase](modules/simpletest/tests/common.test/DrupalHTTPRequestTestCase.md) (class) — `modules/simpletest/tests/common.test` — Test drupal_http_request().
+- [DrupalHTTPResponseStatusLineTest](modules/simpletest/tests/common.test/DrupalHTTPResponseStatusLineTest.md) (class) — `modules/simpletest/tests/common.test` — Tests parsing of the HTTP response status line.
+- [DrupalJSONTest](modules/simpletest/tests/common.test/DrupalJSONTest.md) (class) — `modules/simpletest/tests/common.test` — Tests converting PHP variables to JSON strings and back.
+- [DrupalLocalStreamWrapper](includes/stream_wrappers.inc/DrupalLocalStreamWrapper.md) (class) — `includes/stream_wrappers.inc` — Drupal stream wrapper base class for local files.
+- [DrupalMatchPathTestCase](modules/simpletest/tests/path.test/DrupalMatchPathTestCase.md) (class) — `modules/simpletest/tests/path.test` — Unit tests for the drupal_match_path() function in path.inc.
+- [DrupalPrivateStreamWrapper](includes/stream_wrappers.inc/DrupalPrivateStreamWrapper.md) (class) — `includes/stream_wrappers.inc` — Drupal private (private://) stream wrapper class.
+- [DrupalPublicStreamWrapper](includes/stream_wrappers.inc/DrupalPublicStreamWrapper.md) (class) — `includes/stream_wrappers.inc` — Drupal public (public://) stream wrapper class.
+- [DrupalQueue](modules/system/system.queue.inc/DrupalQueue.md) (class) — `modules/system/system.queue.inc` — Factory class for interacting with queues.
+- [DrupalQueueInterface](modules/system/system.queue.inc/DrupalQueueInterface.md) (interface) — `modules/system/system.queue.inc`
+- [DrupalReliableQueueInterface](modules/system/system.queue.inc/DrupalReliableQueueInterface.md) (interface) — `modules/system/system.queue.inc` — Reliable queue interface.
+- [DrupalRenderTestCase](modules/simpletest/tests/common.test/DrupalRenderTestCase.md) (class) — `modules/simpletest/tests/common.test` — Tests for drupal_render().
+- [DrupalRequestSanitizer](includes/request-sanitizer.inc/DrupalRequestSanitizer.md) (class) — `includes/request-sanitizer.inc` — Sanitizes user input from the request.
+- [DrupalSetContentTestCase](modules/simpletest/tests/common.test/DrupalSetContentTestCase.md) (class) — `modules/simpletest/tests/common.test` — Testing drupal_add_region_content and drupal_get_region_content.
+- [DrupalSetMessageTest](modules/system/system.test/DrupalSetMessageTest.md) (class) — `modules/system/system.test` — Tests drupal_set_message() and related functions.
+- [DrupalStreamWrapperInterface](includes/stream_wrappers.inc/DrupalStreamWrapperInterface.md) (interface) — `includes/stream_wrappers.inc` — Drupal stream wrapper extension.
+- [DrupalSystemListingCompatibleTestCase](profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.test/DrupalSystemListingCompatibleTestCase.md) (class) — `profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.test` — Helper to verify tests in installation profile modules.
+- [DrupalSystemListingTestCase](modules/simpletest/tests/common.test/DrupalSystemListingTestCase.md) (class) — `modules/simpletest/tests/common.test` — Tests for the drupal_system_listing() function.
+- [DrupalTagsHandlingTestCase](modules/simpletest/tests/common.test/DrupalTagsHandlingTestCase.md) (class) — `modules/simpletest/tests/common.test` — Test drupal_explode_tags() and drupal_implode_tags().
+- [DrupalTemporaryStreamWrapper](includes/stream_wrappers.inc/DrupalTemporaryStreamWrapper.md) (class) — `includes/stream_wrappers.inc` — Drupal temporary (temporary://) stream wrapper class.
+- [DrupalTestCase](modules/simpletest/drupal_web_test_case.php/DrupalTestCase.md) (class) — `modules/simpletest/drupal_web_test_case.php` — Base class for Drupal tests.
+- [DrupalUnitTestCase](modules/simpletest/drupal_web_test_case.php/DrupalUnitTestCase.md) (class) — `modules/simpletest/drupal_web_test_case.php` — Test case for Drupal unit tests.
+- [DrupalUpdateException](includes/update.inc/DrupalUpdateException.md) (class) — `includes/update.inc`
+- [DrupalUpdaterInterface](includes/updater.inc/DrupalUpdaterInterface.md) (interface) — `includes/updater.inc` — Interface for a class which can update a Drupal project.
+- [DrupalWebTestCase](modules/simpletest/drupal_web_test_case.php/DrupalWebTestCase.md) (class) — `modules/simpletest/drupal_web_test_case.php` — Test case for typical Drupal tests.
+- [EarlyBootstrapTestCase](modules/simpletest/tests/boot.test/EarlyBootstrapTestCase.md) (class) — `modules/simpletest/tests/boot.test` — Perform early bootstrap tests.
+- [EnableDisableTestCase](modules/system/system.test/EnableDisableTestCase.md) (class) — `modules/system/system.test` — Test module enabling/disabling functionality.
+- [EntityCrudHookTestCase](modules/simpletest/tests/entity_crud_hook_test.test/EntityCrudHookTestCase.md) (class) — `modules/simpletest/tests/entity_crud_hook_test.test` — Tests invocation of hooks when performing an action.
+- [EntityFieldQuery](includes/entity.inc/EntityFieldQuery.md) (class) — `includes/entity.inc` — Retrieves entities matching a given set of conditions.
+- [EntityFieldQueryException](includes/entity.inc/EntityFieldQueryException.md) (class) — `includes/entity.inc` — Exception thrown by EntityFieldQuery() on unsupported query syntax.
+- [EntityFieldQueryTestCase](modules/simpletest/tests/entity_query.test/EntityFieldQueryTestCase.md) (class) — `modules/simpletest/tests/entity_query.test` — Tests EntityFieldQuery.
+- [EntityLoadTestCase](modules/simpletest/tests/entity_crud.test/EntityLoadTestCase.md) (class) — `modules/simpletest/tests/entity_crud.test` — Tests the entity_load() function.
+- [EntityMalformedException](includes/entity.inc/EntityMalformedException.md) (class) — `includes/entity.inc` — Defines an exception thrown when a malformed entity is passed.
+- [EntityPropertiesTestCase](modules/field/tests/field.test/EntityPropertiesTestCase.md) (class) — `modules/field/tests/field.test` — Tests entity properties.
+- [ExampleTest](modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/ExampleTest.php/ExampleTest.md) (class) — `modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/ExampleTest.php`
+- [ExampleTest](modules/simpletest/tests/psr_4_test/src/Tests/ExampleTest.php/ExampleTest.md) (class) — `modules/simpletest/tests/psr_4_test/src/Tests/ExampleTest.php`
+- [Exception](misc/typo3/phar-stream-wrapper/src/Exception.php/Exception.md) (class) — `misc/typo3/phar-stream-wrapper/src/Exception.php`
+- [FakeRecord](modules/simpletest/tests/database_test.test/FakeRecord.md) (class) — `modules/simpletest/tests/database_test.test`
+- [FeedIconTest](modules/simpletest/tests/common.test/FeedIconTest.md) (class) — `modules/simpletest/tests/common.test` — Test for theme_feed_icon().
+- [FeedParserTestCase](modules/aggregator/aggregator.test/FeedParserTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests feed parsing in the Aggregator module.
+- [FieldAttachOtherTestCase](modules/field/tests/field.test/FieldAttachOtherTestCase.md) (class) — `modules/field/tests/field.test` — Unit test class for non-storage related field_attach_* functions.
+- [FieldAttachStorageTestCase](modules/field/tests/field.test/FieldAttachStorageTestCase.md) (class) — `modules/field/tests/field.test` — Unit test class for storage-related field_attach_* functions.
+- [FieldAttachTestCase](modules/field/tests/field.test/FieldAttachTestCase.md) (class) — `modules/field/tests/field.test`
+- [FieldBulkDeleteTestCase](modules/field/tests/field.test/FieldBulkDeleteTestCase.md) (class) — `modules/field/tests/field.test` — Unit test class for field bulk delete and batch purge functionality.
+- [FieldCrudTestCase](modules/field/tests/field.test/FieldCrudTestCase.md) (class) — `modules/field/tests/field.test`
+- [FieldDisplayAPITestCase](modules/field/tests/field.test/FieldDisplayAPITestCase.md) (class) — `modules/field/tests/field.test`
+- [FieldException](modules/field/field.module/FieldException.md) (class) — `modules/field/field.module` — Base class for all exceptions thrown by Field API functions.
+- [FieldFormTestCase](modules/field/tests/field.test/FieldFormTestCase.md) (class) — `modules/field/tests/field.test`
+- [FieldInfo](modules/field/field.info.class.inc/FieldInfo.md) (class) — `modules/field/field.info.class.inc` — Provides field and instance definitions for the current runtime environment.
+- [FieldInfoTestCase](modules/field/tests/field.test/FieldInfoTestCase.md) (class) — `modules/field/tests/field.test`
+- [FieldInstanceCrudTestCase](modules/field/tests/field.test/FieldInstanceCrudTestCase.md) (class) — `modules/field/tests/field.test`
+- [FieldSchemaAlterTestCase](modules/field/tests/field.test/FieldSchemaAlterTestCase.md) (class) — `modules/field/tests/field.test` — Tests that the field schema can be altered with hook_field_schema_alter().
+- [FieldsOverlapException](includes/database/database.inc/FieldsOverlapException.md) (class) — `includes/database/database.inc` — Exception thrown if an insert query specifies a field twice.
+- [FieldSqlStorageTestCase](modules/field/modules/field_sql_storage/field_sql_storage.test/FieldSqlStorageTestCase.md) (class) — `modules/field/modules/field_sql_storage/field_sql_storage.test` — Tests field storage.
+- [FieldTestCase](modules/field/tests/field.test/FieldTestCase.md) (class) — `modules/field/tests/field.test` — Parent class for Field API tests.
+- [FieldTranslationsTestCase](modules/field/tests/field.test/FieldTranslationsTestCase.md) (class) — `modules/field/tests/field.test` — Unit test class for the multilanguage fields logic.
+- [FieldUIAlterTestCase](modules/field_ui/field_ui.test/FieldUIAlterTestCase.md) (class) — `modules/field_ui/field_ui.test` — Tests custom widget hooks and callbacks on the field administration pages.
+- [FieldUIManageDisplayTestCase](modules/field_ui/field_ui.test/FieldUIManageDisplayTestCase.md) (class) — `modules/field_ui/field_ui.test` — Tests the functionality of the 'Manage display' screens.
+- [FieldUIManageFieldsTestCase](modules/field_ui/field_ui.test/FieldUIManageFieldsTestCase.md) (class) — `modules/field_ui/field_ui.test` — Tests the functionality of the 'Manage fields' screen.
+- [FieldUITestCase](modules/field_ui/field_ui.test/FieldUITestCase.md) (class) — `modules/field_ui/field_ui.test` — Provides common functionality for the Field UI test classes.
+- [FieldUpdateForbiddenException](modules/field/field.module/FieldUpdateForbiddenException.md) (class) — `modules/field/field.module` — Exception class thrown by hook_field_update_forbid().
+- [FieldUpdatePathTestCase](modules/simpletest/tests/upgrade/update.field.test/FieldUpdatePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/update.field.test` — Tests the Field 7.0 -> 7.x update path.
+- [FieldValidationException](modules/field/field.attach.inc/FieldValidationException.md) (class) — `modules/field/field.attach.inc` — Exception thrown by field_attach_validate() on field validation errors.
+- [FileCopyTest](modules/simpletest/tests/file.test/FileCopyTest.md) (class) — `modules/simpletest/tests/file.test` — Copy related tests.
+- [FileDeleteTest](modules/simpletest/tests/file.test/FileDeleteTest.md) (class) — `modules/simpletest/tests/file.test` — Deletion related tests.
+- [FileDirectoryTest](modules/simpletest/tests/file.test/FileDirectoryTest.md) (class) — `modules/simpletest/tests/file.test` — Directory related tests.
+- [FileDownloadTest](modules/simpletest/tests/file.test/FileDownloadTest.md) (class) — `modules/simpletest/tests/file.test` — Tests for download/file transfer functions.
+- [FileFieldAnonymousSubmission](modules/file/tests/file.test/FileFieldAnonymousSubmission.md) (class) — `modules/file/tests/file.test` — Confirm that file field submissions work correctly for anonymous visitors.
+- [FileFieldDisplayTestCase](modules/file/tests/file.test/FileFieldDisplayTestCase.md) (class) — `modules/file/tests/file.test` — Tests that formatters are working properly.
+- [FileFieldPathTestCase](modules/file/tests/file.test/FileFieldPathTestCase.md) (class) — `modules/file/tests/file.test` — Tests that files are uploaded to proper locations.
+- [FileFieldRevisionTestCase](modules/file/tests/file.test/FileFieldRevisionTestCase.md) (class) — `modules/file/tests/file.test` — Tests file handling with node revisions.
+- [FileFieldTestCase](modules/file/tests/file.test/FileFieldTestCase.md) (class) — `modules/file/tests/file.test` — Provides methods specifically for testing File module's field handling.
+- [FileFieldValidateTestCase](modules/file/tests/file.test/FileFieldValidateTestCase.md) (class) — `modules/file/tests/file.test` — Tests various validations.
+- [FileFieldWidgetTestCase](modules/file/tests/file.test/FileFieldWidgetTestCase.md) (class) — `modules/file/tests/file.test` — Tests file field widget.
+- [FileHookTestCase](modules/simpletest/tests/file.test/FileHookTestCase.md) (class) — `modules/simpletest/tests/file.test` — Base class for file tests that use the file_test module to test uploads and hooks.
+- [FileLoadTest](modules/simpletest/tests/file.test/FileLoadTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_load() function.
+- [FileManagedFileElementTestCase](modules/file/tests/file.test/FileManagedFileElementTestCase.md) (class) — `modules/file/tests/file.test` — Tests the 'managed_file' element type.
+- [FileMimeTypeTest](modules/simpletest/tests/file.test/FileMimeTypeTest.md) (class) — `modules/simpletest/tests/file.test` — Tests for file_get_mimetype().
+- [FileMoveTest](modules/simpletest/tests/file.test/FileMoveTest.md) (class) — `modules/simpletest/tests/file.test` — Move related tests
+- [FileNameMungingTest](modules/simpletest/tests/file.test/FileNameMungingTest.md) (class) — `modules/simpletest/tests/file.test` — Tests for file_munge_filename() and file_unmunge_filename().
+- [FilePrivateTestCase](modules/file/tests/file.test/FilePrivateTestCase.md) (class) — `modules/file/tests/file.test` — Tests file access on private nodes.
+- [FileSaveDataTest](modules/simpletest/tests/file.test/FileSaveDataTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_save_data() function.
+- [FileSaveTest](modules/simpletest/tests/file.test/FileSaveTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_save() function.
+- [FileSaveUploadTest](modules/simpletest/tests/file.test/FileSaveUploadTest.md) (class) — `modules/simpletest/tests/file.test` — Test the file_save_upload() function.
+- [FileScanDirectory](modules/file/tests/file.test/FileScanDirectory.md) (class) — `modules/file/tests/file.test` — Tests the file_scan_directory() function.
+- [FileScanDirectoryTest](modules/simpletest/tests/file.test/FileScanDirectoryTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_scan_directory() function.
+- [FileSpaceUsedTest](modules/simpletest/tests/file.test/FileSpaceUsedTest.md) (class) — `modules/simpletest/tests/file.test` — This will run tests against the file_space_used() function.
+- [FileTaxonomyTermTestCase](modules/file/tests/file.test/FileTaxonomyTermTestCase.md) (class) — `modules/file/tests/file.test` — Tests adding a file to a non-node entity.
+- [FileTestCase](modules/simpletest/tests/file.test/FileTestCase.md) (class) — `modules/simpletest/tests/file.test` — Base class for file tests that adds some additional file specific assertions and helper functions.
+- [FileThemeImplementationsTestCase](modules/file/tests/file.test/FileThemeImplementationsTestCase.md) (class) — `modules/file/tests/file.test` — Test theme implementations declared in file_theme().
+- [FileTokenReplaceTestCase](modules/file/tests/file.test/FileTokenReplaceTestCase.md) (class) — `modules/file/tests/file.test` — Tests the file token replacement in strings.
+- [FileTranferTest](modules/simpletest/tests/filetransfer.test/FileTranferTest.md) (class) — `modules/simpletest/tests/filetransfer.test`
+- [FileTransfer](includes/filetransfer/filetransfer.inc/FileTransfer.md) (class) — `includes/filetransfer/filetransfer.inc`
+- [FileTransferChmodInterface](includes/filetransfer/filetransfer.inc/FileTransferChmodInterface.md) (interface) — `includes/filetransfer/filetransfer.inc` — A FileTransfer Class implementing this interface can be used to chmod files.
+- [FileTransferException](includes/filetransfer/filetransfer.inc/FileTransferException.md) (class) — `includes/filetransfer/filetransfer.inc` — FileTransferException class.
+- [FileTransferFTP](includes/filetransfer/ftp.inc/FileTransferFTP.md) (class) — `includes/filetransfer/ftp.inc` — Base class for FTP implementations.
+- [FileTransferFTPExtension](includes/filetransfer/ftp.inc/FileTransferFTPExtension.md) (class) — `includes/filetransfer/ftp.inc`
+- [FileTransferLocal](includes/filetransfer/local.inc/FileTransferLocal.md) (class) — `includes/filetransfer/local.inc` — The local connection class for copying files as the httpd user.
+- [FileTransferSSH](includes/filetransfer/ssh.inc/FileTransferSSH.md) (class) — `includes/filetransfer/ssh.inc` — The SSH connection class for the update module.
+- [FileUnmanagedCopyTest](modules/simpletest/tests/file.test/FileUnmanagedCopyTest.md) (class) — `modules/simpletest/tests/file.test` — Unmanaged copy related tests.
+- [FileUnmanagedDeleteRecursiveTest](modules/simpletest/tests/file.test/FileUnmanagedDeleteRecursiveTest.md) (class) — `modules/simpletest/tests/file.test` — Deletion related tests.
+- [FileUnmanagedDeleteTest](modules/simpletest/tests/file.test/FileUnmanagedDeleteTest.md) (class) — `modules/simpletest/tests/file.test` — Deletion related tests.
+- [FileUnmanagedMoveTest](modules/simpletest/tests/file.test/FileUnmanagedMoveTest.md) (class) — `modules/simpletest/tests/file.test` — Unmanaged move related tests.
+- [FileUnmanagedSaveDataTest](modules/simpletest/tests/file.test/FileUnmanagedSaveDataTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_unmanaged_save_data() function.
+- [FileURLRewritingTest](modules/simpletest/tests/file.test/FileURLRewritingTest.md) (class) — `modules/simpletest/tests/file.test` — Tests for file URL rewriting.
+- [FileUsageTest](modules/simpletest/tests/file.test/FileUsageTest.md) (class) — `modules/simpletest/tests/file.test` — Tests file usage functions.
+- [FileValidateTest](modules/simpletest/tests/file.test/FileValidateTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_validate() function..
+- [FileValidatorTest](modules/simpletest/tests/file.test/FileValidatorTest.md) (class) — `modules/simpletest/tests/file.test` — This will run tests against the file validation functions (file_validate_*).
+- [FilledMinimalUpdatePath](modules/simpletest/tests/upgrade/upgrade.test/FilledMinimalUpdatePath.md) (class) — `modules/simpletest/tests/upgrade/upgrade.test` — Performs point release update tests on a populated database.
+- [FilledStandardUpdatePath](modules/simpletest/tests/upgrade/upgrade.test/FilledStandardUpdatePath.md) (class) — `modules/simpletest/tests/upgrade/upgrade.test` — Performs point release update tests on a 'filled' database.
+- [FilterAdminTestCase](modules/filter/filter.test/FilterAdminTestCase.md) (class) — `modules/filter/filter.test` — Tests the administrative functionality of the Filter module.
+- [FilterCRUDTestCase](modules/filter/filter.test/FilterCRUDTestCase.md) (class) — `modules/filter/filter.test` — Tests for text format and filter CRUD operations.
+- [FilterDefaultFormatTestCase](modules/filter/filter.test/FilterDefaultFormatTestCase.md) (class) — `modules/filter/filter.test` — Tests the default filter functionality in the Filter module.
+- [FilterDOMSerializeTestCase](modules/filter/filter.test/FilterDOMSerializeTestCase.md) (class) — `modules/filter/filter.test` — Tests DOMDocument serialization.
+- [FilterFormatAccessTestCase](modules/filter/filter.test/FilterFormatAccessTestCase.md) (class) — `modules/filter/filter.test` — Tests the filter format access functionality in the Filter module.
+- [FilterFormatUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.filter.test/FilterFormatUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.filter.test` — Upgrade test for filter format identifiers.
+- [FilterHooksTestCase](modules/filter/filter.test/FilterHooksTestCase.md) (class) — `modules/filter/filter.test` — Tests for Filter's hook invocations.
+- [FilterNoFormatTestCase](modules/filter/filter.test/FilterNoFormatTestCase.md) (class) — `modules/filter/filter.test` — Tests the behavior of check_markup() when it is called without text format.
+- [FilterSecurityTestCase](modules/filter/filter.test/FilterSecurityTestCase.md) (class) — `modules/filter/filter.test` — Security tests for missing/vanished text formats or filters.
+- [FilterSettingsTestCase](modules/filter/filter.test/FilterSettingsTestCase.md) (class) — `modules/filter/filter.test` — Tests filter settings.
+- [FilterUnitTestCase](modules/filter/filter.test/FilterUnitTestCase.md) (class) — `modules/filter/filter.test` — Unit tests for core filters.
+- [FloodFunctionalTest](modules/system/system.test/FloodFunctionalTest.md) (class) — `modules/system/system.test` — Functional tests for the flood control mechanism.
+- [FormAlterTestCase](modules/simpletest/tests/form.test/FormAlterTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test form alter hooks.
+- [FormatDateUnitTest](modules/simpletest/tests/common.test/FormatDateUnitTest.md) (class) — `modules/simpletest/tests/common.test` — Tests for the format_date() function.
+- [FormCheckboxTestCase](modules/simpletest/tests/form.test/FormCheckboxTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests checkbox element.
+- [FormElementTestCase](modules/simpletest/tests/form.test/FormElementTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests building and processing of core form elements.
+- [FormsArbitraryRebuildTestCase](modules/simpletest/tests/form.test/FormsArbitraryRebuildTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests rebuilding of arbitrary forms by altering them.
+- [FormsElementsLabelsTestCase](modules/simpletest/tests/form.test/FormsElementsLabelsTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test form element labels, required markers and associated output.
+- [FormsElementsTableSelectFunctionalTest](modules/simpletest/tests/form.test/FormsElementsTableSelectFunctionalTest.md) (class) — `modules/simpletest/tests/form.test` — Test the tableselect form element for expected behavior.
+- [FormsElementsValidationTestCase](modules/simpletest/tests/form.test/FormsElementsValidationTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests validation of additional Form API properties.
+- [FormsElementsVerticalTabsFunctionalTest](modules/simpletest/tests/form.test/FormsElementsVerticalTabsFunctionalTest.md) (class) — `modules/simpletest/tests/form.test` — Test the vertical_tabs form element for expected behavior.
+- [FormsFileInclusionTestCase](modules/simpletest/tests/form.test/FormsFileInclusionTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests form API file inclusion.
+- [FormsFormCacheTestCase](modules/simpletest/tests/form.test/FormsFormCacheTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test cache_form.
+- [FormsFormStoragePageCacheTestCase](modules/simpletest/tests/form.test/FormsFormStoragePageCacheTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test the form storage when page caching for anonymous users is turned on.
+- [FormsFormStorageTestCase](modules/simpletest/tests/form.test/FormsFormStorageTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test the form storage on a multistep form.
+- [FormsFormWrapperTestCase](modules/simpletest/tests/form.test/FormsFormWrapperTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test wrapper form callbacks.
+- [FormsProgrammaticTestCase](modules/simpletest/tests/form.test/FormsProgrammaticTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test the programmatic form submission behavior.
+- [FormsRebuildTestCase](modules/simpletest/tests/form.test/FormsRebuildTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests form rebuilding.
+- [FormsRedirectTestCase](modules/simpletest/tests/form.test/FormsRedirectTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests form redirection.
+- [FormStateValuesCleanAdvancedTestCase](modules/simpletest/tests/form.test/FormStateValuesCleanAdvancedTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests $form_state clearance with form elements having buttons.
+- [FormStateValuesCleanTestCase](modules/simpletest/tests/form.test/FormStateValuesCleanTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test $form_state clearance.
+- [FormsTestCase](modules/simpletest/tests/form.test/FormsTestCase.md) (class) — `modules/simpletest/tests/form.test`
+- [FormsTriggeringElementTestCase](modules/simpletest/tests/form.test/FormsTriggeringElementTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test that FAPI correctly determines $form_state['triggering_element'].
+- [FormTextareaTestCase](modules/simpletest/tests/form.test/FormTextareaTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests for form textarea.
+- [FormValidationTestCase](modules/simpletest/tests/form.test/FormValidationTestCase.md) (class) — `modules/simpletest/tests/form.test` — Test form validation handlers.
+- [ForumIndexTestCase](modules/forum/forum.test/ForumIndexTestCase.md) (class) — `modules/forum/forum.test` — Tests the forum index listing.
+- [ForumTestCase](modules/forum/forum.test/ForumTestCase.md) (class) — `modules/forum/forum.test` — Provides automated tests for the Forum module.
+- [ForumUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.forum.test/ForumUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.forum.test` — Upgrade test for forum.module.
+- [FrontPageTestCase](modules/system/system.test/FrontPageTestCase.md) (class) — `modules/system/system.test` — Test front page functionality and administration.
+- [GraphUnitTest](modules/simpletest/tests/graph.test/GraphUnitTest.md) (class) — `modules/simpletest/tests/graph.test` — Unit tests for the graph handling features.
+- [Helper](misc/typo3/phar-stream-wrapper/src/Helper.php/Helper.md) (class) — `misc/typo3/phar-stream-wrapper/src/Helper.php` — Helper provides low-level tools on file name resolving. However it does not (and should not) maintain any runtime state information. In order to resolve Phar archive paths according resolvers have to be used.
+- [HelpTestCase](modules/help/help.test/HelpTestCase.md) (class) — `modules/help/help.test` — Tests help display and user access for all modules implementing help.
+- [HookBootExitTestCase](modules/simpletest/tests/bootstrap.test/HookBootExitTestCase.md) (class) — `modules/simpletest/tests/bootstrap.test` — Test hook_boot() and hook_exit().
+- [HookRequirementsTestCase](modules/system/system.test/HookRequirementsTestCase.md) (class) — `modules/system/system.test` — Tests failure of hook_requirements('install').
+- [HtaccessTest](modules/system/system.test/HtaccessTest.md) (class) — `modules/system/system.test` — Tests .htaccess is working correctly.
+- [HTMLIdTestCase](modules/simpletest/tests/form.test/HTMLIdTestCase.md) (class) — `modules/simpletest/tests/form.test` — Tests uniqueness of generated HTML IDs.
+- [ImageAdminStylesUnitTest](modules/image/image.test/ImageAdminStylesUnitTest.md) (class) — `modules/image/image.test` — Tests creation, deletion, and editing of image styles and effects.
+- [ImageAdminUiTestCase](modules/image/image.test/ImageAdminUiTestCase.md) (class) — `modules/image/image.test` — Tests the administrative user interface.
+- [ImageDimensionsScaleTestCase](modules/image/image.test/ImageDimensionsScaleTestCase.md) (class) — `modules/image/image.test` — Tests image_dimensions_scale().
+- [ImageDimensionsTestCase](modules/image/image.test/ImageDimensionsTestCase.md) (class) — `modules/image/image.test` — Tests that images have correct dimensions when styled.
+- [ImageEffectsUnitTest](modules/image/image.test/ImageEffectsUnitTest.md) (class) — `modules/image/image.test` — Use the image_test.module's mock toolkit to ensure that the effects are properly passing parameters to the image toolkit.
+- [ImageFieldDefaultImagesTestCase](modules/image/image.test/ImageFieldDefaultImagesTestCase.md) (class) — `modules/image/image.test` — Tests default image settings.
+- [ImageFieldDisplayTestCase](modules/image/image.test/ImageFieldDisplayTestCase.md) (class) — `modules/image/image.test` — Test class to check that formatters and display settings are working.
+- [ImageFieldTestCase](modules/image/image.test/ImageFieldTestCase.md) (class) — `modules/image/image.test` — This class provides methods specifically for testing Image's field handling.
+- [ImageFieldValidateTestCase](modules/image/image.test/ImageFieldValidateTestCase.md) (class) — `modules/image/image.test` — Test class to check for various validations.
+- [ImageFileMoveTest](modules/simpletest/tests/image.test/ImageFileMoveTest.md) (class) — `modules/simpletest/tests/image.test` — Tests the file move function for managed files.
+- [ImageStyleFlushTest](modules/image/image.test/ImageStyleFlushTest.md) (class) — `modules/image/image.test` — Tests flushing of image styles.
+- [ImageStylesHTTPHeadersTestCase](modules/image/image.test/ImageStylesHTTPHeadersTestCase.md) (class) — `modules/image/image.test` — Tests for correct file size, dimensions and HTTP headers after scaling.
+- [ImageStylesPathAndUrlTestCase](modules/image/image.test/ImageStylesPathAndUrlTestCase.md) (class) — `modules/image/image.test` — Tests the functions for generating paths and URLs for image styles.
+- [ImageThemeFunctionWebTestCase](modules/image/image.test/ImageThemeFunctionWebTestCase.md) (class) — `modules/image/image.test` — Tests image theme functions.
+- [ImageToolkitGdTestCase](modules/simpletest/tests/image.test/ImageToolkitGdTestCase.md) (class) — `modules/simpletest/tests/image.test` — Test the core GD image manipulation functions.
+- [ImageToolkitTestCase](modules/simpletest/tests/image.test/ImageToolkitTestCase.md) (class) — `modules/simpletest/tests/image.test` — Base class for image manipulation testing.
+- [ImageToolkitUnitTest](modules/simpletest/tests/image.test/ImageToolkitUnitTest.md) (class) — `modules/simpletest/tests/image.test` — Test that the functions in image.inc correctly pass data to the toolkit.
+- [ImportOPMLTestCase](modules/aggregator/aggregator.test/ImportOPMLTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests importing feeds from OPML functionality for the Aggregator module.
+- [InfoFileParserTestCase](modules/system/system.test/InfoFileParserTestCase.md) (class) — `modules/system/system.test`
+- [InsertQuery](includes/database/query.inc/InsertQuery.md) (class) — `includes/database/query.inc` — General class for an abstracted INSERT query.
+- [InsertQuery_mysql](includes/database/mysql/query.inc/InsertQuery_mysql.md) (class) — `includes/database/mysql/query.inc`
+- [InsertQuery_pgsql](includes/database/pgsql/query.inc/InsertQuery_pgsql.md) (class) — `includes/database/pgsql/query.inc`
+- [InsertQuery_sqlite](includes/database/sqlite/query.inc/InsertQuery_sqlite.md) (class) — `includes/database/sqlite/query.inc` — SQLite specific implementation of InsertQuery.
+- [InvalidMergeQueryException](includes/database/database.inc/InvalidMergeQueryException.md) (class) — `includes/database/database.inc` — Exception thrown for merge queries that do not make semantic sense.
+- [InvalidQueryConditionOperatorException](includes/database/database.inc/InvalidQueryConditionOperatorException.md) (class) — `includes/database/database.inc` — Exception thrown if an invalid query condition is specified.
+- [IPAddressBlockingTestCase](modules/system/system.test/IPAddressBlockingTestCase.md) (class) — `modules/system/system.test`
+- [JavaScriptTestCase](modules/simpletest/tests/common.test/JavaScriptTestCase.md) (class) — `modules/simpletest/tests/common.test` — Tests for the JavaScript system.
+- [ListDynamicValuesTestCase](modules/field/modules/list/tests/list.test/ListDynamicValuesTestCase.md) (class) — `modules/field/modules/list/tests/list.test` — Sets up a List field for testing allowed values functions.
+- [ListDynamicValuesValidationTestCase](modules/field/modules/list/tests/list.test/ListDynamicValuesValidationTestCase.md) (class) — `modules/field/modules/list/tests/list.test` — Tests the List field allowed values function.
+- [ListFieldTestCase](modules/field/modules/list/tests/list.test/ListFieldTestCase.md) (class) — `modules/field/modules/list/tests/list.test` — Tests for the 'List' field types.
+- [ListFieldUITestCase](modules/field/modules/list/tests/list.test/ListFieldUITestCase.md) (class) — `modules/field/modules/list/tests/list.test` — List module UI tests.
+- [LocaleBrowserDetectionTest](modules/locale/locale.test/LocaleBrowserDetectionTest.md) (class) — `modules/locale/locale.test` — Test browser language detection.
+- [LocaleCommentLanguageFunctionalTest](modules/locale/locale.test/LocaleCommentLanguageFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for comment language.
+- [LocaleConfigurationTest](modules/locale/locale.test/LocaleConfigurationTest.md) (class) — `modules/locale/locale.test` — Functional tests for the language configuration forms.
+- [LocaleContentFunctionalTest](modules/locale/locale.test/LocaleContentFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for multilingual support on nodes.
+- [LocaleCSSAlterTest](modules/locale/locale.test/LocaleCSSAlterTest.md) (class) — `modules/locale/locale.test` — Functional tests for CSS alter functions.
+- [LocaleDateFormatsFunctionalTest](modules/locale/locale.test/LocaleDateFormatsFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for localizing date formats.
+- [LocaleExportFunctionalTest](modules/locale/locale.test/LocaleExportFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for the export of translation files.
+- [LocaleImportFunctionalTest](modules/locale/locale.test/LocaleImportFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for the import of translation files.
+- [LocaleInstallTest](modules/locale/locale.test/LocaleInstallTest.md) (class) — `modules/locale/locale.test` — Tests for the st() function.
+- [LocaleJavascriptTranslationTest](modules/locale/locale.test/LocaleJavascriptTranslationTest.md) (class) — `modules/locale/locale.test` — Functional tests for JavaScript parsing for translatable strings.
+- [LocaleLanguageNegotiationInfoFunctionalTest](modules/locale/locale.test/LocaleLanguageNegotiationInfoFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional test for language types/negotiation info.
+- [LocaleLanguageSwitchingFunctionalTest](modules/locale/locale.test/LocaleLanguageSwitchingFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for the language switching feature.
+- [LocaleLibraryInfoAlterTest](modules/locale/locale.test/LocaleLibraryInfoAlterTest.md) (class) — `modules/locale/locale.test` — Tests localization of the JavaScript libraries.
+- [LocaleMultilingualFieldsFunctionalTest](modules/locale/locale.test/LocaleMultilingualFieldsFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional test for multilingual fields.
+- [LocalePathFunctionalTest](modules/locale/locale.test/LocalePathFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for configuring a different path alias per language.
+- [LocalePluralFormatTest](modules/locale/locale.test/LocalePluralFormatTest.md) (class) — `modules/locale/locale.test` — Tests plural index computation functionality.
+- [LocaleStringIsSafeTest](modules/locale/locale.test/LocaleStringIsSafeTest.md) (class) — `modules/locale/locale.test` — Tests locale translation safe string handling.
+- [LocaleTranslationFunctionalTest](modules/locale/locale.test/LocaleTranslationFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional test for string translation and validation.
+- [LocaleUILanguageNegotiationTest](modules/locale/locale.test/LocaleUILanguageNegotiationTest.md) (class) — `modules/locale/locale.test` — Test UI language negotiation 1. URL (PATH) > DEFAULT UI Language base on URL prefix, browser language preference has no influence: admin/config UI in site default language zh-hans/admin/config UI in Chinese blah-blah/admin/config 404 2. URL (PATH) > BROWSER > DEFAULT admin/config UI in user's browser language preference if the site has that language enabled, if not, the default language zh-hans/admin/config UI in Chinese blah-blah/admin/config 404 3. URL (DOMAIN) > DEFAULT http://example.com/admin/config UI language in site default http://example.cn/admin/config UI language in Chinese
+- [LocaleUninstallFrenchFunctionalTest](modules/locale/locale.test/LocaleUninstallFrenchFunctionalTest.md) (class) — `modules/locale/locale.test` — Locale uninstall with French UI functional test.
+- [LocaleUninstallFunctionalTest](modules/locale/locale.test/LocaleUninstallFunctionalTest.md) (class) — `modules/locale/locale.test` — Locale uninstall with English UI functional test.
+- [LocaleUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.locale.test/LocaleUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.locale.test` — Upgrade test for locale.module.
+- [LocaleUrlRewritingTest](modules/locale/locale.test/LocaleUrlRewritingTest.md) (class) — `modules/locale/locale.test` — Test that URL rewriting works as expected.
+- [LocaleUserCreationTest](modules/locale/locale.test/LocaleUserCreationTest.md) (class) — `modules/locale/locale.test` — Functional test for language handling during user creation.
+- [LocaleUserLanguageFunctionalTest](modules/locale/locale.test/LocaleUserLanguageFunctionalTest.md) (class) — `modules/locale/locale.test` — Functional tests for a user's ability to change their default language.
+- [LockFunctionalTest](modules/simpletest/tests/lock.test/LockFunctionalTest.md) (class) — `modules/simpletest/tests/lock.test` — Tests for the lock system.
+- [MailSystemInterface](includes/mail.inc/MailSystemInterface.md) (interface) — `includes/mail.inc` — An interface for pluggable mail back-ends.
+- [MailTestCase](modules/simpletest/tests/mail.test/MailTestCase.md) (class) — `modules/simpletest/tests/mail.test`
+- [Manager](misc/typo3/phar-stream-wrapper/src/Manager.php/Manager.md) (class) — `misc/typo3/phar-stream-wrapper/src/Manager.php`
+- [Manifest](misc/typo3/phar-stream-wrapper/src/Phar/Manifest.php/Manifest.md) (class) — `misc/typo3/phar-stream-wrapper/src/Phar/Manifest.php`
+- [MemoryQueue](modules/system/system.queue.inc/MemoryQueue.md) (class) — `modules/system/system.queue.inc` — Static queue implementation.
+- [MenuBreadcrumbTestCase](modules/simpletest/tests/menu.test/MenuBreadcrumbTestCase.md) (class) — `modules/simpletest/tests/menu.test` — Menu breadcrumbs related tests.
+- [MenuDataIntegrityTestCase](modules/simpletest/tests/menu.test/MenuDataIntegrityTestCase.md) (class) — `modules/simpletest/tests/menu.test` — Tests value integrity.
+- [MenuLinksUnitTestCase](modules/simpletest/tests/menu.test/MenuLinksUnitTestCase.md) (class) — `modules/simpletest/tests/menu.test` — Tests for menu links.
+- [MenuNodeTestCase](modules/menu/menu.test/MenuNodeTestCase.md) (class) — `modules/menu/menu.test` — Test menu settings for nodes.
+- [MenuRebuildTestCase](modules/simpletest/tests/menu.test/MenuRebuildTestCase.md) (class) — `modules/simpletest/tests/menu.test` — Tests rebuilding the menu by setting 'menu_rebuild_needed.'
+- [MenuRouterTestCase](modules/simpletest/tests/menu.test/MenuRouterTestCase.md) (class) — `modules/simpletest/tests/menu.test`
+- [MenuTestCase](modules/menu/menu.test/MenuTestCase.md) (class) — `modules/menu/menu.test`
+- [MenuTrailTestCase](modules/simpletest/tests/menu.test/MenuTrailTestCase.md) (class) — `modules/simpletest/tests/menu.test` — Tests active menu trails.
+- [MenuTreeDataTestCase](modules/simpletest/tests/menu.test/MenuTreeDataTestCase.md) (class) — `modules/simpletest/tests/menu.test` — Menu tree data related tests.
+- [MenuTreeOutputTestCase](modules/simpletest/tests/menu.test/MenuTreeOutputTestCase.md) (class) — `modules/simpletest/tests/menu.test` — Menu tree output related tests.
+- [MenuUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.menu.test/MenuUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.menu.test` — Upgrade test for menu.module.
+- [MenuWebTestCase](modules/simpletest/tests/menu.test/MenuWebTestCase.md) (class) — `modules/simpletest/tests/menu.test`
+- [MergeQuery](includes/database/query.inc/MergeQuery.md) (class) — `includes/database/query.inc` — General class for an abstracted MERGE query operation.
+- [MockTestConnection](modules/simpletest/tests/filetransfer.test/MockTestConnection.md) (class) — `modules/simpletest/tests/filetransfer.test` — Mock connection object for test case.
+- [ModuleDependencyTestCase](modules/system/system.test/ModuleDependencyTestCase.md) (class) — `modules/system/system.test` — Test module dependency functionality.
+- [ModuleImplementsAlterTestCase](modules/simpletest/tests/module.test/ModuleImplementsAlterTestCase.md) (class) — `modules/simpletest/tests/module.test`
+- [ModuleInstallTestCase](modules/simpletest/tests/module.test/ModuleInstallTestCase.md) (class) — `modules/simpletest/tests/module.test` — Unit tests for module installation.
+- [ModuleProvidedThemeEngineTestCase](modules/simpletest/tests/theme.test/ModuleProvidedThemeEngineTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Tests module-provided theme engines.
+- [ModuleRequiredTestCase](modules/system/system.test/ModuleRequiredTestCase.md) (class) — `modules/system/system.test` — Test required modules functionality.
+- [ModuleTestCase](modules/system/system.test/ModuleTestCase.md) (class) — `modules/system/system.test` — Helper class for module test cases.
+- [ModuleUninstallTestCase](modules/simpletest/tests/module.test/ModuleUninstallTestCase.md) (class) — `modules/simpletest/tests/module.test` — Unit tests for module uninstallation and related hooks.
+- [ModuleUnitTest](modules/simpletest/tests/module.test/ModuleUnitTest.md) (class) — `modules/simpletest/tests/module.test` — Unit tests for the module API.
+- [ModuleUpdater](modules/system/system.updater.inc/ModuleUpdater.md) (class) — `modules/system/system.updater.inc` — Class for updating modules using FileTransfer classes via authorize.php.
+- [ModuleVersionTestCase](modules/system/system.test/ModuleVersionTestCase.md) (class) — `modules/system/system.test` — Test module dependency on specific versions.
+- [MultiStepNodeFormBasicOptionsTest](modules/node/node.test/MultiStepNodeFormBasicOptionsTest.md) (class) — `modules/node/node.test` — Tests basic options of multi-step node forms.
+- [NestedExampleTest](modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/Nested/NestedExampleTest.php/NestedExampleTest.md) (class) — `modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/Nested/NestedExampleTest.php`
+- [NestedExampleTest](modules/simpletest/tests/psr_4_test/src/Tests/Nested/NestedExampleTest.php/NestedExampleTest.md) (class) — `modules/simpletest/tests/psr_4_test/src/Tests/Nested/NestedExampleTest.php`
+- [NewDefaultThemeBlocks](modules/block/block.test/NewDefaultThemeBlocks.md) (class) — `modules/block/block.test` — Test blocks correctly initialized when picking a new default theme.
+- [NodeAccessBaseTableTestCase](modules/node/node.test/NodeAccessBaseTableTestCase.md) (class) — `modules/node/node.test` — Tests for Node Access with a non-node base table.
+- [NodeAccessFieldTestCase](modules/node/node.test/NodeAccessFieldTestCase.md) (class) — `modules/node/node.test` — Tests the interaction of the node access system with fields.
+- [NodeAccessPagerTestCase](modules/node/node.test/NodeAccessPagerTestCase.md) (class) — `modules/node/node.test` — Tests pagination with a node access module enabled.
+- [NodeAccessRebuildTestCase](modules/node/node.test/NodeAccessRebuildTestCase.md) (class) — `modules/node/node.test` — Verifies the rebuild functionality for the node_access table.
+- [NodeAccessRecordsTestCase](modules/node/node.test/NodeAccessRecordsTestCase.md) (class) — `modules/node/node.test` — Tests hook_node_access_records() functionality.
+- [NodeAccessTestCase](modules/node/node.test/NodeAccessTestCase.md) (class) — `modules/node/node.test` — Tests basic node_access functionality.
+- [NodeAdminTestCase](modules/node/node.test/NodeAdminTestCase.md) (class) — `modules/node/node.test` — Tests node administration page functionality.
+- [NodeBlockFunctionalTest](modules/node/node.test/NodeBlockFunctionalTest.md) (class) — `modules/node/node.test` — Functional tests for the node module blocks.
+- [NodeBlockTestCase](modules/node/node.test/NodeBlockTestCase.md) (class) — `modules/node/node.test` — Tests the availability of the syndicate block.
+- [NodeBodyUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.node.test/NodeBodyUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.node.test` — Upgrade test for node bodies.
+- [NodeBuildContent](modules/node/node.test/NodeBuildContent.md) (class) — `modules/node/node.test` — Test to ensure that a node's content is always rebuilt.
+- [NodeController](modules/node/node.module/NodeController.md) (class) — `modules/node/node.module` — Controller class for nodes.
+- [NodeCreationTestCase](modules/node/node.test/NodeCreationTestCase.md) (class) — `modules/node/node.test` — Tests creating and saving a node.
+- [NodeEntityFieldQueryAlter](modules/node/node.test/NodeEntityFieldQueryAlter.md) (class) — `modules/node/node.test` — Tests node_query_entity_field_access_alter().
+- [NodeEntityViewModeAlterTest](modules/node/node.test/NodeEntityViewModeAlterTest.md) (class) — `modules/node/node.test` — Tests changing view modes for nodes.
+- [NodeFeedTestCase](modules/node/node.test/NodeFeedTestCase.md) (class) — `modules/node/node.test` — Test the node_feed() functionality.
+- [NodeLoadHooksTestCase](modules/node/node.test/NodeLoadHooksTestCase.md) (class) — `modules/node/node.test` — Tests for the hooks invoked during node_load().
+- [NodeLoadMultipleTestCase](modules/node/node.test/NodeLoadMultipleTestCase.md) (class) — `modules/node/node.test` — Test the node_load_multiple() function.
+- [NodeMultiByteUtf8Test](modules/node/node.test/NodeMultiByteUtf8Test.md) (class) — `modules/node/node.test` — Tests that multi-byte UTF-8 characters are stored and retrieved correctly.
+- [NodePageCacheTest](modules/node/node.test/NodePageCacheTest.md) (class) — `modules/node/node.test` — Tests the cache invalidation of node operations.
+- [NodePostSettingsTestCase](modules/node/node.test/NodePostSettingsTestCase.md) (class) — `modules/node/node.test` — Checks that the post information displays when enabled for a content type.
+- [NodeQueryAlter](modules/node/node.test/NodeQueryAlter.md) (class) — `modules/node/node.test` — Tests node_query_node_access_alter().
+- [NodeRevisionPermissionsTestCase](modules/node/node.test/NodeRevisionPermissionsTestCase.md) (class) — `modules/node/node.test` — Tests user permissions for node revisions.
+- [NodeRevisionsTestCase](modules/node/node.test/NodeRevisionsTestCase.md) (class) — `modules/node/node.test` — Tests the node revision functionality.
+- [NodeRSSContentTestCase](modules/node/node.test/NodeRSSContentTestCase.md) (class) — `modules/node/node.test` — Ensures that data added to nodes by other modules appears in RSS feeds.
+- [NodeSaveTestCase](modules/node/node.test/NodeSaveTestCase.md) (class) — `modules/node/node.test` — Tests node save related functionality, including import-save.
+- [NodeTitleTestCase](modules/node/node.test/NodeTitleTestCase.md) (class) — `modules/node/node.test` — Tests node title functionality.
+- [NodeTitleXSSTestCase](modules/node/node.test/NodeTitleXSSTestCase.md) (class) — `modules/node/node.test` — Tests XSS functionality with a node entity.
+- [NodeTokenReplaceTestCase](modules/node/node.test/NodeTokenReplaceTestCase.md) (class) — `modules/node/node.test` — Test node token replacement in strings.
+- [NodeTypePersistenceTestCase](modules/node/node.test/NodeTypePersistenceTestCase.md) (class) — `modules/node/node.test` — Test node type customizations persistence.
+- [NodeTypeTestCase](modules/node/node.test/NodeTypeTestCase.md) (class) — `modules/node/node.test` — Tests related to node types.
+- [NodeWebTestCase](modules/node/node.test/NodeWebTestCase.md) (class) — `modules/node/node.test` — Defines a base class for testing the Node module.
+- [NoFieldsException](includes/database/database.inc/NoFieldsException.md) (class) — `includes/database/database.inc` — Exception thrown if an insert query doesn't specify insert or default fields.
+- [NoHelpTestCase](modules/help/help.test/NoHelpTestCase.md) (class) — `modules/help/help.test` — Tests a module without help to verify it is not listed in the help page.
+- [NonDefaultBlockAdmin](modules/block/block.test/NonDefaultBlockAdmin.md) (class) — `modules/block/block.test`
+- [NumberFieldTestCase](modules/field/modules/number/number.test/NumberFieldTestCase.md) (class) — `modules/field/modules/number/number.test` — Tests for number field types.
+- [OpenIDFunctionalTestCase](modules/openid/openid.test/OpenIDFunctionalTestCase.md) (class) — `modules/openid/openid.test` — Test discovery and login using OpenID
+- [OpenIDInvalidIdentifierTransitionTestCase](modules/openid/openid.test/OpenIDInvalidIdentifierTransitionTestCase.md) (class) — `modules/openid/openid.test` — Test account registration using Simple Registration and Attribute Exchange.
+- [OpenIDRegistrationTestCase](modules/openid/openid.test/OpenIDRegistrationTestCase.md) (class) — `modules/openid/openid.test` — Test account registration using Simple Registration and Attribute Exchange.
+- [OpenIDTestCase](modules/openid/openid.test/OpenIDTestCase.md) (class) — `modules/openid/openid.test` — Test internal helper functions.
+- [OpenIDWebTestCase](modules/openid/openid.test/OpenIDWebTestCase.md) (class) — `modules/openid/openid.test` — Base class for OpenID tests.
+- [OptionsSelectDynamicValuesTestCase](modules/field/modules/options/options.test/OptionsSelectDynamicValuesTestCase.md) (class) — `modules/field/modules/options/options.test` — Test an options select on a list field with a dynamic allowed values function.
+- [OptionsWidgetsTestCase](modules/field/modules/options/options.test/OptionsWidgetsTestCase.md) (class) — `modules/field/modules/options/options.test`
+- [PageEditTestCase](modules/node/node.test/PageEditTestCase.md) (class) — `modules/node/node.test` — Tests the node edit functionality.
+- [PageNotFoundTestCase](modules/system/system.test/PageNotFoundTestCase.md) (class) — `modules/system/system.test`
+- [PagePreviewTestCase](modules/node/node.test/PagePreviewTestCase.md) (class) — `modules/node/node.test` — Tests the node entity preview functionality.
+- [PagerDefault](includes/pager.inc/PagerDefault.md) (class) — `includes/pager.inc` — Query extender for pager queries.
+- [PagerFunctionalWebTestCase](modules/simpletest/tests/pager.test/PagerFunctionalWebTestCase.md) (class) — `modules/simpletest/tests/pager.test` — Tests pager functionality.
+- [PageTitleFiltering](modules/system/system.test/PageTitleFiltering.md) (class) — `modules/system/system.test`
+- [PageViewTestCase](modules/node/node.test/PageViewTestCase.md) (class) — `modules/node/node.test` — Tests the functionality of node entity edit permissions.
+- [ParseInfoFilesTestCase](modules/simpletest/tests/common.test/ParseInfoFilesTestCase.md) (class) — `modules/simpletest/tests/common.test` — Test the drupal_parse_info_file() API function.
+- [PasswordHashingTest](modules/simpletest/tests/password.test/PasswordHashingTest.md) (class) — `modules/simpletest/tests/password.test` — Unit tests for password hashing API.
+- [PathLanguageTestCase](modules/path/path.test/PathLanguageTestCase.md) (class) — `modules/path/path.test` — Tests URL aliases for translated nodes.
+- [PathLanguageUITestCase](modules/path/path.test/PathLanguageUITestCase.md) (class) — `modules/path/path.test` — Tests the user interface for creating path aliases, with languages.
+- [PathLookupTest](modules/simpletest/tests/path.test/PathLookupTest.md) (class) — `modules/simpletest/tests/path.test` — Unit test for drupal_lookup_path().
+- [PathMonolingualTestCase](modules/path/path.test/PathMonolingualTestCase.md) (class) — `modules/path/path.test` — Tests that paths are not prefixed on a monolingual site.
+- [PathSaveTest](modules/simpletest/tests/path.test/PathSaveTest.md) (class) — `modules/simpletest/tests/path.test` — Tests the path_save() function.
+- [PathTaxonomyTermTestCase](modules/path/path.test/PathTaxonomyTermTestCase.md) (class) — `modules/path/path.test` — Tests URL aliases for taxonomy terms.
+- [PathTestCase](modules/path/path.test/PathTestCase.md) (class) — `modules/path/path.test` — Provides a base class for testing the Path module.
+- [PharExtensionInterceptor](misc/typo3/drupal-security/PharExtensionInterceptor.php/PharExtensionInterceptor.md) (class) — `misc/typo3/drupal-security/PharExtensionInterceptor.php` — An alternate PharExtensionInterceptor to support phar-based CLI tools.
+- [PharExtensionInterceptor](misc/typo3/phar-stream-wrapper/src/Interceptor/PharExtensionInterceptor.php/PharExtensionInterceptor.md) (class) — `misc/typo3/phar-stream-wrapper/src/Interceptor/PharExtensionInterceptor.php`
+- [PharInvocation](misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocation.php/PharInvocation.md) (class) — `misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocation.php`
+- [PharInvocationCollection](misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationCollection.php/PharInvocationCollection.md) (class) — `misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationCollection.php`
+- [PharInvocationResolver](misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationResolver.php/PharInvocationResolver.md) (class) — `misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationResolver.php`
+- [PharMetaDataInterceptor](misc/typo3/phar-stream-wrapper/src/Interceptor/PharMetaDataInterceptor.php/PharMetaDataInterceptor.md) (class) — `misc/typo3/phar-stream-wrapper/src/Interceptor/PharMetaDataInterceptor.php`
+- [PharStreamWrapper](misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php/PharStreamWrapper.md) (class) — `misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php`
+- [PHPAccessTestCase](modules/php/php.test/PHPAccessTestCase.md) (class) — `modules/php/php.test` — Tests to make sure access to the PHP filter is properly restricted.
+- [PHPFilterTestCase](modules/php/php.test/PHPFilterTestCase.md) (class) — `modules/php/php.test` — Tests to make sure the PHP filter actually evaluates PHP code when used.
+- [PHPTestCase](modules/php/php.test/PHPTestCase.md) (class) — `modules/php/php.test` — Defines a base PHP test case class.
+- [PollBlockTestCase](modules/poll/poll.test/PollBlockTestCase.md) (class) — `modules/poll/poll.test`
+- [PollCreateTestCase](modules/poll/poll.test/PollCreateTestCase.md) (class) — `modules/poll/poll.test`
+- [PollDeleteChoiceTestCase](modules/poll/poll.test/PollDeleteChoiceTestCase.md) (class) — `modules/poll/poll.test`
+- [PollExpirationTestCase](modules/poll/poll.test/PollExpirationTestCase.md) (class) — `modules/poll/poll.test`
+- [PollJSAddChoice](modules/poll/poll.test/PollJSAddChoice.md) (class) — `modules/poll/poll.test` — Test adding new choices.
+- [PollTestCase](modules/poll/poll.test/PollTestCase.md) (class) — `modules/poll/poll.test`
+- [PollTokenReplaceTestCase](modules/poll/poll.test/PollTokenReplaceTestCase.md) (class) — `modules/poll/poll.test` — Test poll token replacement in strings.
+- [PollTranslateTestCase](modules/poll/poll.test/PollTranslateTestCase.md) (class) — `modules/poll/poll.test` — Tests poll translation logic.
+- [PollUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.node.test/PollUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.node.test` — Upgrade test for node type poll.
+- [PollUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.poll.test/PollUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.poll.test` — Upgrade test for poll.module.
+- [PollVoteCheckHostname](modules/poll/poll.test/PollVoteCheckHostname.md) (class) — `modules/poll/poll.test`
+- [PollVoteTestCase](modules/poll/poll.test/PollVoteTestCase.md) (class) — `modules/poll/poll.test`
+- [ProfileBlockTestCase](modules/profile/profile.test/ProfileBlockTestCase.md) (class) — `modules/profile/profile.test`
+- [ProfileCrudTestCase](modules/profile/profile.test/ProfileCrudTestCase.md) (class) — `modules/profile/profile.test` — Test profile integration with user CRUD operations.
+- [ProfileTestAutocomplete](modules/profile/profile.test/ProfileTestAutocomplete.md) (class) — `modules/profile/profile.test` — Test profile field autocompletion and access.
+- [ProfileTestBrowsing](modules/profile/profile.test/ProfileTestBrowsing.md) (class) — `modules/profile/profile.test` — Test profile browsing.
+- [ProfileTestCase](modules/profile/profile.test/ProfileTestCase.md) (class) — `modules/profile/profile.test` — A class for common methods for testing profile fields.
+- [ProfileTestDate](modules/profile/profile.test/ProfileTestDate.md) (class) — `modules/profile/profile.test`
+- [ProfileTestFields](modules/profile/profile.test/ProfileTestFields.md) (class) — `modules/profile/profile.test`
+- [ProfileTestSelect](modules/profile/profile.test/ProfileTestSelect.md) (class) — `modules/profile/profile.test`
+- [ProfileTestWeights](modules/profile/profile.test/ProfileTestWeights.md) (class) — `modules/profile/profile.test`
+- [PSR0WebTest](modules/simpletest/lib/Drupal/simpletest/Tests/PSR0WebTest.php/PSR0WebTest.md) (class) — `modules/simpletest/lib/Drupal/simpletest/Tests/PSR0WebTest.php`
+- [PSR4WebTest](modules/simpletest/src/Tests/PSR4WebTest.php/PSR4WebTest.md) (class) — `modules/simpletest/src/Tests/PSR4WebTest.php`
+- [Query](includes/database/query.inc/Query.md) (class) — `includes/database/query.inc` — Base class for query builders.
+- [QueryAlterableInterface](includes/database/query.inc/QueryAlterableInterface.md) (interface) — `includes/database/query.inc` — Interface for a query that can be manipulated via an alter hook.
+- [QueryConditionInterface](includes/database/query.inc/QueryConditionInterface.md) (interface) — `includes/database/query.inc` — Interface for a conditional clause in a query.
+- [QueryExtendableInterface](includes/database/select.inc/QueryExtendableInterface.md) (interface) — `includes/database/select.inc` — Interface for extendable query objects.
+- [QueryPlaceholderInterface](includes/database/query.inc/QueryPlaceholderInterface.md) (interface) — `includes/database/query.inc` — Interface for a query that accepts placeholders.
+- [QueueTestCase](modules/system/system.test/QueueTestCase.md) (class) — `modules/system/system.test` — Test the basic queue functionality.
+- [RdfCommentAttributesTestCase](modules/rdf/rdf.test/RdfCommentAttributesTestCase.md) (class) — `modules/rdf/rdf.test`
+- [RdfCrudTestCase](modules/rdf/rdf.test/RdfCrudTestCase.md) (class) — `modules/rdf/rdf.test`
+- [RdfGetRdfNamespacesTestCase](modules/rdf/rdf.test/RdfGetRdfNamespacesTestCase.md) (class) — `modules/rdf/rdf.test` — Tests for RDF namespaces declaration with hook_rdf_namespaces().
+- [RdfMappingDefinitionTestCase](modules/rdf/rdf.test/RdfMappingDefinitionTestCase.md) (class) — `modules/rdf/rdf.test`
+- [RdfMappingHookTestCase](modules/rdf/rdf.test/RdfMappingHookTestCase.md) (class) — `modules/rdf/rdf.test`
+- [RdfRdfaMarkupTestCase](modules/rdf/rdf.test/RdfRdfaMarkupTestCase.md) (class) — `modules/rdf/rdf.test` — Test RDFa markup generation.
+- [RdfTrackerAttributesTestCase](modules/rdf/rdf.test/RdfTrackerAttributesTestCase.md) (class) — `modules/rdf/rdf.test`
+- [Reader](misc/typo3/phar-stream-wrapper/src/Phar/Reader.php/Reader.md) (class) — `misc/typo3/phar-stream-wrapper/src/Phar/Reader.php`
+- [ReaderException](misc/typo3/phar-stream-wrapper/src/Phar/ReaderException.php/ReaderException.md) (class) — `misc/typo3/phar-stream-wrapper/src/Phar/ReaderException.php`
+- [RegistryParseFilesTestCase](modules/simpletest/tests/registry.test/RegistryParseFilesTestCase.md) (class) — `modules/simpletest/tests/registry.test`
+- [RegistryParseFileTestCase](modules/simpletest/tests/registry.test/RegistryParseFileTestCase.md) (class) — `modules/simpletest/tests/registry.test`
+- [RemoteFileDirectoryTest](modules/simpletest/tests/file.test/RemoteFileDirectoryTest.md) (class) — `modules/simpletest/tests/file.test` — Directory related tests.
+- [RemoteFileSaveUploadTest](modules/simpletest/tests/file.test/RemoteFileSaveUploadTest.md) (class) — `modules/simpletest/tests/file.test` — Test the file_save_upload() function on remote filesystems.
+- [RemoteFileScanDirectoryTest](modules/simpletest/tests/file.test/RemoteFileScanDirectoryTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_scan_directory() function on remote filesystems.
+- [RemoteFileUnmanagedCopyTest](modules/simpletest/tests/file.test/RemoteFileUnmanagedCopyTest.md) (class) — `modules/simpletest/tests/file.test` — Unmanaged copy related tests on remote filesystems.
+- [RemoteFileUnmanagedDeleteRecursiveTest](modules/simpletest/tests/file.test/RemoteFileUnmanagedDeleteRecursiveTest.md) (class) — `modules/simpletest/tests/file.test` — Deletion related tests on remote filesystems.
+- [RemoteFileUnmanagedDeleteTest](modules/simpletest/tests/file.test/RemoteFileUnmanagedDeleteTest.md) (class) — `modules/simpletest/tests/file.test` — Deletion related tests on remote filesystems.
+- [RemoteFileUnmanagedMoveTest](modules/simpletest/tests/file.test/RemoteFileUnmanagedMoveTest.md) (class) — `modules/simpletest/tests/file.test` — Unmanaged move related tests on remote filesystems.
+- [RemoteFileUnmanagedSaveDataTest](modules/simpletest/tests/file.test/RemoteFileUnmanagedSaveDataTest.md) (class) — `modules/simpletest/tests/file.test` — Tests the file_unmanaged_save_data() function on remote filesystems.
+- [RemoveFeedItemTestCase](modules/aggregator/aggregator.test/RemoveFeedItemTestCase.md) (class) — `modules/aggregator/aggregator.test`
+- [RemoveFeedTestCase](modules/aggregator/aggregator.test/RemoveFeedTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests functionality for removing feeds in the Aggregator module.
+- [RenderElementTypesTestCase](modules/simpletest/tests/theme.test/RenderElementTypesTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Tests the markup of core render element types passed to drupal_render().
+- [RequestSanitizerTest](modules/simpletest/tests/request_sanitizer.test/RequestSanitizerTest.md) (class) — `modules/simpletest/tests/request_sanitizer.test` — Tests DrupalRequestSanitizer class.
+- [Resolvable](misc/typo3/phar-stream-wrapper/src/Resolvable.php/Resolvable.md) (interface) — `misc/typo3/phar-stream-wrapper/src/Resolvable.php`
+- [RetrieveFileTestCase](modules/system/system.test/RetrieveFileTestCase.md) (class) — `modules/system/system.test` — Test HTTP file downloading capability.
+- [SanitizerTestRequest](modules/simpletest/tests/request_sanitizer.test/SanitizerTestRequest.md) (class) — `modules/simpletest/tests/request_sanitizer.test` — Basic HTTP Request class.
+- [SchemaCache](includes/bootstrap.inc/SchemaCache.md) (class) — `includes/bootstrap.inc` — Extends DrupalCacheArray to allow for dynamic building of the schema cache.
+- [SchemaTestCase](modules/simpletest/tests/schema.test/SchemaTestCase.md) (class) — `modules/simpletest/tests/schema.test` — Unit tests for the Schema API.
+- [SearchAdvancedSearchForm](modules/search/search.test/SearchAdvancedSearchForm.md) (class) — `modules/search/search.test` — Indexes content and tests the advanced search form.
+- [SearchBlockTestCase](modules/search/search.test/SearchBlockTestCase.md) (class) — `modules/search/search.test` — Tests the rendering of the search block.
+- [SearchCommentCountToggleTestCase](modules/search/search.test/SearchCommentCountToggleTestCase.md) (class) — `modules/search/search.test` — Tests that comment count display toggles properly on comment status of node
+- [SearchCommentTestCase](modules/search/search.test/SearchCommentTestCase.md) (class) — `modules/search/search.test` — Test integration searching comments.
+- [SearchConfigSettingsForm](modules/search/search.test/SearchConfigSettingsForm.md) (class) — `modules/search/search.test` — Test config page.
+- [SearchEmbedForm](modules/search/search.test/SearchEmbedForm.md) (class) — `modules/search/search.test` — Tests that we can embed a form in search results and submit it.
+- [SearchExactTestCase](modules/search/search.test/SearchExactTestCase.md) (class) — `modules/search/search.test` — Tests that searching for a phrase gets the correct page count.
+- [SearchExcerptTestCase](modules/search/search.test/SearchExcerptTestCase.md) (class) — `modules/search/search.test` — Tests the search_excerpt() function.
+- [SearchExpressionInsertExtractTestCase](modules/search/search.test/SearchExpressionInsertExtractTestCase.md) (class) — `modules/search/search.test` — Tests search_expression_insert() and search_expression_extract().
+- [SearchKeywordsConditions](modules/search/search.test/SearchKeywordsConditions.md) (class) — `modules/search/search.test` — Tests keywords and conditions.
+- [SearchLanguageTestCase](modules/search/search.test/SearchLanguageTestCase.md) (class) — `modules/search/search.test` — Test node search with multiple languages.
+- [SearchMatchTestCase](modules/search/search.test/SearchMatchTestCase.md) (class) — `modules/search/search.test` — Indexes content and queries it.
+- [SearchNodeAccessTest](modules/search/search.test/SearchNodeAccessTest.md) (class) — `modules/search/search.test` — Tests node search with node access control.
+- [SearchNodeTagTest](modules/search/search.test/SearchNodeTagTest.md) (class) — `modules/search/search.test` — Tests node search with query tags.
+- [SearchNumberMatchingTestCase](modules/search/search.test/SearchNumberMatchingTestCase.md) (class) — `modules/search/search.test` — Tests that numbers can be searched, with more complex matching.
+- [SearchNumbersTestCase](modules/search/search.test/SearchNumbersTestCase.md) (class) — `modules/search/search.test` — Tests that numbers can be searched.
+- [SearchPageOverride](modules/search/search.test/SearchPageOverride.md) (class) — `modules/search/search.test` — Tests that hook_search_page runs.
+- [SearchPageText](modules/search/search.test/SearchPageText.md) (class) — `modules/search/search.test` — Tests the bike shed text on no results page, and text on the search page.
+- [SearchQuery](modules/search/search.extender.inc/SearchQuery.md) (class) — `modules/search/search.extender.inc` — Do a query on the full-text search index for a word or words.
+- [SearchRankingTestCase](modules/search/search.test/SearchRankingTestCase.md) (class) — `modules/search/search.test` — Indexes content and tests ranking factors.
+- [SearchSetLocaleTest](modules/search/search.test/SearchSetLocaleTest.md) (class) — `modules/search/search.test` — Tests searching with locale values set.
+- [SearchSimplifyTestCase](modules/search/search.test/SearchSimplifyTestCase.md) (class) — `modules/search/search.test` — Test search_simplify() on every Unicode character, and some other cases.
+- [SearchTokenizerTestCase](modules/search/search.test/SearchTokenizerTestCase.md) (class) — `modules/search/search.test` — Test the CJK tokenizer.
+- [SelectQuery](includes/database/select.inc/SelectQuery.md) (class) — `includes/database/select.inc` — Query builder for SELECT statements.
+- [SelectQuery_pgsql](includes/database/pgsql/select.inc/SelectQuery_pgsql.md) (class) — `includes/database/pgsql/select.inc`
+- [SelectQuery_sqlite](includes/database/sqlite/select.inc/SelectQuery_sqlite.md) (class) — `includes/database/sqlite/select.inc` — SQLite specific query builder for SELECT statements.
+- [SelectQueryExtender](includes/database/select.inc/SelectQueryExtender.md) (class) — `includes/database/select.inc` — The base extender class for Select queries.
+- [SelectQueryInterface](includes/database/select.inc/SelectQueryInterface.md) (interface) — `includes/database/select.inc` — Interface definition for a Select Query object.
+- [SessionHttpsTestCase](modules/simpletest/tests/session.test/SessionHttpsTestCase.md) (class) — `modules/simpletest/tests/session.test` — Ensure that when running under HTTPS two session cookies are generated.
+- [SessionTestCase](modules/simpletest/tests/session.test/SessionTestCase.md) (class) — `modules/simpletest/tests/session.test`
+- [SessionUnitTestCase](modules/simpletest/tests/session.test/SessionUnitTestCase.md) (class) — `modules/simpletest/tests/session.test` — Unit tests for session handling.
+- [ShortcutLinksTestCase](modules/shortcut/shortcut.test/ShortcutLinksTestCase.md) (class) — `modules/shortcut/shortcut.test` — Defines shortcut links test cases.
+- [ShortcutSetsTestCase](modules/shortcut/shortcut.test/ShortcutSetsTestCase.md) (class) — `modules/shortcut/shortcut.test` — Defines shortcut set test cases.
+- [ShortcutTestCase](modules/shortcut/shortcut.test/ShortcutTestCase.md) (class) — `modules/shortcut/shortcut.test` — Defines base class for shortcut test cases.
+- [ShutdownFunctionsTest](modules/system/system.test/ShutdownFunctionsTest.md) (class) — `modules/system/system.test` — Functional tests shutdown functions.
+- [SimpleTestBrokenSetUp](modules/simpletest/simpletest.test/SimpleTestBrokenSetUp.md) (class) — `modules/simpletest/simpletest.test` — Tests a test case that does not run parent::setUp() in its setUp() method.
+- [SimpleTestBrowserTestCase](modules/simpletest/simpletest.test/SimpleTestBrowserTestCase.md) (class) — `modules/simpletest/simpletest.test` — Test internal testing framework browser.
+- [SimpleTestDiscoveryTestCase](modules/simpletest/simpletest.test/SimpleTestDiscoveryTestCase.md) (class) — `modules/simpletest/simpletest.test` — Verifies that tests in other installation profiles are not found.
+- [SimpleTestFolderTestCase](modules/simpletest/simpletest.test/SimpleTestFolderTestCase.md) (class) — `modules/simpletest/simpletest.test` — Test Folder creation
+- [SimpleTestFunctionalTest](modules/simpletest/simpletest.test/SimpleTestFunctionalTest.md) (class) — `modules/simpletest/simpletest.test`
+- [SimpleTestInstallationProfileModuleTestsTestCase](modules/simpletest/simpletest.test/SimpleTestInstallationProfileModuleTestsTestCase.md) (class) — `modules/simpletest/simpletest.test` — Verifies that tests bundled with installation profile modules are found.
+- [SimpleTestMailCaptureTestCase](modules/simpletest/simpletest.test/SimpleTestMailCaptureTestCase.md) (class) — `modules/simpletest/simpletest.test`
+- [SimpleTestMissingDependentModuleUnitTest](modules/simpletest/simpletest.test/SimpleTestMissingDependentModuleUnitTest.md) (class) — `modules/simpletest/simpletest.test` — Test required modules for tests.
+- [SimpleTestOtherInstallationProfileModuleTestsTestCase](modules/simpletest/simpletest.test/SimpleTestOtherInstallationProfileModuleTestsTestCase.md) (class) — `modules/simpletest/simpletest.test` — Verifies that tests in other installation profiles are not found.
+- [SiteMaintenanceTestCase](modules/system/system.test/SiteMaintenanceTestCase.md) (class) — `modules/system/system.test` — Tests site maintenance functionality.
+- [SkipDotsRecursiveDirectoryIterator](includes/filetransfer/filetransfer.inc/SkipDotsRecursiveDirectoryIterator.md) (class) — `includes/filetransfer/filetransfer.inc` — Provides an interface for iterating recursively over filesystem directories.
+- [StatisticsAdminTestCase](modules/statistics/statistics.test/StatisticsAdminTestCase.md) (class) — `modules/statistics/statistics.test` — Tests the statistics administration screen.
+- [StatisticsBlockVisitorsTestCase](modules/statistics/statistics.test/StatisticsBlockVisitorsTestCase.md) (class) — `modules/statistics/statistics.test` — Tests that the visitor blocking functionality works.
+- [StatisticsLoggingTestCase](modules/statistics/statistics.test/StatisticsLoggingTestCase.md) (class) — `modules/statistics/statistics.test` — Tests that logging via statistics_exit() works for all pages.
+- [StatisticsReportsTestCase](modules/statistics/statistics.test/StatisticsReportsTestCase.md) (class) — `modules/statistics/statistics.test` — Tests that report pages render properly, and that access logging works.
+- [StatisticsTestCase](modules/statistics/statistics.test/StatisticsTestCase.md) (class) — `modules/statistics/statistics.test` — Defines a base class for testing the Statistics module.
+- [StatisticsTokenReplaceTestCase](modules/statistics/statistics.test/StatisticsTokenReplaceTestCase.md) (class) — `modules/statistics/statistics.test` — Tests statistics token replacement in strings.
+- [StreamWrapperInterface](includes/stream_wrappers.inc/StreamWrapperInterface.md) (interface) — `includes/stream_wrappers.inc` — Generic PHP stream wrapper interface.
+- [StreamWrapperTest](modules/simpletest/tests/file.test/StreamWrapperTest.md) (class) — `modules/simpletest/tests/file.test` — Tests stream wrapper functions.
+- [Stub](misc/typo3/phar-stream-wrapper/src/Phar/Stub.php/Stub.md) (class) — `misc/typo3/phar-stream-wrapper/src/Phar/Stub.php`
+- [SummaryLengthTestCase](modules/node/node.test/SummaryLengthTestCase.md) (class) — `modules/node/node.test` — Tests the summary length functionality.
+- [SyslogTestCase](modules/syslog/syslog.test/SyslogTestCase.md) (class) — `modules/syslog/syslog.test` — Tests the Syslog module functionality.
+- [SystemAdminTestCase](modules/system/system.test/SystemAdminTestCase.md) (class) — `modules/system/system.test` — Tests administrative overview pages.
+- [SystemArchiverTest](modules/system/system.test/SystemArchiverTest.md) (class) — `modules/system/system.test` — Test case for Archiver classes.
+- [SystemAuthorizeCase](modules/system/system.test/SystemAuthorizeCase.md) (class) — `modules/system/system.test` — Tests authorize.php and related hooks.
+- [SystemBlockTestCase](modules/system/system.test/SystemBlockTestCase.md) (class) — `modules/system/system.test`
+- [SystemIndexPhpTest](modules/system/system.test/SystemIndexPhpTest.md) (class) — `modules/system/system.test` — Test the handling of requests containing 'index.php'.
+- [SystemInfoAlterTestCase](modules/system/system.test/SystemInfoAlterTestCase.md) (class) — `modules/system/system.test` — Tests the effectiveness of hook_system_info_alter().
+- [SystemMainContentFallback](modules/system/system.test/SystemMainContentFallback.md) (class) — `modules/system/system.test` — Test main content rendering fallback provided by system module.
+- [SystemQueue](modules/system/system.queue.inc/SystemQueue.md) (class) — `modules/system/system.queue.inc` — Default queue implementation.
+- [SystemTestFileTransfer](modules/simpletest/tests/system_test.module/SystemTestFileTransfer.md) (class) — `modules/simpletest/tests/system_test.module` — Mock FileTransfer object to test the settings form functionality.
+- [SystemThemeFunctionalTest](modules/system/system.test/SystemThemeFunctionalTest.md) (class) — `modules/system/system.test` — Tests for the theme interface functionality.
+- [SystemValidTokenTest](modules/system/system.test/SystemValidTokenTest.md) (class) — `modules/system/system.test` — Test case for drupal_valid_token().
+- [TableSort](includes/tablesort.inc/TableSort.md) (class) — `includes/tablesort.inc` — Query extender class for tablesort queries.
+- [TableSortTest](modules/simpletest/tests/tablesort.test/TableSortTest.md) (class) — `modules/simpletest/tests/tablesort.test` — Test unicode handling features implemented in unicode.inc.
+- [TaxonomyEFQTestCase](modules/taxonomy/taxonomy.test/TaxonomyEFQTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests the functionality of EntityFieldQuery for taxonomy entities.
+- [TaxonomyHooksTestCase](modules/taxonomy/taxonomy.test/TaxonomyHooksTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests for taxonomy hook invocation.
+- [TaxonomyLegacyTestCase](modules/taxonomy/taxonomy.test/TaxonomyLegacyTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Test for legacy node bug.
+- [TaxonomyLoadMultipleTestCase](modules/taxonomy/taxonomy.test/TaxonomyLoadMultipleTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Test the taxonomy_term_load_multiple() function.
+- [TaxonomyPrivateFileTestCase](modules/taxonomy/taxonomy.test/TaxonomyPrivateFileTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests appropriate access control to private file fields on a term.
+- [TaxonomyQueryAlterTestCase](modules/taxonomy/taxonomy.test/TaxonomyQueryAlterTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests that appropriate query tags are added.
+- [TaxonomyRSSTestCase](modules/taxonomy/taxonomy.test/TaxonomyRSSTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests the rendering of term reference fields in RSS feeds.
+- [TaxonomyTermCacheUsageTestCase](modules/taxonomy/taxonomy.test/TaxonomyTermCacheUsageTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests for taxonomy terms cache usage.
+- [TaxonomyTermController](modules/taxonomy/taxonomy.module/TaxonomyTermController.md) (class) — `modules/taxonomy/taxonomy.module` — Controller class for taxonomy terms.
+- [TaxonomyTermFieldMultipleVocabularyTestCase](modules/taxonomy/taxonomy.test/TaxonomyTermFieldMultipleVocabularyTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests a taxonomy term reference field that allows multiple vocabularies.
+- [TaxonomyTermFieldTestCase](modules/taxonomy/taxonomy.test/TaxonomyTermFieldTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests for taxonomy term field and formatter.
+- [TaxonomyTermFunctionTestCase](modules/taxonomy/taxonomy.test/TaxonomyTermFunctionTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Unit tests for taxonomy term functions.
+- [TaxonomyTermIndexTestCase](modules/taxonomy/taxonomy.test/TaxonomyTermIndexTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests the hook implementations that maintain the taxonomy index.
+- [TaxonomyTermTestCase](modules/taxonomy/taxonomy.test/TaxonomyTermTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests for taxonomy term functions.
+- [TaxonomyThemeTestCase](modules/taxonomy/taxonomy.test/TaxonomyThemeTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests for verifying that taxonomy pages use the correct theme.
+- [TaxonomyTokenReplaceTestCase](modules/taxonomy/taxonomy.test/TaxonomyTokenReplaceTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Test taxonomy token replacement in strings.
+- [TaxonomyVocabularyController](modules/taxonomy/taxonomy.module/TaxonomyVocabularyController.md) (class) — `modules/taxonomy/taxonomy.module` — Controller class for taxonomy vocabularies.
+- [TaxonomyVocabularyFunctionalTest](modules/taxonomy/taxonomy.test/TaxonomyVocabularyFunctionalTest.md) (class) — `modules/taxonomy/taxonomy.test` — Tests the taxonomy vocabulary interface.
+- [TaxonomyVocabularyTestCase](modules/taxonomy/taxonomy.test/TaxonomyVocabularyTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Tests for taxonomy vocabulary functions.
+- [TaxonomyWebTestCase](modules/taxonomy/taxonomy.test/TaxonomyWebTestCase.md) (class) — `modules/taxonomy/taxonomy.test` — Provides common helper methods for Taxonomy module tests.
+- [TestEntityBundleController](modules/field/tests/field_test.entity.inc/TestEntityBundleController.md) (class) — `modules/field/tests/field_test.entity.inc` — Controller class for the test_entity_bundle entity type.
+- [TestFileTransfer](modules/simpletest/tests/filetransfer.test/TestFileTransfer.md) (class) — `modules/simpletest/tests/filetransfer.test` — Mock FileTransfer object for test case.
+- [TestingMailSystem](modules/system/system.mail.inc/TestingMailSystem.md) (class) — `modules/system/system.mail.inc` — A mail sending implementation that captures sent messages to a variable.
+- [TestTaxonomyTermController](modules/simpletest/tests/taxonomy_test.module/TestTaxonomyTermController.md) (class) — `modules/simpletest/tests/taxonomy_test.module` — Test controller class for taxonomy terms.
+- [TextFieldTestCase](modules/field/modules/text/text.test/TextFieldTestCase.md) (class) — `modules/field/modules/text/text.test`
+- [TextSummaryTestCase](modules/field/modules/text/text.test/TextSummaryTestCase.md) (class) — `modules/field/modules/text/text.test`
+- [TextTranslationTestCase](modules/field/modules/text/text.test/TextTranslationTestCase.md) (class) — `modules/field/modules/text/text.test`
+- [ThemeDebugMarkupTestCase](modules/simpletest/tests/theme.test/ThemeDebugMarkupTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Tests for theme debug markup.
+- [ThemeFastTestCase](modules/simpletest/tests/theme.test/ThemeFastTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Tests autocompletion not loading registry.
+- [ThemeHookInitTestCase](modules/simpletest/tests/theme.test/ThemeHookInitTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Functional test for initialization of the theme system in hook_init().
+- [ThemeItemListUnitTest](modules/simpletest/tests/theme.test/ThemeItemListUnitTest.md) (class) — `modules/simpletest/tests/theme.test` — Unit tests for theme_item_list().
+- [ThemeLinksTest](modules/simpletest/tests/theme.test/ThemeLinksTest.md) (class) — `modules/simpletest/tests/theme.test` — Unit tests for theme_links().
+- [ThemeRegistry](includes/theme.inc/ThemeRegistry.md) (class) — `includes/theme.inc` — Builds the run-time theme registry.
+- [ThemeRegistryTestCase](modules/simpletest/tests/theme.test/ThemeRegistryTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Tests for the ThemeRegistry class.
+- [ThemeTableTestCase](modules/simpletest/tests/theme.test/ThemeTableTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Unit tests for theme_table().
+- [ThemeTestCase](modules/simpletest/tests/theme.test/ThemeTestCase.md) (class) — `modules/simpletest/tests/theme.test` — Unit tests for the Theme API.
+- [ThemeUpdater](modules/system/system.updater.inc/ThemeUpdater.md) (class) — `modules/system/system.updater.inc` — Class for updating themes using FileTransfer classes via authorize.php.
+- [TokenReplaceTestCase](modules/system/system.test/TokenReplaceTestCase.md) (class) — `modules/system/system.test` — Test token replacement in strings.
+- [TokenScanTest](modules/system/system.test/TokenScanTest.md) (class) — `modules/system/system.test` — Test token replacement in strings.
+- [ToolbarTestCase](modules/toolbar/toolbar.test/ToolbarTestCase.md) (class) — `modules/toolbar/toolbar.test`
+- [TrackerTest](modules/tracker/tracker.test/TrackerTest.md) (class) — `modules/tracker/tracker.test` — Defines a base class for testing tracker.module.
+- [TranslatableUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.translatable.test/TranslatableUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.translatable.test` — Upgrade test for translatable content types of node.module.
+- [TranslationTestCase](modules/translation/translation.test/TranslationTestCase.md) (class) — `modules/translation/translation.test` — Functional tests for the Translation module.
+- [TriggerActionTestCase](modules/trigger/trigger.test/TriggerActionTestCase.md) (class) — `modules/trigger/trigger.test` — Provides a base class with trigger assignments and test comparisons.
+- [TriggerContentTestCase](modules/trigger/trigger.test/TriggerContentTestCase.md) (class) — `modules/trigger/trigger.test` — Provides tests for node triggers.
+- [TriggerCronTestCase](modules/trigger/trigger.test/TriggerCronTestCase.md) (class) — `modules/trigger/trigger.test` — Tests cron trigger.
+- [TriggerOrphanedActionsTestCase](modules/trigger/trigger.test/TriggerOrphanedActionsTestCase.md) (class) — `modules/trigger/trigger.test` — Tests that orphaned actions are properly handled.
+- [TriggerOtherTestCase](modules/trigger/trigger.test/TriggerOtherTestCase.md) (class) — `modules/trigger/trigger.test` — Tests other triggers.
+- [TriggerUnassignTestCase](modules/trigger/trigger.test/TriggerUnassignTestCase.md) (class) — `modules/trigger/trigger.test` — Tests the unassigning of triggers.
+- [TriggerUpdatePathTestCase](modules/simpletest/tests/upgrade/update.trigger.test/TriggerUpdatePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/update.trigger.test` — Tests the Trigger 7.0 -> 7.x upgrade path.
+- [TriggerUserActionTestCase](modules/trigger/trigger.test/TriggerUserActionTestCase.md) (class) — `modules/trigger/trigger.test` — Tests token substitution in trigger actions.
+- [TriggerUserTokenTestCase](modules/trigger/trigger.test/TriggerUserTokenTestCase.md) (class) — `modules/trigger/trigger.test` — Tests token substitution in trigger actions.
+- [TriggerWebTestCase](modules/trigger/trigger.test/TriggerWebTestCase.md) (class) — `modules/trigger/trigger.test` — Provides common helper methods.
+- [TruncateQuery](includes/database/query.inc/TruncateQuery.md) (class) — `includes/database/query.inc` — General class for an abstracted TRUNCATE operation.
+- [TruncateQuery_mysql](includes/database/mysql/query.inc/TruncateQuery_mysql.md) (class) — `includes/database/mysql/query.inc`
+- [TruncateQuery_sqlite](includes/database/sqlite/query.inc/TruncateQuery_sqlite.md) (class) — `includes/database/sqlite/query.inc` — SQLite specific implementation of TruncateQuery.
+- [UnicodeUnitTest](modules/simpletest/tests/unicode.test/UnicodeUnitTest.md) (class) — `modules/simpletest/tests/unicode.test` — Test unicode handling features implemented in unicode.inc.
+- [Unserialize](misc/brumann/polyfill-unserialize/src/Unserialize.php/Unserialize.md) (class) — `misc/brumann/polyfill-unserialize/src/Unserialize.php`
+- [UpdateCoreTestCase](modules/update/update.test/UpdateCoreTestCase.md) (class) — `modules/update/update.test` — Tests behavior related to discovering and listing updates to Drupal core.
+- [UpdateCoreUnitTestCase](modules/update/update.test/UpdateCoreUnitTestCase.md) (class) — `modules/update/update.test` — Tests update functionality unrelated to the database.
+- [UpdateDependencyHookInvocationTestCase](modules/simpletest/tests/update.test/UpdateDependencyHookInvocationTestCase.md) (class) — `modules/simpletest/tests/update.test` — Tests for the invocation of hook_update_dependencies().
+- [UpdateDependencyMissingTestCase](modules/simpletest/tests/update.test/UpdateDependencyMissingTestCase.md) (class) — `modules/simpletest/tests/update.test` — Tests for missing update dependencies.
+- [UpdateDependencyOrderingTestCase](modules/simpletest/tests/update.test/UpdateDependencyOrderingTestCase.md) (class) — `modules/simpletest/tests/update.test` — Tests for the update dependency ordering system.
+- [UpdateFeedItemTestCase](modules/aggregator/aggregator.test/UpdateFeedItemTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests functionality of updating a feed item in the Aggregator module.
+- [UpdateFeedTestCase](modules/aggregator/aggregator.test/UpdateFeedTestCase.md) (class) — `modules/aggregator/aggregator.test` — Tests functionality of updating the feed in the Aggregator module.
+- [UpdatePathTestCase](modules/simpletest/tests/upgrade/upgrade.test/UpdatePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.test` — Performs end-to-end point test of the release update path.
+- [UpdateQuery](includes/database/query.inc/UpdateQuery.md) (class) — `includes/database/query.inc` — General class for an abstracted UPDATE operation.
+- [UpdateQuery_mysql](includes/database/mysql/query.inc/UpdateQuery_mysql.md) (class) — `includes/database/mysql/query.inc`
+- [UpdateQuery_pgsql](includes/database/pgsql/query.inc/UpdateQuery_pgsql.md) (class) — `includes/database/pgsql/query.inc`
+- [UpdateQuery_sqlite](includes/database/sqlite/query.inc/UpdateQuery_sqlite.md) (class) — `includes/database/sqlite/query.inc` — SQLite specific implementation of UpdateQuery.
+- [Updater](includes/updater.inc/Updater.md) (class) — `includes/updater.inc` — Base class for Updaters used in Drupal.
+- [UpdaterException](includes/updater.inc/UpdaterException.md) (class) — `includes/updater.inc` — Exception class for the Updater class hierarchy.
+- [UpdaterFileTransferException](includes/updater.inc/UpdaterFileTransferException.md) (class) — `includes/updater.inc` — Child class of UpdaterException that indicates a FileTransfer exception.
+- [UpdateScriptFunctionalTest](modules/system/system.test/UpdateScriptFunctionalTest.md) (class) — `modules/system/system.test` — Tests for the update system functionality.
+- [UpdateTestContribCase](modules/update/update.test/UpdateTestContribCase.md) (class) — `modules/update/update.test` — Tests behavior related to handling updates to contributed modules and themes.
+- [UpdateTestFileTransfer](modules/update/tests/update_test.module/UpdateTestFileTransfer.md) (class) — `modules/update/tests/update_test.module` — Mocks a FileTransfer object to test the settings form functionality.
+- [UpdateTestHelper](modules/update/update.test/UpdateTestHelper.md) (class) — `modules/update/update.test` — Defines some shared functions used by all update tests.
+- [UpdateTestUploadCase](modules/update/update.test/UpdateTestUploadCase.md) (class) — `modules/update/update.test` — Tests project upload and extract functionality.
+- [UpgradePathTaxonomyTestCase](modules/simpletest/tests/upgrade/upgrade.taxonomy.test/UpgradePathTaxonomyTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.taxonomy.test` — Test taxonomy upgrades.
+- [UpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.test/UpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.test` — Perform end-to-end tests of the upgrade path.
+- [UpgradePathTriggerTestCase](modules/simpletest/tests/upgrade/upgrade.trigger.test/UpgradePathTriggerTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.trigger.test` — Tests the Trigger 6 -> 7 upgrade path.
+- [UploadUpgradePathTestCase](modules/simpletest/tests/upgrade/upgrade.upload.test/UploadUpgradePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.upload.test` — Upgrade test for comment.module.
+- [UrlAlterFunctionalTest](modules/simpletest/tests/path.test/UrlAlterFunctionalTest.md) (class) — `modules/simpletest/tests/path.test` — Tests hook_url_alter functions.
+- [UrlIsExternalUnitTest](modules/simpletest/tests/common.test/UrlIsExternalUnitTest.md) (class) — `modules/simpletest/tests/common.test` — Tests url_is_external().
+- [UserAccountLinksUnitTests](modules/user/user.test/UserAccountLinksUnitTests.md) (class) — `modules/user/user.test` — Tests user links in the secondary menu.
+- [UserActionsTest](modules/user/user.test/UserActionsTest.md) (class) — `modules/user/user.test` — Tests actions provided by the User module.
+- [UserAdminTestCase](modules/user/user.test/UserAdminTestCase.md) (class) — `modules/user/user.test`
+- [UserAuthmapAssignmentTestCase](modules/user/user.test/UserAuthmapAssignmentTestCase.md) (class) — `modules/user/user.test` — Unit test for authmap assignment.
+- [UserAutocompleteTestCase](modules/user/user.test/UserAutocompleteTestCase.md) (class) — `modules/user/user.test` — Test user autocompletion.
+- [UserBlocksUnitTests](modules/user/user.test/UserBlocksUnitTests.md) (class) — `modules/user/user.test` — Test user blocks.
+- [UserCancelTestCase](modules/user/user.test/UserCancelTestCase.md) (class) — `modules/user/user.test` — Test cancelling a user.
+- [UserController](modules/user/user.module/UserController.md) (class) — `modules/user/user.module` — Controller class for users.
+- [UserCreateTestCase](modules/user/user.test/UserCreateTestCase.md) (class) — `modules/user/user.test` — Test the create user administration page.
+- [UserEditedOwnAccountTestCase](modules/user/user.test/UserEditedOwnAccountTestCase.md) (class) — `modules/user/user.test`
+- [UserEditRebuildTestCase](modules/user/user.test/UserEditRebuildTestCase.md) (class) — `modules/user/user.test` — Tests editing a user account with and without a form rebuild.
+- [UserEditTestCase](modules/user/user.test/UserEditTestCase.md) (class) — `modules/user/user.test` — Tests editing a user account.
+- [UserLoginTestCase](modules/user/user.test/UserLoginTestCase.md) (class) — `modules/user/user.test` — Functional tests for user logins, including rate limiting of login attempts.
+- [UserPasswordResetTestCase](modules/user/user.test/UserPasswordResetTestCase.md) (class) — `modules/user/user.test` — Tests resetting a user password.
+- [UserPermissionsTestCase](modules/user/user.test/UserPermissionsTestCase.md) (class) — `modules/user/user.test`
+- [UserPictureTestCase](modules/user/user.test/UserPictureTestCase.md) (class) — `modules/user/user.test`
+- [UserRegistrationTestCase](modules/user/user.test/UserRegistrationTestCase.md) (class) — `modules/user/user.test`
+- [UserRoleAdminTestCase](modules/user/user.test/UserRoleAdminTestCase.md) (class) — `modules/user/user.test` — Test case to test adding, editing and deleting roles.
+- [UserRolesAssignmentTestCase](modules/user/user.test/UserRolesAssignmentTestCase.md) (class) — `modules/user/user.test` — Test role assignment.
+- [UserSaveTestCase](modules/user/user.test/UserSaveTestCase.md) (class) — `modules/user/user.test` — Tests saving a user account.
+- [UserSignatureTestCase](modules/user/user.test/UserSignatureTestCase.md) (class) — `modules/user/user.test` — Test case for user signatures.
+- [UserTimeZoneFunctionalTest](modules/user/user.test/UserTimeZoneFunctionalTest.md) (class) — `modules/user/user.test` — Tests for user-configurable time zones.
+- [UserTokenReplaceTestCase](modules/user/user.test/UserTokenReplaceTestCase.md) (class) — `modules/user/user.test` — Test user token replacement in strings.
+- [UserUpdatePathTestCase](modules/simpletest/tests/upgrade/update.user.test/UserUpdatePathTestCase.md) (class) — `modules/simpletest/tests/upgrade/update.user.test` — Tests the User 7.0 -> 7.x update path.
+- [UserUpgradePathDuplicatedPermissionTestCase](modules/simpletest/tests/upgrade/upgrade.user.test/UserUpgradePathDuplicatedPermissionTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.user.test` — Upgrade test for user.module (duplicated permission).
+- [UserUpgradePathNoPasswordTokenTestCase](modules/simpletest/tests/upgrade/upgrade.user.test/UserUpgradePathNoPasswordTokenTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.user.test` — Upgrade test for user.module (password token not involved).
+- [UserUpgradePathPasswordTokenTestCase](modules/simpletest/tests/upgrade/upgrade.user.test/UserUpgradePathPasswordTokenTestCase.md) (class) — `modules/simpletest/tests/upgrade/upgrade.user.test` — Upgrade test for user.module (password token involved).
+- [UserUserSearchTestCase](modules/user/user.test/UserUserSearchTestCase.md) (class) — `modules/user/user.test` — Test user search.
+- [UserValidateCurrentPassCustomForm](modules/user/user.test/UserValidateCurrentPassCustomForm.md) (class) — `modules/user/user.test` — Tests user_validate_current_pass on a custom form.
+- [UserValidationTestCase](modules/user/user.test/UserValidationTestCase.md) (class) — `modules/user/user.test`
+- [ValidUrlTestCase](modules/simpletest/tests/common.test/ValidUrlTestCase.md) (class) — `modules/simpletest/tests/common.test` — Test for valid_url().
+- [XMLRPCBasicTestCase](modules/simpletest/tests/xmlrpc.test/XMLRPCBasicTestCase.md) (class) — `modules/simpletest/tests/xmlrpc.test` — Perform basic XML-RPC tests that do not require addition callbacks.
+- [XMLRPCMessagesTestCase](modules/simpletest/tests/xmlrpc.test/XMLRPCMessagesTestCase.md) (class) — `modules/simpletest/tests/xmlrpc.test`
+- [XMLRPCValidator1IncTestCase](modules/simpletest/tests/xmlrpc.test/XMLRPCValidator1IncTestCase.md) (class) — `modules/simpletest/tests/xmlrpc.test`

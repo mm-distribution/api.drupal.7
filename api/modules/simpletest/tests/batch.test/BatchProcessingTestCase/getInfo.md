@@ -1,0 +1,31 @@
+# BatchProcessingTestCase::getInfo()
+
+- **Type:** Method
+- **File:** [`modules/simpletest/tests/batch.test`](../_file.md), lines 12–18 · [local source](../../../../../../source/modules/simpletest/tests/batch.test) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/simpletest/tests/batch.test#L12-L18)
+- **Class:** [BatchProcessingTestCase](../BatchProcessingTestCase.md)
+- **Module/theme:** batch_test
+
+## Signature
+
+```php
+public static function getInfo()
+```
+
+## Documentation
+
+_No docblock in source._
+
+## Code
+
+```php
+  public static function getInfo() {
+    return array(
+      'name' => 'Batch processing',
+      'description' => 'Test batch processing in form and non-form workflow.',
+      'group' => 'Batch API',
+    );
+  }
+```
+
+---
+_Drupal 7.103 · [modules/simpletest/tests/batch.test](https://github.com/drupal/drupal/blob/7.103/modules/simpletest/tests/batch.test) · Licensed GPL-2.0-or-later (see LICENSE)._

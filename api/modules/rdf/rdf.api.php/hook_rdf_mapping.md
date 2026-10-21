@@ -1,0 +1,98 @@
+# hook_rdf_mapping()
+
+- **Type:** Hook (documentation function)
+- **File:** [`modules/rdf/rdf.api.php`](_file.md), lines 46–74 · [local source](../../../../source/modules/rdf/rdf.api.php) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/rdf/rdf.api.php#L46-L74)
+- **Module/theme:** rdf
+- **Topics:** [hooks](../../../topics/hooks.md), [rdf](../../../topics/rdf.md)
+
+## Signature
+
+```php
+function hook_rdf_mapping()
+```
+
+## Documentation
+
+```text
+Allow modules to define RDF mappings for field bundles.
+
+Modules defining their own field bundles can specify which RDF semantics
+should be used to annotate these bundles. These mappings are then used for
+automatic RDFa output in the HTML code.
+
+@return
+  A list of mapping structures, where each mapping is an associative array:
+  - type: The name of an entity type (e.g., 'node', 'comment', and so on.)
+  - bundle: The name of the bundle (e.g., 'page', 'blog', or
+    RDF_DEFAULT_BUNDLE for default mappings.)
+  - mapping: The mapping structure which applies to the entity type and
+    bundle. A mapping structure is an array with keys corresponding to
+    existing field instances in the bundle. Each field is then described in
+    terms of the RDF mapping:
+    - predicates: An array of RDF predicates which describe the relation
+      between the bundle (RDF subject) and the value of the field (RDF
+      object). This value is either some text, another bundle, or a URI in
+      general.
+    - datatype: Is used along with 'callback' to format data so that it is
+      readable by machines. A typical example is a date which can be written
+      in many different formats but should be translated into a uniform
+      format for machine consumption.
+    - callback: A function name to invoke for 'datatype'.
+    - type: A string used to determine the type of RDFa markup which will be
+      used in the final HTML output, depending on whether the RDF object is a
+      literal text or another RDF resource.
+    - rdftype: A special property used to define the type of the instance.
+      Its value should be an array of RDF classes.
+
+      @ingroup rdf
+```
+
+## Code
+
+```php
+function hook_rdf_mapping() {
+  return array(
+    array(
+      'type' => 'node',
+      'bundle' => 'blog',
+      'mapping' => array(
+        'rdftype' => array('sioct:Weblog'),
+        'title' => array(
+          'predicates' => array('dc:title'),
+        ),
+        'created' => array(
+          'predicates' => array('dc:date', 'dc:created'),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array('content:encoded'),
+        ),
+        'uid' => array(
+          'predicates' => array('sioc:has_creator'),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array('foaf:name'),
+        ),
+      ),
+    ),
+  );
+}
+```
+
+## Implementations in Drupal core (derived)
+
+Functions whose docblock says "Implements hook_rdf_mapping()".
+
+- [blog_rdf_mapping()](../../blog/blog.module/blog_rdf_mapping.md) — `modules/blog/blog.module`
+- [comment_rdf_mapping()](../../comment/comment.module/comment_rdf_mapping.md) — `modules/comment/comment.module`
+- [forum_rdf_mapping()](../../forum/forum.module/forum_rdf_mapping.md) — `modules/forum/forum.module`
+- [node_rdf_mapping()](../../node/node.module/node_rdf_mapping.md) — `modules/node/node.module`
+- [poll_rdf_mapping()](../../poll/poll.module/poll_rdf_mapping.md) — `modules/poll/poll.module`
+- [rdf_test_rdf_mapping()](../tests/rdf_test.module/rdf_test_rdf_mapping.md) — `modules/rdf/tests/rdf_test.module`
+- [taxonomy_rdf_mapping()](../../taxonomy/taxonomy.module/taxonomy_rdf_mapping.md) — `modules/taxonomy/taxonomy.module`
+- [user_rdf_mapping()](../../user/user.module/user_rdf_mapping.md) — `modules/user/user.module`
+
+---
+_Drupal 7.103 · [modules/rdf/rdf.api.php](https://github.com/drupal/drupal/blob/7.103/modules/rdf/rdf.api.php) · Licensed GPL-2.0-or-later (see LICENSE)._

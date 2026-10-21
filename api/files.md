@@ -1,0 +1,611 @@
+# Files (derived index)
+
+All 607 PHP source files in Drupal 7.103 core.
+
+- [authorize.php](authorize.php/_file.md) — Administrative script for running authorized file operations.
+- [cron.php](cron.php/_file.md) — Handles incoming requests to fire off regularly-scheduled tasks (cron jobs).
+- [includes/actions.inc](includes/actions.inc/_file.md) — This is the actions engine for executing stored actions.
+- [includes/ajax.inc](includes/ajax.inc/_file.md) — Functions for use with Drupal's Ajax framework.
+- [includes/archiver.inc](includes/archiver.inc/_file.md) — Shared classes and interfaces for the archiver system.
+- [includes/authorize.inc](includes/authorize.inc/_file.md) — Helper functions and form handlers used for the authorize.php script.
+- [includes/batch.inc](includes/batch.inc/_file.md) — Batch processing API for processes to run in multiple HTTP requests.
+- [includes/batch.queue.inc](includes/batch.queue.inc/_file.md) — Queue handlers used by the Batch API.
+- [includes/bootstrap.inc](includes/bootstrap.inc/_file.md) — Functions that need to be loaded on every Drupal request.
+- [includes/cache-install.inc](includes/cache-install.inc/_file.md) — Provides a stub cache implementation to be used during installation.
+- [includes/cache.inc](includes/cache.inc/_file.md) — Functions and interfaces for cache handling.
+- [includes/common.inc](includes/common.inc/_file.md) — Common functions that many Drupal modules will need to reference.
+- [includes/database/database.inc](includes/database/database.inc/_file.md) — Core systems for the database layer.
+- [includes/database/log.inc](includes/database/log.inc/_file.md) — Logging classes for the database layer.
+- [includes/database/mysql/database.inc](includes/database/mysql/database.inc/_file.md) — Database interface code for MySQL database servers.
+- [includes/database/mysql/install.inc](includes/database/mysql/install.inc/_file.md) — Installation code for MySQL embedded database engine.
+- [includes/database/mysql/query.inc](includes/database/mysql/query.inc/_file.md) — Query code for MySQL embedded database engine.
+- [includes/database/mysql/schema.inc](includes/database/mysql/schema.inc/_file.md) — Database schema code for MySQL database servers.
+- [includes/database/pgsql/database.inc](includes/database/pgsql/database.inc/_file.md) — Database interface code for PostgreSQL database servers.
+- [includes/database/pgsql/install.inc](includes/database/pgsql/install.inc/_file.md) — Install functions for PostgreSQL embedded database engine.
+- [includes/database/pgsql/query.inc](includes/database/pgsql/query.inc/_file.md) — Query code for PostgreSQL embedded database engine.
+- [includes/database/pgsql/schema.inc](includes/database/pgsql/schema.inc/_file.md) — Database schema code for PostgreSQL database servers.
+- [includes/database/pgsql/select.inc](includes/database/pgsql/select.inc/_file.md) — Select builder for PostgreSQL database engine.
+- [includes/database/prefetch.inc](includes/database/prefetch.inc/_file.md) — Database interface code for engines that need complete control over their result sets. For example, SQLite will prefix some column names by the name of the table. We post-process the data, by renaming the column names using the same convention as MySQL and PostgreSQL.
+- [includes/database/query.inc](includes/database/query.inc/_file.md) — Non-specific Database query code. Used by all engines.
+- [includes/database/schema.inc](includes/database/schema.inc/_file.md) — Generic Database schema code.
+- [includes/database/select.inc](includes/database/select.inc/_file.md)
+- [includes/database/sqlite/database.inc](includes/database/sqlite/database.inc/_file.md) — Database interface code for SQLite embedded database engine.
+- [includes/database/sqlite/install.inc](includes/database/sqlite/install.inc/_file.md) — SQLite specific install functions
+- [includes/database/sqlite/query.inc](includes/database/sqlite/query.inc/_file.md) — Query code for SQLite embedded database engine.
+- [includes/database/sqlite/schema.inc](includes/database/sqlite/schema.inc/_file.md) — Database schema code for SQLite databases.
+- [includes/database/sqlite/select.inc](includes/database/sqlite/select.inc/_file.md) — Select builder for SQLite embedded database engine.
+- [includes/date.inc](includes/date.inc/_file.md) — Initializes the list of date formats and their locales.
+- [includes/entity.inc](includes/entity.inc/_file.md)
+- [includes/errors.inc](includes/errors.inc/_file.md) — Functions for error handling.
+- [includes/file.inc](includes/file.inc/_file.md) — API for handling file uploads and server file management.
+- [includes/file.mimetypes.inc](includes/file.mimetypes.inc/_file.md) — Provides mimetype mappings.
+- [includes/file.phar.inc](includes/file.phar.inc/_file.md)
+- [includes/filetransfer/filetransfer.inc](includes/filetransfer/filetransfer.inc/_file.md)
+- [includes/filetransfer/ftp.inc](includes/filetransfer/ftp.inc/_file.md)
+- [includes/filetransfer/local.inc](includes/filetransfer/local.inc/_file.md)
+- [includes/filetransfer/ssh.inc](includes/filetransfer/ssh.inc/_file.md)
+- [includes/form.inc](includes/form.inc/_file.md) — Functions for form and batch generation and processing.
+- [includes/graph.inc](includes/graph.inc/_file.md) — Directed acyclic graph manipulation.
+- [includes/image.inc](includes/image.inc/_file.md) — API for manipulating images.
+- [includes/install.core.inc](includes/install.core.inc/_file.md) — API functions for installing Drupal.
+- [includes/install.inc](includes/install.inc/_file.md) — API functions for installing modules and themes.
+- [includes/iso.inc](includes/iso.inc/_file.md) — Provides a list of countries and languages based on ISO standards.
+- [includes/json-encode.inc](includes/json-encode.inc/_file.md) — Provides a helper to properly encode HTML-safe JSON prior to PHP 5.3.0.
+- [includes/language.inc](includes/language.inc/_file.md) — Language Negotiation API.
+- [includes/locale.inc](includes/locale.inc/_file.md) — Administration functions for locale.module.
+- [includes/lock.inc](includes/lock.inc/_file.md) — A database-mediated implementation of a locking mechanism.
+- [includes/mail.inc](includes/mail.inc/_file.md) — API functions for processing and sending e-mail.
+- [includes/menu.inc](includes/menu.inc/_file.md) — API for the Drupal menu system.
+- [includes/module.inc](includes/module.inc/_file.md) — API for loading and interacting with Drupal modules.
+- [includes/pager.inc](includes/pager.inc/_file.md) — Functions to aid in presenting database results as a set of pages.
+- [includes/password.inc](includes/password.inc/_file.md) — Secure password hashing functions for user authentication.
+- [includes/path.inc](includes/path.inc/_file.md) — Functions to handle paths in Drupal, including path aliasing.
+- [includes/registry.inc](includes/registry.inc/_file.md) — This file contains the code registry parser engine.
+- [includes/request-sanitizer.inc](includes/request-sanitizer.inc/_file.md) — Contains code for sanitizing user input from the request.
+- [includes/session.inc](includes/session.inc/_file.md) — User session handling functions.
+- [includes/stream_wrappers.inc](includes/stream_wrappers.inc/_file.md) — Drupal stream wrapper interface.
+- [includes/tablesort.inc](includes/tablesort.inc/_file.md) — Functions to aid in the creation of sortable tables.
+- [includes/theme.inc](includes/theme.inc/_file.md) — The theme system, which controls the output of Drupal.
+- [includes/theme.maintenance.inc](includes/theme.maintenance.inc/_file.md) — Theming for maintenance pages.
+- [includes/token.inc](includes/token.inc/_file.md) — Drupal placeholder/token replacement system.
+- [includes/unicode.entities.inc](includes/unicode.entities.inc/_file.md) — (X)HTML entities, as defined in HTML 4.01.
+- [includes/unicode.inc](includes/unicode.inc/_file.md) — Provides Unicode-related conversions and operations.
+- [includes/update.inc](includes/update.inc/_file.md) — Drupal database update API.
+- [includes/updater.inc](includes/updater.inc/_file.md) — Classes used for updating various files in the Drupal webroot. These classes use a FileTransfer object to actually perform the operations. Normally, the FileTransfer is provided when the site owner is redirected to authorize.php as part of a multistep process.
+- [includes/utility.inc](includes/utility.inc/_file.md) — Miscellaneous functions.
+- [includes/xmlrpc.inc](includes/xmlrpc.inc/_file.md) — Drupal XML-RPC library.
+- [includes/xmlrpcs.inc](includes/xmlrpcs.inc/_file.md) — Provides API for defining and handling XML-RPC requests.
+- [index.php](index.php/_file.md) — The PHP page that serves all page requests on a Drupal installation.
+- [install.php](install.php/_file.md) — Initiates a browser-based installation of Drupal.
+- [misc/brumann/polyfill-unserialize/src/Unserialize.php](misc/brumann/polyfill-unserialize/src/Unserialize.php/_file.md)
+- [misc/typo3/drupal-security/PharExtensionInterceptor.php](misc/typo3/drupal-security/PharExtensionInterceptor.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Assertable.php](misc/typo3/phar-stream-wrapper/src/Assertable.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Behavior.php](misc/typo3/phar-stream-wrapper/src/Behavior.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Collectable.php](misc/typo3/phar-stream-wrapper/src/Collectable.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Exception.php](misc/typo3/phar-stream-wrapper/src/Exception.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Helper.php](misc/typo3/phar-stream-wrapper/src/Helper.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Interceptor/ConjunctionInterceptor.php](misc/typo3/phar-stream-wrapper/src/Interceptor/ConjunctionInterceptor.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Interceptor/PharExtensionInterceptor.php](misc/typo3/phar-stream-wrapper/src/Interceptor/PharExtensionInterceptor.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Interceptor/PharMetaDataInterceptor.php](misc/typo3/phar-stream-wrapper/src/Interceptor/PharMetaDataInterceptor.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Manager.php](misc/typo3/phar-stream-wrapper/src/Manager.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Phar/Container.php](misc/typo3/phar-stream-wrapper/src/Phar/Container.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Phar/DeserializationException.php](misc/typo3/phar-stream-wrapper/src/Phar/DeserializationException.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Phar/Manifest.php](misc/typo3/phar-stream-wrapper/src/Phar/Manifest.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Phar/Reader.php](misc/typo3/phar-stream-wrapper/src/Phar/Reader.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Phar/ReaderException.php](misc/typo3/phar-stream-wrapper/src/Phar/ReaderException.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Phar/Stub.php](misc/typo3/phar-stream-wrapper/src/Phar/Stub.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php](misc/typo3/phar-stream-wrapper/src/PharStreamWrapper.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Resolvable.php](misc/typo3/phar-stream-wrapper/src/Resolvable.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocation.php](misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocation.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationCollection.php](misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationCollection.php/_file.md)
+- [misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationResolver.php](misc/typo3/phar-stream-wrapper/src/Resolver/PharInvocationResolver.php/_file.md)
+- [modules/aggregator/aggregator-feed-source.tpl.php](modules/aggregator/aggregator-feed-source.tpl.php/_file.md) — Default theme implementation to present the source of the feed.
+- [modules/aggregator/aggregator-item.tpl.php](modules/aggregator/aggregator-item.tpl.php/_file.md) — Default theme implementation to format an individual feed item for display on the aggregator page.
+- [modules/aggregator/aggregator-summary-item.tpl.php](modules/aggregator/aggregator-summary-item.tpl.php/_file.md) — Default theme implementation to present a linked feed item for summaries.
+- [modules/aggregator/aggregator-summary-items.tpl.php](modules/aggregator/aggregator-summary-items.tpl.php/_file.md) — Default theme implementation to present feeds as list items.
+- [modules/aggregator/aggregator-wrapper.tpl.php](modules/aggregator/aggregator-wrapper.tpl.php/_file.md) — Default theme implementation to wrap aggregator content.
+- [modules/aggregator/aggregator.admin.inc](modules/aggregator/aggregator.admin.inc/_file.md) — Administration page callbacks for the Aggregator module.
+- [modules/aggregator/aggregator.api.php](modules/aggregator/aggregator.api.php/_file.md) — Documentation for aggregator API.
+- [modules/aggregator/aggregator.fetcher.inc](modules/aggregator/aggregator.fetcher.inc/_file.md) — Fetcher functions for the aggregator module.
+- [modules/aggregator/aggregator.install](modules/aggregator/aggregator.install/_file.md) — Install, update and uninstall functions for the aggregator module.
+- [modules/aggregator/aggregator.module](modules/aggregator/aggregator.module/_file.md) — Used to aggregate syndicated content (RSS, RDF, and Atom).
+- [modules/aggregator/aggregator.pages.inc](modules/aggregator/aggregator.pages.inc/_file.md) — User page callbacks for the Aggregator module.
+- [modules/aggregator/aggregator.parser.inc](modules/aggregator/aggregator.parser.inc/_file.md) — Parser functions for the aggregator module.
+- [modules/aggregator/aggregator.processor.inc](modules/aggregator/aggregator.processor.inc/_file.md) — Processor functions for the aggregator module.
+- [modules/aggregator/aggregator.test](modules/aggregator/aggregator.test/_file.md) — Tests for aggregator.module.
+- [modules/aggregator/tests/aggregator_test.module](modules/aggregator/tests/aggregator_test.module/_file.md)
+- [modules/announcements_feed/announcements-feed.tpl.php](modules/announcements_feed/announcements-feed.tpl.php/_file.md) — Template file for the theming of announcements_feed admin page.
+- [modules/announcements_feed/announcements_feed.inc](modules/announcements_feed/announcements_feed.inc/_file.md) — Announcements feed helper functions.
+- [modules/announcements_feed/announcements_feed.install](modules/announcements_feed/announcements_feed.install/_file.md) — Install, update, and uninstall functions for the announcements_feed module.
+- [modules/announcements_feed/announcements_feed.module](modules/announcements_feed/announcements_feed.module/_file.md) — Used to create an announcements feed using the JSON data from drupal.org.
+- [modules/announcements_feed/tests/announce_feed_test.module](modules/announcements_feed/tests/announce_feed_test.module/_file.md) — Helper functions for testing the announcements feed functionality.
+- [modules/announcements_feed/tests/announce_feed_test.test](modules/announcements_feed/tests/announce_feed_test.test/_file.md) — Contains tests for the announcements_feed module.
+- [modules/block/block-admin-display-form.tpl.php](modules/block/block-admin-display-form.tpl.php/_file.md) — Default theme implementation to configure blocks.
+- [modules/block/block.admin.inc](modules/block/block.admin.inc/_file.md) — Admin page callbacks for the block module.
+- [modules/block/block.api.php](modules/block/block.api.php/_file.md) — Hooks provided by the Block module.
+- [modules/block/block.install](modules/block/block.install/_file.md) — Install, update and uninstall functions for the block module.
+- [modules/block/block.module](modules/block/block.module/_file.md) — Controls the visual building blocks a page is constructed with.
+- [modules/block/block.test](modules/block/block.test/_file.md) — Tests for block.module.
+- [modules/block/block.tpl.php](modules/block/block.tpl.php/_file.md) — Default theme implementation to display a block.
+- [modules/block/tests/block_test.module](modules/block/tests/block_test.module/_file.md) — Provide test blocks.
+- [modules/block/tests/themes/block_test_theme/page.tpl.php](modules/block/tests/themes/block_test_theme/page.tpl.php/_file.md) — Custom theme implementation to display a single Drupal page without sidebars. The sidebars are hidden by regions_hidden for this theme, so the default page.tpl.php will not work without throwing exceptions.
+- [modules/blog/blog.install](modules/blog/blog.install/_file.md) — Install, update and uninstall functions for the blog module.
+- [modules/blog/blog.module](modules/blog/blog.module/_file.md) — Enables multi-user blogs.
+- [modules/blog/blog.pages.inc](modules/blog/blog.pages.inc/_file.md) — Page callback file for the blog module.
+- [modules/blog/blog.test](modules/blog/blog.test/_file.md) — Tests for blog.module.
+- [modules/book/book-all-books-block.tpl.php](modules/book/book-all-books-block.tpl.php/_file.md) — Default theme implementation for rendering book outlines within a block.
+- [modules/book/book-export-html.tpl.php](modules/book/book-export-html.tpl.php/_file.md) — Default theme implementation for printed version of book outline.
+- [modules/book/book-navigation.tpl.php](modules/book/book-navigation.tpl.php/_file.md) — Default theme implementation to navigate books.
+- [modules/book/book-node-export-html.tpl.php](modules/book/book-node-export-html.tpl.php/_file.md) — Default theme implementation for a single node in a printer-friendly outline.
+- [modules/book/book.admin.inc](modules/book/book.admin.inc/_file.md) — Administration page callbacks for the Book module.
+- [modules/book/book.install](modules/book/book.install/_file.md) — Install, update and uninstall functions for the book module.
+- [modules/book/book.module](modules/book/book.module/_file.md) — Allows users to create and organize related content in an outline.
+- [modules/book/book.pages.inc](modules/book/book.pages.inc/_file.md) — User page callbacks for the book module.
+- [modules/book/book.test](modules/book/book.test/_file.md) — Tests for book.module.
+- [modules/color/color.install](modules/color/color.install/_file.md) — Install, update and uninstall functions for the color module.
+- [modules/color/color.module](modules/color/color.module/_file.md) — Allows users to change the color scheme of themes.
+- [modules/color/color.test](modules/color/color.test/_file.md) — Tests for color module.
+- [modules/comment/comment-wrapper.tpl.php](modules/comment/comment-wrapper.tpl.php/_file.md) — Default theme implementation to provide an HTML container for comments.
+- [modules/comment/comment.admin.inc](modules/comment/comment.admin.inc/_file.md) — Admin page callbacks for the comment module.
+- [modules/comment/comment.api.php](modules/comment/comment.api.php/_file.md) — Hooks provided by the Comment module.
+- [modules/comment/comment.install](modules/comment/comment.install/_file.md) — Install, update and uninstall functions for the comment module.
+- [modules/comment/comment.module](modules/comment/comment.module/_file.md) — Enables users to comment on published content.
+- [modules/comment/comment.pages.inc](modules/comment/comment.pages.inc/_file.md) — User page callbacks for the comment module.
+- [modules/comment/comment.test](modules/comment/comment.test/_file.md) — Tests for comment.module.
+- [modules/comment/comment.tokens.inc](modules/comment/comment.tokens.inc/_file.md) — Builds placeholder replacement tokens for comment-related data.
+- [modules/comment/comment.tpl.php](modules/comment/comment.tpl.php/_file.md) — Default theme implementation for comments.
+- [modules/comment/tests/comment_hook_test.module](modules/comment/tests/comment_hook_test.module/_file.md) — Test module for the comment hooks testing.
+- [modules/contact/contact.admin.inc](modules/contact/contact.admin.inc/_file.md) — Admin page callbacks for the Contact module.
+- [modules/contact/contact.install](modules/contact/contact.install/_file.md) — Install, update and uninstall functions for the contact module.
+- [modules/contact/contact.module](modules/contact/contact.module/_file.md) — Enables the use of personal and site-wide contact forms.
+- [modules/contact/contact.pages.inc](modules/contact/contact.pages.inc/_file.md) — Page callbacks for the Contact module.
+- [modules/contact/contact.test](modules/contact/contact.test/_file.md) — Tests for the Contact module.
+- [modules/contextual/contextual.api.php](modules/contextual/contextual.api.php/_file.md) — Hooks provided by Contextual module.
+- [modules/contextual/contextual.module](modules/contextual/contextual.module/_file.md) — Adds contextual links to perform actions related to elements on a page.
+- [modules/contextual/contextual.test](modules/contextual/contextual.test/_file.md) — Tests for contextual.module.
+- [modules/dashboard/dashboard.api.php](modules/dashboard/dashboard.api.php/_file.md) — Hooks provided by the Dashboard module.
+- [modules/dashboard/dashboard.install](modules/dashboard/dashboard.install/_file.md) — Install, update and uninstall functions for the dashboard module.
+- [modules/dashboard/dashboard.module](modules/dashboard/dashboard.module/_file.md) — Provides a dashboard page in the administrative interface.
+- [modules/dashboard/dashboard.test](modules/dashboard/dashboard.test/_file.md) — Tests for dashboard.module.
+- [modules/dblog/dblog.admin.inc](modules/dblog/dblog.admin.inc/_file.md) — Administrative page callbacks for the Database Logging module.
+- [modules/dblog/dblog.install](modules/dblog/dblog.install/_file.md) — Install, update and uninstall functions for the dblog module.
+- [modules/dblog/dblog.module](modules/dblog/dblog.module/_file.md) — System monitoring and logging for administrators.
+- [modules/dblog/dblog.test](modules/dblog/dblog.test/_file.md) — Tests for dblog.module.
+- [modules/field/field.api.php](modules/field/field.api.php/_file.md) — Hooks provided by the Field module.
+- [modules/field/field.attach.inc](modules/field/field.attach.inc/_file.md) — Field attach API, allowing entities (nodes, users, ...) to be 'fieldable'.
+- [modules/field/field.crud.inc](modules/field/field.crud.inc/_file.md) — Field CRUD API, handling field and field instance creation and deletion.
+- [modules/field/field.default.inc](modules/field/field.default.inc/_file.md) — Default 'implementations' of hook_field_*(): common field housekeeping.
+- [modules/field/field.form.inc](modules/field/field.form.inc/_file.md) — Field forms management.
+- [modules/field/field.info.class.inc](modules/field/field.info.class.inc/_file.md)
+- [modules/field/field.info.inc](modules/field/field.info.inc/_file.md) — Field Info API, providing information about available fields and field types.
+- [modules/field/field.install](modules/field/field.install/_file.md) — Install, update and uninstall functions for the field module.
+- [modules/field/field.module](modules/field/field.module/_file.md) — Attach custom data fields to Drupal entities.
+- [modules/field/field.multilingual.inc](modules/field/field.multilingual.inc/_file.md) — Functions implementing Field API multilingual support.
+- [modules/field/modules/field_sql_storage/field_sql_storage.install](modules/field/modules/field_sql_storage/field_sql_storage.install/_file.md) — Install, update and uninstall functions for the field_sql_storage module.
+- [modules/field/modules/field_sql_storage/field_sql_storage.module](modules/field/modules/field_sql_storage/field_sql_storage.module/_file.md) — Default implementation of the field storage API.
+- [modules/field/modules/field_sql_storage/field_sql_storage.test](modules/field/modules/field_sql_storage/field_sql_storage.test/_file.md) — Tests for field_sql_storage.module.
+- [modules/field/modules/list/list.install](modules/field/modules/list/list.install/_file.md) — Install, update and uninstall functions for the list module.
+- [modules/field/modules/list/list.module](modules/field/modules/list/list.module/_file.md) — Defines list field types that can be used with the Options module.
+- [modules/field/modules/list/tests/list.test](modules/field/modules/list/tests/list.test/_file.md) — Tests for list.module.
+- [modules/field/modules/list/tests/list_test.module](modules/field/modules/list/tests/list_test.module/_file.md) — Helper module for the List module tests.
+- [modules/field/modules/number/number.install](modules/field/modules/number/number.install/_file.md) — Install, update and uninstall functions for the number module.
+- [modules/field/modules/number/number.module](modules/field/modules/number/number.module/_file.md) — Defines numeric field types.
+- [modules/field/modules/number/number.test](modules/field/modules/number/number.test/_file.md) — Tests for number.module.
+- [modules/field/modules/options/options.api.php](modules/field/modules/options/options.api.php/_file.md) — Hooks provided by the Options module.
+- [modules/field/modules/options/options.module](modules/field/modules/options/options.module/_file.md) — Defines selection, check box and radio button widgets for text and numeric fields.
+- [modules/field/modules/options/options.test](modules/field/modules/options/options.test/_file.md) — Tests for options.module.
+- [modules/field/modules/text/text.install](modules/field/modules/text/text.install/_file.md) — Install, update and uninstall functions for the text module.
+- [modules/field/modules/text/text.module](modules/field/modules/text/text.module/_file.md) — Defines simple text field types.
+- [modules/field/modules/text/text.test](modules/field/modules/text/text.test/_file.md) — Tests for text.module.
+- [modules/field/tests/field.test](modules/field/tests/field.test/_file.md) — Tests for field.module.
+- [modules/field/tests/field_test.entity.inc](modules/field/tests/field_test.entity.inc/_file.md) — Defines an entity type.
+- [modules/field/tests/field_test.field.inc](modules/field/tests/field_test.field.inc/_file.md) — Defines a field type and its formatters and widgets.
+- [modules/field/tests/field_test.install](modules/field/tests/field_test.install/_file.md) — Install, update and uninstall functions for the field_test module.
+- [modules/field/tests/field_test.module](modules/field/tests/field_test.module/_file.md) — Helper module for the Field API tests.
+- [modules/field/tests/field_test.storage.inc](modules/field/tests/field_test.storage.inc/_file.md) — Defines a field storage backend.
+- [modules/field/tests/field_test_schema_alter.install](modules/field/tests/field_test_schema_alter.install/_file.md) — Install, update and uninstall functions for the field_test_schema_alter module.
+- [modules/field/tests/field_test_schema_alter.module](modules/field/tests/field_test_schema_alter.module/_file.md)
+- [modules/field/theme/field.tpl.php](modules/field/theme/field.tpl.php/_file.md) — Default template implementation to display the value of a field.
+- [modules/field_ui/field_ui.admin.inc](modules/field_ui/field_ui.admin.inc/_file.md) — Administrative interface for custom field type creation.
+- [modules/field_ui/field_ui.api.php](modules/field_ui/field_ui.api.php/_file.md) — Hooks provided by the Field UI module.
+- [modules/field_ui/field_ui.module](modules/field_ui/field_ui.module/_file.md) — Allows administrators to attach custom fields to fieldable types.
+- [modules/field_ui/field_ui.test](modules/field_ui/field_ui.test/_file.md) — Tests for field_ui.module.
+- [modules/file/file.api.php](modules/file/file.api.php/_file.md) — Hooks for file module.
+- [modules/file/file.field.inc](modules/file/file.field.inc/_file.md) — Field module functionality for the File module.
+- [modules/file/file.install](modules/file/file.install/_file.md) — Install, update and uninstall functions for File module.
+- [modules/file/file.module](modules/file/file.module/_file.md) — Defines a "managed_file" Form API field and a "file" field for Field module.
+- [modules/file/tests/file.test](modules/file/tests/file.test/_file.md) — Tests for file.module.
+- [modules/file/tests/file_module_test.module](modules/file/tests/file_module_test.module/_file.md) — Provides File module pages for testing purposes.
+- [modules/filter/filter.admin.inc](modules/filter/filter.admin.inc/_file.md) — Administrative page callbacks for the Filter module.
+- [modules/filter/filter.api.php](modules/filter/filter.api.php/_file.md) — Hooks provided by the Filter module.
+- [modules/filter/filter.install](modules/filter/filter.install/_file.md) — Install, update, and uninstall functions for the Filter module.
+- [modules/filter/filter.module](modules/filter/filter.module/_file.md) — Framework for handling the filtering of content.
+- [modules/filter/filter.pages.inc](modules/filter/filter.pages.inc/_file.md) — User page callbacks for the Filter module.
+- [modules/filter/filter.test](modules/filter/filter.test/_file.md) — Tests for filter.module.
+- [modules/forum/forum-icon.tpl.php](modules/forum/forum-icon.tpl.php/_file.md) — Displays an appropriate icon for a forum post.
+- [modules/forum/forum-list.tpl.php](modules/forum/forum-list.tpl.php/_file.md) — Displays a list of forums and containers.
+- [modules/forum/forum-submitted.tpl.php](modules/forum/forum-submitted.tpl.php/_file.md) — Formats a forum post submission string.
+- [modules/forum/forum-topic-list.tpl.php](modules/forum/forum-topic-list.tpl.php/_file.md) — Displays a list of forum topics.
+- [modules/forum/forum.admin.inc](modules/forum/forum.admin.inc/_file.md) — Administrative page callbacks for the Forum module.
+- [modules/forum/forum.install](modules/forum/forum.install/_file.md) — Install, update, and uninstall functions for the Forum module.
+- [modules/forum/forum.module](modules/forum/forum.module/_file.md) — Provides discussion forums.
+- [modules/forum/forum.pages.inc](modules/forum/forum.pages.inc/_file.md) — User page callbacks for the Forum module.
+- [modules/forum/forum.test](modules/forum/forum.test/_file.md) — Tests for forum.module.
+- [modules/forum/forums.tpl.php](modules/forum/forums.tpl.php/_file.md) — Displays a forum.
+- [modules/help/help.admin.inc](modules/help/help.admin.inc/_file.md) — Admin page callbacks for the help module.
+- [modules/help/help.module](modules/help/help.module/_file.md) — Manages displaying online help.
+- [modules/help/help.test](modules/help/help.test/_file.md) — Tests for help.module.
+- [modules/image/image.admin.inc](modules/image/image.admin.inc/_file.md) — Administration pages for image settings.
+- [modules/image/image.api.php](modules/image/image.api.php/_file.md) — Hooks related to image styles and effects.
+- [modules/image/image.effects.inc](modules/image/image.effects.inc/_file.md) — Functions needed to execute image effects provided by Image module.
+- [modules/image/image.field.inc](modules/image/image.field.inc/_file.md) — Implement an image field, based on the file module's file field.
+- [modules/image/image.install](modules/image/image.install/_file.md) — Install, update and uninstall functions for the image module.
+- [modules/image/image.module](modules/image/image.module/_file.md) — Exposes global functionality for creating image styles.
+- [modules/image/image.test](modules/image/image.test/_file.md) — Tests for image.module.
+- [modules/image/tests/image_module_styles_test.module](modules/image/tests/image_module_styles_test.module/_file.md) — Provides additional Image module hook implementations for testing purposes.
+- [modules/image/tests/image_module_test.module](modules/image/tests/image_module_test.module/_file.md) — Provides Image module hook implementations for testing purposes.
+- [modules/locale/locale.admin.inc](modules/locale/locale.admin.inc/_file.md) — Administration functions for locale.module.
+- [modules/locale/locale.api.php](modules/locale/locale.api.php/_file.md) — Hooks provided by the Locale module.
+- [modules/locale/locale.install](modules/locale/locale.install/_file.md) — Install, update and uninstall functions for the locale module.
+- [modules/locale/locale.module](modules/locale/locale.module/_file.md) — Add language handling functionality and enables the translation of the user interface to languages other than English.
+- [modules/locale/locale.test](modules/locale/locale.test/_file.md) — Tests for locale.module.
+- [modules/locale/tests/locale_test.module](modules/locale/tests/locale_test.module/_file.md) — Mock module for locale layer tests.
+- [modules/menu/menu.admin.inc](modules/menu/menu.admin.inc/_file.md) — Administrative page callbacks for menu module.
+- [modules/menu/menu.api.php](modules/menu/menu.api.php/_file.md) — Hooks provided by the Menu module.
+- [modules/menu/menu.install](modules/menu/menu.install/_file.md) — Install, update and uninstall functions for the menu module.
+- [modules/menu/menu.module](modules/menu/menu.module/_file.md) — Allows administrators to customize the site's navigation menus.
+- [modules/menu/menu.test](modules/menu/menu.test/_file.md) — Tests for menu.module.
+- [modules/node/content_types.inc](modules/node/content_types.inc/_file.md) — Content type editing user interface.
+- [modules/node/node.admin.inc](modules/node/node.admin.inc/_file.md) — Content administration and module settings UI.
+- [modules/node/node.api.php](modules/node/node.api.php/_file.md) — Hooks provided by the Node module.
+- [modules/node/node.install](modules/node/node.install/_file.md) — Install, update and uninstall functions for the node module.
+- [modules/node/node.module](modules/node/node.module/_file.md) — The core that allows content to be submitted to the site. Modules and scripts may programmatically submit nodes using the usual form API pattern.
+- [modules/node/node.pages.inc](modules/node/node.pages.inc/_file.md) — Page callbacks for adding, editing, deleting, and revisions management for content.
+- [modules/node/node.test](modules/node/node.test/_file.md) — Tests for node.module.
+- [modules/node/node.tokens.inc](modules/node/node.tokens.inc/_file.md) — Builds placeholder replacement tokens for node-related data.
+- [modules/node/node.tpl.php](modules/node/node.tpl.php/_file.md) — Default theme implementation to display a node.
+- [modules/node/tests/node_access_test.install](modules/node/tests/node_access_test.install/_file.md) — Install, update and uninstall functions for the node_access_test module.
+- [modules/node/tests/node_access_test.module](modules/node/tests/node_access_test.module/_file.md) — A dummy module implementing node access related hooks for testing purposes.
+- [modules/node/tests/node_test.module](modules/node/tests/node_test.module/_file.md) — A dummy module for testing node related hooks.
+- [modules/node/tests/node_test_exception.module](modules/node/tests/node_test_exception.module/_file.md) — A module implementing node related hooks to test API interaction.
+- [modules/openid/openid.api.php](modules/openid/openid.api.php/_file.md) — Hooks provided by the OpenID module.
+- [modules/openid/openid.inc](modules/openid/openid.inc/_file.md) — OpenID utility functions.
+- [modules/openid/openid.install](modules/openid/openid.install/_file.md) — Install, update and uninstall functions for the openid module.
+- [modules/openid/openid.module](modules/openid/openid.module/_file.md) — Implement OpenID Relying Party support for Drupal
+- [modules/openid/openid.pages.inc](modules/openid/openid.pages.inc/_file.md) — User page callbacks for the openid module.
+- [modules/openid/openid.test](modules/openid/openid.test/_file.md) — Tests for openid.module.
+- [modules/openid/tests/openid_test.install](modules/openid/tests/openid_test.install/_file.md) — Install, update and uninstall functions for the openid_test module.
+- [modules/openid/tests/openid_test.module](modules/openid/tests/openid_test.module/_file.md) — Dummy OpenID Provider used with SimpleTest.
+- [modules/overlay/overlay.api.php](modules/overlay/overlay.api.php/_file.md) — Hooks provided by Overlay module.
+- [modules/overlay/overlay.install](modules/overlay/overlay.install/_file.md) — Install, update, and uninstall functions for the Overlay module.
+- [modules/overlay/overlay.module](modules/overlay/overlay.module/_file.md) — Displays the Drupal administration interface in an overlay.
+- [modules/overlay/overlay.tpl.php](modules/overlay/overlay.tpl.php/_file.md) — Default theme implementation to display a page in the overlay.
+- [modules/path/path.admin.inc](modules/path/path.admin.inc/_file.md) — Administrative page callbacks for the path module.
+- [modules/path/path.api.php](modules/path/path.api.php/_file.md) — Hooks provided by the Path module.
+- [modules/path/path.module](modules/path/path.module/_file.md) — Enables users to rename URLs.
+- [modules/path/path.test](modules/path/path.test/_file.md) — Tests for the Path module.
+- [modules/php/php.install](modules/php/php.install/_file.md) — Install, update and uninstall functions for the php module.
+- [modules/php/php.module](modules/php/php.module/_file.md) — Additional filter for PHP input.
+- [modules/php/php.test](modules/php/php.test/_file.md) — Tests for php.module.
+- [modules/poll/poll-bar--block.tpl.php](modules/poll/poll-bar--block.tpl.php/_file.md) — Default theme implementation to display the bar for a single choice in a poll.
+- [modules/poll/poll-bar.tpl.php](modules/poll/poll-bar.tpl.php/_file.md) — Default theme implementation to display the bar for a single choice in a poll.
+- [modules/poll/poll-results--block.tpl.php](modules/poll/poll-results--block.tpl.php/_file.md) — Default theme implementation to display the poll results in a block.
+- [modules/poll/poll-results.tpl.php](modules/poll/poll-results.tpl.php/_file.md) — Default theme implementation to display the poll results in a block.
+- [modules/poll/poll-vote.tpl.php](modules/poll/poll-vote.tpl.php/_file.md) — Default theme implementation to display voting form for a poll.
+- [modules/poll/poll.install](modules/poll/poll.install/_file.md) — Install, update and uninstall functions for the poll module.
+- [modules/poll/poll.module](modules/poll/poll.module/_file.md) — Enables your site to capture votes on different topics in the form of multiple choice questions.
+- [modules/poll/poll.pages.inc](modules/poll/poll.pages.inc/_file.md) — User page callbacks for the poll module.
+- [modules/poll/poll.test](modules/poll/poll.test/_file.md) — Tests for poll.module.
+- [modules/poll/poll.tokens.inc](modules/poll/poll.tokens.inc/_file.md) — Builds placeholder replacement tokens for values specific to Poll nodes.
+- [modules/profile/profile-block.tpl.php](modules/profile/profile-block.tpl.php/_file.md) — Default theme implementation for displaying a users profile within a block. It only shows in relation to a node displayed as a full page.
+- [modules/profile/profile-listing.tpl.php](modules/profile/profile-listing.tpl.php/_file.md) — Default theme implementation for displaying a user and their profile data for member listing pages.
+- [modules/profile/profile-wrapper.tpl.php](modules/profile/profile-wrapper.tpl.php/_file.md) — Default theme implementation for wrapping member listings and their profiles.
+- [modules/profile/profile.admin.inc](modules/profile/profile.admin.inc/_file.md) — Administrative page callbacks for the profile module.
+- [modules/profile/profile.install](modules/profile/profile.install/_file.md) — Install, update and uninstall functions for the profile module.
+- [modules/profile/profile.module](modules/profile/profile.module/_file.md) — Support for configurable user profiles.
+- [modules/profile/profile.pages.inc](modules/profile/profile.pages.inc/_file.md) — User page callbacks for the profile module.
+- [modules/profile/profile.test](modules/profile/profile.test/_file.md) — Tests for profile.module.
+- [modules/rdf/rdf.api.php](modules/rdf/rdf.api.php/_file.md) — Hooks provided by the RDF module.
+- [modules/rdf/rdf.install](modules/rdf/rdf.install/_file.md) — Install, update and uninstall functions for the rdf module.
+- [modules/rdf/rdf.module](modules/rdf/rdf.module/_file.md) — Enables semantically enriched output for Drupal sites in the form of RDFa.
+- [modules/rdf/rdf.test](modules/rdf/rdf.test/_file.md) — Tests for rdf.module.
+- [modules/rdf/tests/rdf_test.install](modules/rdf/tests/rdf_test.install/_file.md) — Install, update and uninstall functions for the rdf module.
+- [modules/rdf/tests/rdf_test.module](modules/rdf/tests/rdf_test.module/_file.md) — Test API interaction with the RDF module.
+- [modules/search/search-block-form.tpl.php](modules/search/search-block-form.tpl.php/_file.md) — Displays the search form block.
+- [modules/search/search-result.tpl.php](modules/search/search-result.tpl.php/_file.md) — Default theme implementation for displaying a single search result.
+- [modules/search/search-results.tpl.php](modules/search/search-results.tpl.php/_file.md) — Default theme implementation for displaying search results.
+- [modules/search/search.admin.inc](modules/search/search.admin.inc/_file.md) — Admin page callbacks for the search module.
+- [modules/search/search.api.php](modules/search/search.api.php/_file.md) — Hooks provided by the Search module.
+- [modules/search/search.extender.inc](modules/search/search.extender.inc/_file.md) — Search query extender and helper functions.
+- [modules/search/search.install](modules/search/search.install/_file.md) — Install, update and uninstall functions for the search module.
+- [modules/search/search.module](modules/search/search.module/_file.md) — Enables site-wide keyword searching.
+- [modules/search/search.pages.inc](modules/search/search.pages.inc/_file.md) — User page callbacks for the search module.
+- [modules/search/search.test](modules/search/search.test/_file.md) — Tests for search.module.
+- [modules/search/tests/search_embedded_form.module](modules/search/tests/search_embedded_form.module/_file.md) — Test module implementing a form that can be embedded in search results.
+- [modules/search/tests/search_extra_type.module](modules/search/tests/search_extra_type.module/_file.md) — Dummy module implementing a search type for search module testing.
+- [modules/search/tests/search_node_tags.module](modules/search/tests/search_node_tags.module/_file.md) — Dummy module implementing a node search hooks for search module testing.
+- [modules/shortcut/shortcut.admin.inc](modules/shortcut/shortcut.admin.inc/_file.md) — Administrative page callbacks for the shortcut module.
+- [modules/shortcut/shortcut.api.php](modules/shortcut/shortcut.api.php/_file.md) — Hooks provided by the Shortcut module.
+- [modules/shortcut/shortcut.install](modules/shortcut/shortcut.install/_file.md) — Install, update and uninstall functions for the shortcut module.
+- [modules/shortcut/shortcut.module](modules/shortcut/shortcut.module/_file.md) — Allows users to manage customizable lists of shortcut links.
+- [modules/shortcut/shortcut.test](modules/shortcut/shortcut.test/_file.md) — Tests for shortcut.module.
+- [modules/simpletest/drupal_web_test_case.php](modules/simpletest/drupal_web_test_case.php/_file.md)
+- [modules/simpletest/files/php-2.php](modules/simpletest/files/php-2.php/_file.md)
+- [modules/simpletest/lib/Drupal/simpletest/Tests/PSR0WebTest.php](modules/simpletest/lib/Drupal/simpletest/Tests/PSR0WebTest.php/_file.md)
+- [modules/simpletest/simpletest.api.php](modules/simpletest/simpletest.api.php/_file.md) — Hooks provided by the SimpleTest module.
+- [modules/simpletest/simpletest.install](modules/simpletest/simpletest.install/_file.md) — Install, update and uninstall functions for the simpletest module.
+- [modules/simpletest/simpletest.module](modules/simpletest/simpletest.module/_file.md) — Provides testing functionality.
+- [modules/simpletest/simpletest.pages.inc](modules/simpletest/simpletest.pages.inc/_file.md) — Page callbacks for simpletest module.
+- [modules/simpletest/simpletest.test](modules/simpletest/simpletest.test/_file.md) — Tests for simpletest.module.
+- [modules/simpletest/src/Tests/PSR4WebTest.php](modules/simpletest/src/Tests/PSR4WebTest.php/_file.md)
+- [modules/simpletest/tests/actions.test](modules/simpletest/tests/actions.test/_file.md)
+- [modules/simpletest/tests/actions_loop_test.install](modules/simpletest/tests/actions_loop_test.install/_file.md)
+- [modules/simpletest/tests/actions_loop_test.module](modules/simpletest/tests/actions_loop_test.module/_file.md)
+- [modules/simpletest/tests/ajax.test](modules/simpletest/tests/ajax.test/_file.md)
+- [modules/simpletest/tests/ajax_forms_test.module](modules/simpletest/tests/ajax_forms_test.module/_file.md) — Simpletest mock module for Ajax forms testing.
+- [modules/simpletest/tests/ajax_test.module](modules/simpletest/tests/ajax_test.module/_file.md) — Helper module for Ajax framework tests.
+- [modules/simpletest/tests/batch.test](modules/simpletest/tests/batch.test/_file.md) — Tests for the Batch API.
+- [modules/simpletest/tests/batch_test.callbacks.inc](modules/simpletest/tests/batch_test.callbacks.inc/_file.md) — Batch callbacks for the Batch API tests.
+- [modules/simpletest/tests/batch_test.module](modules/simpletest/tests/batch_test.module/_file.md) — Helper module for the Batch API tests.
+- [modules/simpletest/tests/boot.test](modules/simpletest/tests/boot.test/_file.md)
+- [modules/simpletest/tests/boot_test_1.module](modules/simpletest/tests/boot_test_1.module/_file.md) — Tests calling module_implements() during hook_boot() invocation.
+- [modules/simpletest/tests/boot_test_2.module](modules/simpletest/tests/boot_test_2.module/_file.md) — Defines a hook_help() implementation in a non-"bootstrap" module.
+- [modules/simpletest/tests/bootstrap.test](modules/simpletest/tests/bootstrap.test/_file.md)
+- [modules/simpletest/tests/cache.test](modules/simpletest/tests/cache.test/_file.md)
+- [modules/simpletest/tests/common.test](modules/simpletest/tests/common.test/_file.md) — Tests for common.inc functionality.
+- [modules/simpletest/tests/common_test.module](modules/simpletest/tests/common_test.module/_file.md) — Helper module for the Common tests.
+- [modules/simpletest/tests/common_test_cron_helper.module](modules/simpletest/tests/common_test_cron_helper.module/_file.md) — Helper module for the testCronExceptions in addition to common_test module.
+- [modules/simpletest/tests/database_test.install](modules/simpletest/tests/database_test.install/_file.md) — Install, update and uninstall functions for the database_test module.
+- [modules/simpletest/tests/database_test.module](modules/simpletest/tests/database_test.module/_file.md)
+- [modules/simpletest/tests/database_test.test](modules/simpletest/tests/database_test.test/_file.md)
+- [modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test.module](modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test.module/_file.md) — Test module to check code registry.
+- [modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_class.inc](modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_class.inc/_file.md) — Test classes for code registry testing.
+- [modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_interface.inc](modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_interface.inc/_file.md) — Test interfaces for code registry testing.
+- [modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_trait.sh](modules/simpletest/tests/drupal_autoload_test/drupal_autoload_test_trait.sh/_file.md) — Test traits for code registry testing.
+- [modules/simpletest/tests/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module](modules/simpletest/tests/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module/_file.md)
+- [modules/simpletest/tests/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.module](modules/simpletest/tests/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.module/_file.md)
+- [modules/simpletest/tests/entity_cache_test.module](modules/simpletest/tests/entity_cache_test.module/_file.md) — Helper module for entity cache tests.
+- [modules/simpletest/tests/entity_cache_test_dependency.module](modules/simpletest/tests/entity_cache_test_dependency.module/_file.md) — Helper module for entity cache tests.
+- [modules/simpletest/tests/entity_crud.test](modules/simpletest/tests/entity_crud.test/_file.md) — Tests for the Entity CRUD API.
+- [modules/simpletest/tests/entity_crud_hook_test.module](modules/simpletest/tests/entity_crud_hook_test.module/_file.md) — Test module for the Entity CRUD API.
+- [modules/simpletest/tests/entity_crud_hook_test.test](modules/simpletest/tests/entity_crud_hook_test.test/_file.md) — CRUD hook tests for the Entity CRUD API.
+- [modules/simpletest/tests/entity_query.test](modules/simpletest/tests/entity_query.test/_file.md) — Unit test file for the entity API.
+- [modules/simpletest/tests/entity_query_access_test.module](modules/simpletest/tests/entity_query_access_test.module/_file.md) — Helper module for testing EntityFieldQuery access on any type of entity.
+- [modules/simpletest/tests/error.test](modules/simpletest/tests/error.test/_file.md)
+- [modules/simpletest/tests/error_test.module](modules/simpletest/tests/error_test.module/_file.md)
+- [modules/simpletest/tests/file.test](modules/simpletest/tests/file.test/_file.md) — This provides SimpleTests for the core file handling functionality. These include FileValidateTest and FileSaveTest.
+- [modules/simpletest/tests/file_test.module](modules/simpletest/tests/file_test.module/_file.md) — Helper module for the file tests.
+- [modules/simpletest/tests/filetransfer.test](modules/simpletest/tests/filetransfer.test/_file.md)
+- [modules/simpletest/tests/filter_test.module](modules/simpletest/tests/filter_test.module/_file.md) — Test module for Filter module hooks and functions not used in core.
+- [modules/simpletest/tests/form.test](modules/simpletest/tests/form.test/_file.md) — Unit tests for the Drupal Form API.
+- [modules/simpletest/tests/form_test.file.inc](modules/simpletest/tests/form_test.file.inc/_file.md) — An include file to test loading it with the form API.
+- [modules/simpletest/tests/form_test.module](modules/simpletest/tests/form_test.module/_file.md) — Helper module for the form API tests.
+- [modules/simpletest/tests/graph.test](modules/simpletest/tests/graph.test/_file.md) — Provides unit tests for graph.inc.
+- [modules/simpletest/tests/http.php](modules/simpletest/tests/http.php/_file.md) — Fake an HTTP request, for use during testing.
+- [modules/simpletest/tests/https.php](modules/simpletest/tests/https.php/_file.md) — Fake an HTTPS request, for use during testing.
+- [modules/simpletest/tests/image.test](modules/simpletest/tests/image.test/_file.md) — Tests for core image handling API.
+- [modules/simpletest/tests/image_test.module](modules/simpletest/tests/image_test.module/_file.md) — Helper module for the image tests.
+- [modules/simpletest/tests/lock.test](modules/simpletest/tests/lock.test/_file.md)
+- [modules/simpletest/tests/mail.test](modules/simpletest/tests/mail.test/_file.md) — Test the Drupal mailing system.
+- [modules/simpletest/tests/menu.test](modules/simpletest/tests/menu.test/_file.md) — Provides SimpleTests for menu.inc.
+- [modules/simpletest/tests/menu_test.module](modules/simpletest/tests/menu_test.module/_file.md) — Dummy module implementing hook menu.
+- [modules/simpletest/tests/module.test](modules/simpletest/tests/module.test/_file.md) — Tests for the module API.
+- [modules/simpletest/tests/module_test.file.inc](modules/simpletest/tests/module_test.file.inc/_file.md) — A file to test module_implements() loading includes.
+- [modules/simpletest/tests/module_test.implementations.inc](modules/simpletest/tests/module_test.implementations.inc/_file.md)
+- [modules/simpletest/tests/module_test.install](modules/simpletest/tests/module_test.install/_file.md) — Install, update and uninstall functions for the module_test module.
+- [modules/simpletest/tests/module_test.module](modules/simpletest/tests/module_test.module/_file.md)
+- [modules/simpletest/tests/pager.test](modules/simpletest/tests/pager.test/_file.md) — Tests for pager functionality.
+- [modules/simpletest/tests/password.test](modules/simpletest/tests/password.test/_file.md) — Provides unit tests for password.inc.
+- [modules/simpletest/tests/path.test](modules/simpletest/tests/path.test/_file.md) — Tests for path.inc.
+- [modules/simpletest/tests/path_test.module](modules/simpletest/tests/path_test.module/_file.md) — Helper module for the path tests.
+- [modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/ExampleTest.php](modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/ExampleTest.php/_file.md)
+- [modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/Nested/NestedExampleTest.php](modules/simpletest/tests/psr_0_test/lib/Drupal/psr_0_test/Tests/Nested/NestedExampleTest.php/_file.md)
+- [modules/simpletest/tests/psr_0_test/psr_0_test.module](modules/simpletest/tests/psr_0_test/psr_0_test.module/_file.md)
+- [modules/simpletest/tests/psr_4_test/psr_4_test.module](modules/simpletest/tests/psr_4_test/psr_4_test.module/_file.md)
+- [modules/simpletest/tests/psr_4_test/src/Tests/ExampleTest.php](modules/simpletest/tests/psr_4_test/src/Tests/ExampleTest.php/_file.md)
+- [modules/simpletest/tests/psr_4_test/src/Tests/Nested/NestedExampleTest.php](modules/simpletest/tests/psr_4_test/src/Tests/Nested/NestedExampleTest.php/_file.md)
+- [modules/simpletest/tests/registry.test](modules/simpletest/tests/registry.test/_file.md)
+- [modules/simpletest/tests/request_sanitizer.test](modules/simpletest/tests/request_sanitizer.test/_file.md) — Tests for the RequestSanitizer class.
+- [modules/simpletest/tests/requirements1_test.install](modules/simpletest/tests/requirements1_test.install/_file.md)
+- [modules/simpletest/tests/requirements1_test.module](modules/simpletest/tests/requirements1_test.module/_file.md) — Tests that a module is not installed when it fails hook_requirements('install').
+- [modules/simpletest/tests/requirements2_test.module](modules/simpletest/tests/requirements2_test.module/_file.md) — Tests that a module is not installed when the one it depends on fails hook_requirements('install').
+- [modules/simpletest/tests/schema.test](modules/simpletest/tests/schema.test/_file.md) — Tests for the Database Schema API.
+- [modules/simpletest/tests/session.test](modules/simpletest/tests/session.test/_file.md) — Provides SimpleTests for core session handling functionality.
+- [modules/simpletest/tests/session_test.module](modules/simpletest/tests/session_test.module/_file.md)
+- [modules/simpletest/tests/system_admin_test.module](modules/simpletest/tests/system_admin_test.module/_file.md) — Helper module for module for testing system.admin.inc.
+- [modules/simpletest/tests/system_dependencies_test.module](modules/simpletest/tests/system_dependencies_test.module/_file.md)
+- [modules/simpletest/tests/system_incompatible_core_version_dependencies_test.module](modules/simpletest/tests/system_incompatible_core_version_dependencies_test.module/_file.md)
+- [modules/simpletest/tests/system_incompatible_core_version_test.module](modules/simpletest/tests/system_incompatible_core_version_test.module/_file.md)
+- [modules/simpletest/tests/system_incompatible_module_version_dependencies_test.module](modules/simpletest/tests/system_incompatible_module_version_dependencies_test.module/_file.md)
+- [modules/simpletest/tests/system_incompatible_module_version_test.module](modules/simpletest/tests/system_incompatible_module_version_test.module/_file.md)
+- [modules/simpletest/tests/system_null_version_test.module](modules/simpletest/tests/system_null_version_test.module/_file.md)
+- [modules/simpletest/tests/system_project_namespace_test.module](modules/simpletest/tests/system_project_namespace_test.module/_file.md)
+- [modules/simpletest/tests/system_requires_null_version_test.module](modules/simpletest/tests/system_requires_null_version_test.module/_file.md)
+- [modules/simpletest/tests/system_test.install](modules/simpletest/tests/system_test.install/_file.md) — Install, update and uninstall functions for the system_test module.
+- [modules/simpletest/tests/system_test.module](modules/simpletest/tests/system_test.module/_file.md)
+- [modules/simpletest/tests/tablesort.test](modules/simpletest/tests/tablesort.test/_file.md) — Various tablesort tests.
+- [modules/simpletest/tests/taxonomy_nodes_test.module](modules/simpletest/tests/taxonomy_nodes_test.module/_file.md) — Dummy module implementing hook_query_TAG_alter.
+- [modules/simpletest/tests/taxonomy_test.install](modules/simpletest/tests/taxonomy_test.install/_file.md) — Install, update and uninstall functions for the taxonomy_test module.
+- [modules/simpletest/tests/taxonomy_test.module](modules/simpletest/tests/taxonomy_test.module/_file.md) — Test module for Taxonomy hooks and functions not used in core.
+- [modules/simpletest/tests/theme.test](modules/simpletest/tests/theme.test/_file.md) — Tests for the theme API.
+- [modules/simpletest/tests/theme_test.inc](modules/simpletest/tests/theme_test.inc/_file.md)
+- [modules/simpletest/tests/theme_test.module](modules/simpletest/tests/theme_test.module/_file.md)
+- [modules/simpletest/tests/theme_test.template_test.tpl.php](modules/simpletest/tests/theme_test.template_test.tpl.php/_file.md)
+- [modules/simpletest/tests/themes/engines/nyan_cat/nyan_cat.engine](modules/simpletest/tests/themes/engines/nyan_cat/nyan_cat.engine/_file.md) — Handles integration of Nyan cat templates because we love kittens.
+- [modules/simpletest/tests/themes/test_theme/template.php](modules/simpletest/tests/themes/test_theme/template.php/_file.md)
+- [modules/simpletest/tests/themes/test_theme/templates/node--1.tpl.php](modules/simpletest/tests/themes/test_theme/templates/node--1.tpl.php/_file.md)
+- [modules/simpletest/tests/themes/test_theme/theme-settings.php](modules/simpletest/tests/themes/test_theme/theme-settings.php/_file.md) — Theme setting callbacks for the test_theme theme.
+- [modules/simpletest/tests/unicode.test](modules/simpletest/tests/unicode.test/_file.md) — Various unicode handling tests.
+- [modules/simpletest/tests/update.test](modules/simpletest/tests/update.test/_file.md) — Tests for the update system.
+- [modules/simpletest/tests/update_script_test.install](modules/simpletest/tests/update_script_test.install/_file.md) — Install, update and uninstall functions for the update_script_test module.
+- [modules/simpletest/tests/update_script_test.module](modules/simpletest/tests/update_script_test.module/_file.md) — This file provides testing functionality for update.php.
+- [modules/simpletest/tests/update_test_1.install](modules/simpletest/tests/update_test_1.install/_file.md) — Install, update and uninstall functions for the update_test_1 module.
+- [modules/simpletest/tests/update_test_1.module](modules/simpletest/tests/update_test_1.module/_file.md)
+- [modules/simpletest/tests/update_test_2.install](modules/simpletest/tests/update_test_2.install/_file.md) — Install, update and uninstall functions for the update_test_2 module.
+- [modules/simpletest/tests/update_test_2.module](modules/simpletest/tests/update_test_2.module/_file.md)
+- [modules/simpletest/tests/update_test_3.install](modules/simpletest/tests/update_test_3.install/_file.md) — Install, update and uninstall functions for the update_test_3 module.
+- [modules/simpletest/tests/update_test_3.module](modules/simpletest/tests/update_test_3.module/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.bare.database.php](modules/simpletest/tests/upgrade/drupal-6.bare.database.php/_file.md) — Bare installation of Drupal 6.17, for test purposes.
+- [modules/simpletest/tests/upgrade/drupal-6.comments.database.php](modules/simpletest/tests/upgrade/drupal-6.comments.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.duplicate-permission.database.php](modules/simpletest/tests/upgrade/drupal-6.duplicate-permission.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.filled.database.php](modules/simpletest/tests/upgrade/drupal-6.filled.database.php/_file.md) — Filled installation of Drupal 6.17, for test purposes.
+- [modules/simpletest/tests/upgrade/drupal-6.forum.database.php](modules/simpletest/tests/upgrade/drupal-6.forum.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.locale.database.php](modules/simpletest/tests/upgrade/drupal-6.locale.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.menu.database.php](modules/simpletest/tests/upgrade/drupal-6.menu.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.node_type_broken.database.php](modules/simpletest/tests/upgrade/drupal-6.node_type_broken.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.translatable.database.php](modules/simpletest/tests/upgrade/drupal-6.translatable.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.trigger.database.php](modules/simpletest/tests/upgrade/drupal-6.trigger.database.php/_file.md) — Test content for the trigger upgrade path.
+- [modules/simpletest/tests/upgrade/drupal-6.upload.database.php](modules/simpletest/tests/upgrade/drupal-6.upload.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.user-no-password-token.database.php](modules/simpletest/tests/upgrade/drupal-6.user-no-password-token.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-6.user-password-token.database.php](modules/simpletest/tests/upgrade/drupal-6.user-password-token.database.php/_file.md)
+- [modules/simpletest/tests/upgrade/drupal-7.aggregator.database.php](modules/simpletest/tests/upgrade/drupal-7.aggregator.database.php/_file.md) — Test content for the aggregator update path.
+- [modules/simpletest/tests/upgrade/drupal-7.field.database.php](modules/simpletest/tests/upgrade/drupal-7.field.database.php/_file.md) — Test content for the field update path.
+- [modules/simpletest/tests/upgrade/drupal-7.trigger.database.php](modules/simpletest/tests/upgrade/drupal-7.trigger.database.php/_file.md) — Test content for the trigger upgrade path.
+- [modules/simpletest/tests/upgrade/update.aggregator.test](modules/simpletest/tests/upgrade/update.aggregator.test/_file.md) — Tests schema changes in aggregator.module.
+- [modules/simpletest/tests/upgrade/update.field.test](modules/simpletest/tests/upgrade/update.field.test/_file.md) — Provides update path tests for the Field module.
+- [modules/simpletest/tests/upgrade/update.trigger.test](modules/simpletest/tests/upgrade/update.trigger.test/_file.md) — Provides upgrade path tests for the Trigger module.
+- [modules/simpletest/tests/upgrade/update.user.test](modules/simpletest/tests/upgrade/update.user.test/_file.md) — Provides update path tests for the User module.
+- [modules/simpletest/tests/upgrade/upgrade.comment.test](modules/simpletest/tests/upgrade/upgrade.comment.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.filter.test](modules/simpletest/tests/upgrade/upgrade.filter.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.forum.test](modules/simpletest/tests/upgrade/upgrade.forum.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.locale.test](modules/simpletest/tests/upgrade/upgrade.locale.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.menu.test](modules/simpletest/tests/upgrade/upgrade.menu.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.node.test](modules/simpletest/tests/upgrade/upgrade.node.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.poll.test](modules/simpletest/tests/upgrade/upgrade.poll.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.taxonomy.test](modules/simpletest/tests/upgrade/upgrade.taxonomy.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.test](modules/simpletest/tests/upgrade/upgrade.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.translatable.test](modules/simpletest/tests/upgrade/upgrade.translatable.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.trigger.test](modules/simpletest/tests/upgrade/upgrade.trigger.test/_file.md) — Provides upgrade path tests for the Trigger module.
+- [modules/simpletest/tests/upgrade/upgrade.upload.test](modules/simpletest/tests/upgrade/upgrade.upload.test/_file.md)
+- [modules/simpletest/tests/upgrade/upgrade.user.test](modules/simpletest/tests/upgrade/upgrade.user.test/_file.md)
+- [modules/simpletest/tests/url_alter_test.install](modules/simpletest/tests/url_alter_test.install/_file.md)
+- [modules/simpletest/tests/url_alter_test.module](modules/simpletest/tests/url_alter_test.module/_file.md) — Module to help test hook_url_inbound_alter() and hook_url_outbound_alter().
+- [modules/simpletest/tests/xmlrpc.test](modules/simpletest/tests/xmlrpc.test/_file.md)
+- [modules/simpletest/tests/xmlrpc_test.module](modules/simpletest/tests/xmlrpc_test.module/_file.md)
+- [modules/statistics/statistics.admin.inc](modules/statistics/statistics.admin.inc/_file.md) — Admin page callbacks for the Statistics module.
+- [modules/statistics/statistics.install](modules/statistics/statistics.install/_file.md) — Install, update, and uninstall functions for the Statistics module.
+- [modules/statistics/statistics.module](modules/statistics/statistics.module/_file.md) — Logs and displays access statistics for a site.
+- [modules/statistics/statistics.pages.inc](modules/statistics/statistics.pages.inc/_file.md) — User page callbacks for the Statistics module.
+- [modules/statistics/statistics.php](modules/statistics/statistics.php/_file.md) — Handles counts of node views via Ajax with minimal bootstrap.
+- [modules/statistics/statistics.test](modules/statistics/statistics.test/_file.md) — Tests for the Statistics module.
+- [modules/statistics/statistics.tokens.inc](modules/statistics/statistics.tokens.inc/_file.md) — Builds placeholder replacement tokens for node visitor statistics.
+- [modules/syslog/syslog.install](modules/syslog/syslog.install/_file.md) — Install, update and uninstall functions for the syslog module.
+- [modules/syslog/syslog.module](modules/syslog/syslog.module/_file.md) — Redirects logging messages to syslog.
+- [modules/syslog/syslog.test](modules/syslog/syslog.test/_file.md) — Tests for syslog.module.
+- [modules/system/form.api.php](modules/system/form.api.php/_file.md) — Callbacks provided by the form system.
+- [modules/system/html.tpl.php](modules/system/html.tpl.php/_file.md) — Default theme implementation to display the basic html structure of a single Drupal page.
+- [modules/system/image.gd.inc](modules/system/image.gd.inc/_file.md) — GD2 toolkit for image manipulation within Drupal.
+- [modules/system/language.api.php](modules/system/language.api.php/_file.md) — Hooks provided by the base system for language support.
+- [modules/system/maintenance-page.tpl.php](modules/system/maintenance-page.tpl.php/_file.md) — Default theme implementation to display a single Drupal page while offline.
+- [modules/system/page.tpl.php](modules/system/page.tpl.php/_file.md) — Default theme implementation to display a single Drupal page.
+- [modules/system/region.tpl.php](modules/system/region.tpl.php/_file.md) — Default theme implementation to display a region.
+- [modules/system/system.admin.inc](modules/system/system.admin.inc/_file.md) — Admin page callbacks for the system module.
+- [modules/system/system.api.php](modules/system/system.api.php/_file.md) — Hooks provided by Drupal core and the System module.
+- [modules/system/system.archiver.inc](modules/system/system.archiver.inc/_file.md) — Archiver implementations provided by the system module.
+- [modules/system/system.install](modules/system/system.install/_file.md) — Install, update and uninstall functions for the system module.
+- [modules/system/system.mail.inc](modules/system/system.mail.inc/_file.md) — Drupal core implementations of MailSystemInterface.
+- [modules/system/system.module](modules/system/system.module/_file.md) — Configuration system that lets administrators modify the workings of the site.
+- [modules/system/system.queue.inc](modules/system/system.queue.inc/_file.md) — Queue functionality.
+- [modules/system/system.tar.inc](modules/system/system.tar.inc/_file.md)
+- [modules/system/system.test](modules/system/system.test/_file.md) — Tests for system.module.
+- [modules/system/system.tokens.inc](modules/system/system.tokens.inc/_file.md) — Builds placeholder replacement tokens system-wide data.
+- [modules/system/system.updater.inc](modules/system/system.updater.inc/_file.md) — Subclasses of the Updater class to update Drupal core knows how to update. At this time, only modules and themes are supported.
+- [modules/system/tests/cron_queue_test.module](modules/system/tests/cron_queue_test.module/_file.md)
+- [modules/system/tests/system_cron_test.module](modules/system/tests/system_cron_test.module/_file.md) — Helper module for CronRunTestCase::testCronCacheExpiration().
+- [modules/system/theme.api.php](modules/system/theme.api.php/_file.md)
+- [modules/taxonomy/taxonomy-term.tpl.php](modules/taxonomy/taxonomy-term.tpl.php/_file.md) — Default theme implementation to display a term.
+- [modules/taxonomy/taxonomy.admin.inc](modules/taxonomy/taxonomy.admin.inc/_file.md) — Administrative page callbacks for the taxonomy module.
+- [modules/taxonomy/taxonomy.api.php](modules/taxonomy/taxonomy.api.php/_file.md) — Hooks provided by the Taxonomy module.
+- [modules/taxonomy/taxonomy.install](modules/taxonomy/taxonomy.install/_file.md) — Install, update and uninstall functions for the taxonomy module.
+- [modules/taxonomy/taxonomy.module](modules/taxonomy/taxonomy.module/_file.md) — Enables the organization of content into categories.
+- [modules/taxonomy/taxonomy.pages.inc](modules/taxonomy/taxonomy.pages.inc/_file.md) — Page callbacks for the taxonomy module.
+- [modules/taxonomy/taxonomy.test](modules/taxonomy/taxonomy.test/_file.md) — Tests for taxonomy.module.
+- [modules/taxonomy/taxonomy.tokens.inc](modules/taxonomy/taxonomy.tokens.inc/_file.md) — Builds placeholder replacement tokens for taxonomy terms and vocabularies.
+- [modules/toolbar/toolbar.module](modules/toolbar/toolbar.module/_file.md) — Administration toolbar for quick access to top level administration items.
+- [modules/toolbar/toolbar.test](modules/toolbar/toolbar.test/_file.md)
+- [modules/toolbar/toolbar.tpl.php](modules/toolbar/toolbar.tpl.php/_file.md) — Default template for admin toolbar.
+- [modules/tracker/tracker.install](modules/tracker/tracker.install/_file.md) — Install, update, and uninstall functions for tracker.module.
+- [modules/tracker/tracker.module](modules/tracker/tracker.module/_file.md) — Tracks recent content posted by a user or users.
+- [modules/tracker/tracker.pages.inc](modules/tracker/tracker.pages.inc/_file.md) — User page callbacks for tracker.module.
+- [modules/tracker/tracker.test](modules/tracker/tracker.test/_file.md) — Tests for tracker.module.
+- [modules/translation/tests/translation_test.module](modules/translation/tests/translation_test.module/_file.md) — Mock module for content translation tests.
+- [modules/translation/translation.module](modules/translation/translation.module/_file.md) — Manages content translations.
+- [modules/translation/translation.pages.inc](modules/translation/translation.pages.inc/_file.md) — User page callbacks for the Translation module.
+- [modules/translation/translation.test](modules/translation/translation.test/_file.md) — Tests for the Translation module.
+- [modules/trigger/tests/trigger_test.module](modules/trigger/tests/trigger_test.module/_file.md) — Mock module to aid in testing trigger.module.
+- [modules/trigger/trigger.admin.inc](modules/trigger/trigger.admin.inc/_file.md) — Admin page callbacks for the trigger module.
+- [modules/trigger/trigger.api.php](modules/trigger/trigger.api.php/_file.md) — Hooks provided by the Trigger module.
+- [modules/trigger/trigger.install](modules/trigger/trigger.install/_file.md) — Install, update and uninstall functions for the trigger module.
+- [modules/trigger/trigger.module](modules/trigger/trigger.module/_file.md) — Enables functions to be stored and executed at a later time.
+- [modules/trigger/trigger.test](modules/trigger/trigger.test/_file.md) — Tests for trigger.module.
+- [modules/update/tests/aaa_update_test.module](modules/update/tests/aaa_update_test.module/_file.md) — Dummy module for testing Update status.
+- [modules/update/tests/bbb_update_test.module](modules/update/tests/bbb_update_test.module/_file.md) — Dummy module for testing Update status.
+- [modules/update/tests/ccc_update_test.module](modules/update/tests/ccc_update_test.module/_file.md) — Dummy module for testing Update status.
+- [modules/update/tests/update_test.module](modules/update/tests/update_test.module/_file.md) — Module for testing Update Manager functionality.
+- [modules/update/update.api.php](modules/update/update.api.php/_file.md) — Hooks provided by the Update Manager module.
+- [modules/update/update.authorize.inc](modules/update/update.authorize.inc/_file.md) — Callbacks and related functions invoked by authorize.php to update projects.
+- [modules/update/update.compare.inc](modules/update/update.compare.inc/_file.md) — Code required only when comparing available updates to existing data.
+- [modules/update/update.fetch.inc](modules/update/update.fetch.inc/_file.md) — Code required only when fetching information about available updates.
+- [modules/update/update.install](modules/update/update.install/_file.md) — Install, update, and uninstall functions for the Update Manager module.
+- [modules/update/update.manager.inc](modules/update/update.manager.inc/_file.md) — Administrative screens and processing functions of the Update Manager module.
+- [modules/update/update.module](modules/update/update.module/_file.md) — Handles updates of Drupal core and contributed projects.
+- [modules/update/update.report.inc](modules/update/update.report.inc/_file.md) — Code required only when rendering the available updates report.
+- [modules/update/update.settings.inc](modules/update/update.settings.inc/_file.md) — Code required only for the update status settings form.
+- [modules/update/update.test](modules/update/update.test/_file.md) — This file contains tests for the Update Manager module.
+- [modules/user/tests/anonymous_user_unblock_test.module](modules/user/tests/anonymous_user_unblock_test.module/_file.md) — Dummy module implementing hook_user_load().
+- [modules/user/tests/user_email_validation_test.module](modules/user/tests/user_email_validation_test.module/_file.md) — Dummy module implementing hook_valid_email_address_alter.
+- [modules/user/tests/user_flood_test.module](modules/user/tests/user_flood_test.module/_file.md) — Dummy module implementing hook_user_flood_control.
+- [modules/user/tests/user_form_test.module](modules/user/tests/user_form_test.module/_file.md) — Dummy module implementing a form to test user password validation
+- [modules/user/tests/user_session_test.module](modules/user/tests/user_session_test.module/_file.md) — Dummy module implementing a page callback to create an anon session.
+- [modules/user/user-picture.tpl.php](modules/user/user-picture.tpl.php/_file.md) — Default theme implementation to present a picture configured for the user's account.
+- [modules/user/user-profile-category.tpl.php](modules/user/user-profile-category.tpl.php/_file.md) — Default theme implementation to present profile categories (groups of profile items).
+- [modules/user/user-profile-item.tpl.php](modules/user/user-profile-item.tpl.php/_file.md) — Default theme implementation to present profile items (values from user account profile fields or modules).
+- [modules/user/user-profile.tpl.php](modules/user/user-profile.tpl.php/_file.md) — Default theme implementation to present all user profile data.
+- [modules/user/user.admin.inc](modules/user/user.admin.inc/_file.md) — Admin page callback file for the user module.
+- [modules/user/user.api.php](modules/user/user.api.php/_file.md) — Hooks provided by the User module.
+- [modules/user/user.install](modules/user/user.install/_file.md) — Install, update and uninstall functions for the user module.
+- [modules/user/user.module](modules/user/user.module/_file.md) — Enables the user registration and login system.
+- [modules/user/user.pages.inc](modules/user/user.pages.inc/_file.md) — User page callback file for the user module.
+- [modules/user/user.test](modules/user/user.test/_file.md) — Tests for user.module.
+- [modules/user/user.tokens.inc](modules/user/user.tokens.inc/_file.md) — Builds placeholder replacement tokens for user-related data.
+- [profiles/minimal/minimal.install](profiles/minimal/minimal.install/_file.md) — Install, update and uninstall functions for the minimal installation profile.
+- [profiles/minimal/minimal.profile](profiles/minimal/minimal.profile/_file.md) — Enables modules and site configuration for a minimal site installation.
+- [profiles/standard/standard.install](profiles/standard/standard.install/_file.md) — Install, update and uninstall functions for the standard installation profile.
+- [profiles/standard/standard.profile](profiles/standard/standard.profile/_file.md) — Enables modules and site configuration for a standard site installation.
+- [profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module](profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.module/_file.md)
+- [profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.test](profiles/testing/modules/drupal_system_listing_compatible_test/drupal_system_listing_compatible_test.test/_file.md)
+- [profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.module](profiles/testing/modules/drupal_system_listing_incompatible_test/drupal_system_listing_incompatible_test.module/_file.md)
+- [profiles/testing/testing.install](profiles/testing/testing.install/_file.md) — Install, update and uninstall functions for the testing profile.
+- [profiles/testing/testing.profile](profiles/testing/testing.profile/_file.md) — Installation profile for tests.
+- [scripts/code-clean.sh](scripts/code-clean.sh/_file.md)
+- [scripts/cron-curl.sh](scripts/cron-curl.sh/_file.md)
+- [scripts/cron-lynx.sh](scripts/cron-lynx.sh/_file.md)
+- [scripts/drupal.sh](scripts/drupal.sh/_file.md)
+- [scripts/dump-database-d6.sh](scripts/dump-database-d6.sh/_file.md)
+- [scripts/dump-database-d7.sh](scripts/dump-database-d7.sh/_file.md) — Dumps a Drupal 7 database into a PHP script to test the upgrade process.
+- [scripts/generate-d6-content.sh](scripts/generate-d6-content.sh/_file.md)
+- [scripts/generate-d7-content.sh](scripts/generate-d7-content.sh/_file.md) — Generates content for a Drupal 7 database to test the upgrade process.
+- [scripts/password-hash.sh](scripts/password-hash.sh/_file.md)
+- [scripts/run-tests.sh](scripts/run-tests.sh/_file.md) — This script runs Drupal tests from command line.
+- [sites/default/default.settings.php](sites/default/default.settings.php/_file.md) — Drupal site-specific configuration file.
+- [sites/example.sites.php](sites/example.sites.php/_file.md) — Configuration file for Drupal's multi-site directory aliasing feature.
+- [themes/bartik/color/color.inc](themes/bartik/color/color.inc/_file.md)
+- [themes/bartik/template.php](themes/bartik/template.php/_file.md)
+- [themes/bartik/templates/comment-wrapper.tpl.php](themes/bartik/templates/comment-wrapper.tpl.php/_file.md) — Bartik's theme implementation to provide an HTML container for comments.
+- [themes/bartik/templates/comment.tpl.php](themes/bartik/templates/comment.tpl.php/_file.md) — Bartik's theme implementation for comments.
+- [themes/bartik/templates/maintenance-page.tpl.php](themes/bartik/templates/maintenance-page.tpl.php/_file.md) — Implementation to display a single Drupal page while offline.
+- [themes/bartik/templates/node.tpl.php](themes/bartik/templates/node.tpl.php/_file.md) — Bartik's theme implementation to display a node.
+- [themes/bartik/templates/page.tpl.php](themes/bartik/templates/page.tpl.php/_file.md) — Bartik's theme implementation to display a single Drupal page.
+- [themes/engines/phptemplate/phptemplate.engine](themes/engines/phptemplate/phptemplate.engine/_file.md) — Handles integration of PHP templates with the Drupal theme system.
+- [themes/garland/color/color.inc](themes/garland/color/color.inc/_file.md)
+- [themes/garland/comment.tpl.php](themes/garland/comment.tpl.php/_file.md)
+- [themes/garland/maintenance-page.tpl.php](themes/garland/maintenance-page.tpl.php/_file.md) — Override of the default maintenance page.
+- [themes/garland/node.tpl.php](themes/garland/node.tpl.php/_file.md)
+- [themes/garland/page.tpl.php](themes/garland/page.tpl.php/_file.md)
+- [themes/garland/template.php](themes/garland/template.php/_file.md)
+- [themes/garland/theme-settings.php](themes/garland/theme-settings.php/_file.md) — Theme setting callbacks for the garland theme.
+- [themes/seven/maintenance-page.tpl.php](themes/seven/maintenance-page.tpl.php/_file.md)
+- [themes/seven/page.tpl.php](themes/seven/page.tpl.php/_file.md)
+- [themes/seven/template.php](themes/seven/template.php/_file.md)
+- [update.php](update.php/_file.md) — Administrative page for handling updates from one Drupal version to another.
+- [xmlrpc.php](xmlrpc.php/_file.md) — PHP page for handling incoming XML-RPC requests from clients.

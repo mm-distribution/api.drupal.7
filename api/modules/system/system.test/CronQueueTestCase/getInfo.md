@@ -1,0 +1,33 @@
+# CronQueueTestCase::getInfo()
+
+- **Type:** Method
+- **File:** [`modules/system/system.test`](../_file.md), lines 975–981 · [local source](../../../../../source/modules/system/system.test) · [GitHub](https://github.com/drupal/drupal/blob/7.103/modules/system/system.test#L975-L981)
+- **Class:** [CronQueueTestCase](../CronQueueTestCase.md)
+- **Module/theme:** system
+
+## Signature
+
+```php
+public static function getInfo()
+```
+
+## Documentation
+
+```text
+Implement getInfo().
+```
+
+## Code
+
+```php
+  public static function getInfo() {
+    return array(
+      'name' => 'Cron queue functionality',
+      'description' => 'Tests the cron queue runner.',
+      'group' => 'System'
+    );
+  }
+```
+
+---
+_Drupal 7.103 · [modules/system/system.test](https://github.com/drupal/drupal/blob/7.103/modules/system/system.test) · Licensed GPL-2.0-or-later (see LICENSE)._
